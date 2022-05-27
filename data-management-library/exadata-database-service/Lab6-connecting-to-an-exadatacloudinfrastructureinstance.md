@@ -27,7 +27,7 @@ Estimated Lab Time: 10 minutes
 * The full path to the file that contains the private key associated with the public key used when the system was launched.
 * The public or private IP address of the Exadata Cloud Infrastructure instance.
 
-  
+
 
 
  <!-- add hyperlink for policies -->
@@ -40,22 +40,22 @@ Estimated Lab Time: 10 minutes
 
 1.  Click the navigation menu Click **Oracle Database**, then click **Exadata on Oracle Public Cloud**.
 
-    ![](./images/Lab2/exacs.png " ")
+    ![](./Images/Lab2/exacs.png " ")
 
 2.  Choose your **Compartment**
 
-    ![](./images/Lab4/compartment.png " ")
+    ![](./Images/Lab4/compartment.png " ")
 
 
 3.  Navigate to the cloud VM cluster you want to view the IP addresses:
 
     Under **Oracle Exadata Database Service on Dedicated Infrastructure**, Click **Exadata VM Clusters**. In the list of VM clusters, find the VM cluster you want to access and click its highlighted name to view the details page for the cluster.
 
-    ![](./images/Lab4/exavmclusters.png " ")
+    ![](./Images/Lab4/exavmclusters.png " ")
 
 4.  Under **Resources**, click **Virutal Machines**.
 
-    ![](./images/Lab6/viewvmcluster.png " ")
+    ![](./Images/Lab6/viewvmcluster.png " ")
 
     Find the public or private IP address of the Exadata Cloud Infrastructure instance.
 
@@ -83,9 +83,9 @@ You can connect to the virtual machines in an Exadata Cloud Infrastructure syste
          * To perform operations that require *<code>  root  </code>* access to the virtual machine, such as patching, connect as *<code>  opc  </code>*. The *<code>  opc  </code>* user can use the *<code>  sudo -s  </code>* command to gain *<code>  root  </code>* access to the virtual machine.
     * *<code>  node  </code>* is the host name or IP address for the virtual machine that you want to access.
 
-    ![](./images/Lab6/sshnew.png " ")
+    ![](./Images/Lab6/sshnew.png " ")
 
-    ![](./images/Lab6/sqlplus.png " ")
+    ![](./Images/Lab6/sqlplus.png " ")
 
 
     *Note*: Follow this procedure if you want to access a virtual machine from a Microsoft Windows system using PuTTY.  

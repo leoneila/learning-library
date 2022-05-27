@@ -37,53 +37,53 @@ Estimated Lab Time: 10 minutes
 
 1.  Click the navigation menu Click **Oracle Database**, then click **Exadata on Oracle Public Cloud**.
 
-    ![](./images/Lab2/exacs.png " ")
+    ![](./Images/Lab2/exacs.png " ")
 
 2.  Choose your **Compartment**
 
-    ![](./images/Lab4/compartment.png " ")
+    ![](./Images/Lab4/compartment.png " ")
 
 
 3.  Navigate to the cloud VM cluster containing the database you want to configure:
 
     Under **Oracle Exadata Database Service on Dedicated Infrastructure**, Click **Exadata VM Clusters**. In the list of VM clusters, find the VM cluster you want to access and click its highlighted name to view the details page for the cluster.
 
-    ![](./images/Lab4/exavmclusters.png " ")
+    ![](./Images/Lab4/exavmclusters.png " ")
 
 
 4. In the list of databases, find the database for which you want to enable or disable automatic backups, and click its name to
    display database details.
 
-   ![](./images/Lab7/db.png " ")
+   ![](./Images/Lab7/db.png " ")
 
 
    The details indicate whether automatic backups are enabled.
 
-   ![](./images/Lab7/dis.png " ")
+   ![](./Images/Lab7/dis.png " ")
 
 5. Click Configure Automatic Backups
 
-   ![](./images/Lab7/configure.png " ")
+   ![](./Images/Lab7/configure.png " ")
 
 6. In the Configure Automatic Backups dialog, check **Enable Automatic Backup**
 
-   ![](./images/Lab7/enable.png " ")
+   ![](./Images/Lab7/enable.png " ")
 
    If you are enabling automatic backups, you can choose one of the following preset retention periods: 7 days, 15 days, 30 days, 45 days, or 60 days. The default selection is 30 days.
 
-   ![](./images/Lab7/retention.png " ")
+   ![](./Images/Lab7/retention.png " ")
 
    Select Backup Scheduling
 
-   ![](./images/Lab7/backupsched.png " ")
+   ![](./Images/Lab7/backupsched.png " ")
 
 7. Click Save Changes
 
-   ![](./images/Lab7/save.png " ")
+   ![](./Images/Lab7/save.png " ")
 
    Once Automatic Backup is configured for a database, you can see from the Database details page that automatic backups are enabled
 
-   ![](./images/Lab7/enabled.png " ")
+   ![](./Images/Lab7/enabled.png " ")
 
 
 

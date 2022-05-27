@@ -31,35 +31,35 @@ Estimated Lab Time: 10 minutes
 
 1. Log in to the Oracle Cloud, Once you are logged in, you are taken to the cloud services dashboard where you can see all the services available to you.
 
-    ![](./images/Lab2/oraclecloud.png " ")
+    ![](./Images/Lab2/oraclecloud.png " ")
 
 
 2.  Click the navigation menu Click **Oracle Database**, then click **Exadata on Oracle Public Cloud**.
 
-    ![](./images/Lab2/exacs.png " ")
+    ![](./Images/Lab2/exacs.png " ")
 
 
 3. Under **Oracle Exadata Database Service on Dedicated Infrastructure**, click **Exadata Infrastructure**.
 
-    ![](./images/Lab2/exainfra.png " ")
+    ![](./Images/Lab2/exainfra.png " ")
 
 4. Click Create Exadata Infrastructure.
 
-    ![](./images/Lab2/createinfra.png " ")
+    ![](./Images/Lab2/createinfra.png " ")
 
     In the Create Exadata Infrastructure Page, Provide basic information for the Exadata Cloud Infrastructure
 
  5. **Compartment**: Select a compartment for the Exadata infrastructure.
-    ![](./images/Lab2/comp.png " ")
+    ![](./Images/Lab2/comp.png " ")
  6. **Display name**: Enter a display name for the Exadata infrastructure.
  7. **Select an availability domain**: The availability domain in which the Exadata infrastructure resides.
 
-    ![](./images/Lab2/AD.png " ")
+    ![](./Images/Lab2/AD.png " ")
 
  8. **Select the Exadata system model**: Select either a fixed-shape system (quarter, half, or full rack X7-2  or X8-2 shapes), or a scalable system (X8M-2 or X9M-2).
 
 
-    ![](./images/Lab2/model.png " ")
+    ![](./Images/Lab2/model.png " ")
 
     *Note: Exadata system model*
 
@@ -73,22 +73,22 @@ Estimated Lab Time: 10 minutes
 
     If you selected a flexible shape (X8M-2 or X9M-2) , specify the **Compute and storage configuration**. You can specify **Database servers** from minimum of 2 up to 32. You can specify **Storage servers** from minimum of 3 up to 64.
 
-    ![](./images/Lab2/x8m.png " ")
+    ![](./Images/Lab2/x8m.png " ")
 
 
  9. Configure automatic maintenance: Click this button to specify a schedule for the quarterly automatic infrastructure maintenance.
 
-    ![](./images/Lab2/maintenance.png " ")
+    ![](./Images/Lab2/maintenance.png " ")
 
     In the Automatic Infrastructure Maintenance Schedule dialog that opens, do the following:
 
     Click the **Specify a schedule** radio button to choose your preferred month, week, weekday, and start time for infrastructure maintenance.
 
-    ![](./images/Lab2/specify.png " ")
+    ![](./Images/Lab2/specify.png " ")
 
     Under **Maintenance months**, specify at least one month for each quarter during which Exadata infrastructure maintenance will take place.
 
-    ![](./images/Lab2/months.png " ")
+    ![](./Images/Lab2/months.png " ")
 
     * Under **Week of the month**, specify which week of the month maintenance will take place.
     * Under **Day of the week**, specify the day of the week on which the maintenance will occur.
@@ -97,11 +97,11 @@ Estimated Lab Time: 10 minutes
 
     Click **Update Maintenance Schedule**.
 
-    ![](./images/Lab2/updatems.png " ")
+    ![](./Images/Lab2/updatems.png " ")
 
     Provide **Maintenance Contacts**
 
-    ![](./images/Lab2/maintenancecontacts.png " ")
+    ![](./Images/Lab2/maintenancecontacts.png " ")
 
     Maintenance contacts are required for service request based communications for maintenance events.
 
@@ -110,19 +110,19 @@ Estimated Lab Time: 10 minutes
 
      In the **Tags** tab, you can add tags to the database. To apply a defined tag, you must have permissions to use the tag namespace. For more information about tagging, see Resource Tags . If you are not sure if you should apply tags, skip this option (you can apply tags later) or ask your administrator.
 
-     ![](./images/Lab2/advanced.png " ")
+     ![](./Images/Lab2/advanced.png " ")
 
  11. Click **Create Exadata Infrastructure**.
 
-     ![](./images/Lab2/clickcreate.png " ")
+     ![](./Images/Lab2/clickcreate.png " ")
 
      The Cloud Exadata infrastructure appears in the Exadata Infrastructure list with a status of **Provisioning**.  
 
-     ![](./images/Lab2/provisioning.png " ")
+     ![](./Images/Lab2/provisioning.png " ")
 
      After the Cloud Exadata infrastructure resource is successfully provisioned, The infrastructure's icon changes from yellow to green and in the **Available** state, you can create a cloud VM cluster as described in Lab3 of this workshop.
 
-     ![](./images/Lab2/available.png " ")
+     ![](./Images/Lab2/available.png " ")
 
      You may now **proceed to the next lab**
 

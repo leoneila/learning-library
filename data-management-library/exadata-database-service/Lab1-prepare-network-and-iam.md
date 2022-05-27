@@ -32,11 +32,11 @@ Estimated Lab Time: 10 minutes
 
     Click the navigation menu Click **Identity & Security**, then click **Policies**.
 
-     ![](./images/Lab1/policy.png " ")
+     ![](./Images/Lab1/policy.png " ")
 
 2. Select **Compartment**, Under Identity in the **Policies** section Click **Create Policy**
 
-     ![](./images/Lab1/cpol.png " ")
+     ![](./Images/Lab1/cpol.png " ")
 
 
      A **policy** is an IAM document that specifies who has what type of access to your resources. It is used in different ways:
@@ -51,7 +51,7 @@ Estimated Lab Time: 10 minutes
 
      For administrators: The policy in "Let database admins manage DB systems" lets the specified group do everything with databases, and related database resources.
 
-     ![](./images/Lab1/iam.png " ")
+     ![](./Images/Lab1/iam.png " ")
 
      If you're new to policies, then see "Getting Started with Policies" and "Common Policies". If you want to dig deeper into writing policies for databases, then see "Details for the Database Service".
 
@@ -69,19 +69,19 @@ Estimated Lab Time: 10 minutes
 
 1. Click the navigation menu Click **Networking**, then click **Virtual Cloud Networks**.
 
-    ![](./images/Lab1/vcn.png " ")
+    ![](./Images/Lab1/vcn.png " ")
 
 2. Select your **Compartment**, Under Networking in the **Virtual Cloud Networks** Click on **Create VCN**
 
-    ![](./images/Lab1/createvcn.png " ")
+    ![](./Images/Lab1/createvcn.png " ")
 
-    ![](./images/Lab1/cvcn.png " ")
+    ![](./Images/Lab1/cvcn.png " ")
 
     *Note:*
 
     For Exadata Cloud Infrastructure instances, networking is configured on the cloud VM cluster resource.
 
-    ![](./images/Lab1/exadbvcn.png " ")
+    ![](./Images/Lab1/exadbvcn.png " ")
 
     In general, Oracle recommends using **regional subnets** , which span all **availability domains** in the region. For more information, See <a href="https://docs.oracle.com/iaas/Content/Network/Tasks/managingVCNs_topic-Overview_of_VCNs_and_Subnets.htm#Overview" target="\_blank">Overview of VCNs and Subnets</a>.
 

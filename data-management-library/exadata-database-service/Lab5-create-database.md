@@ -36,26 +36,26 @@ Estimated Lab Time: 10 minutes
 
 1.  Click the navigation menu Click **Oracle Database**, then click **Exadata on Oracle Public Cloud**.
 
-    ![](./images/Lab2/exacs.png " ")
+    ![](./Images/Lab2/exacs.png " ")
 
 2.  Choose your **Compartment**
 
-    ![](./images/Lab4/compartment.png " ")
+    ![](./Images/Lab4/compartment.png " ")
 
 
 3.  Navigate to the cloud VM cluster you want to create the new Database on:
 
     Under **Oracle Exadata Database Service on Dedicated Infrastructure**, Click **Exadata VM Clusters**. In the list of VM clusters, find the VM cluster you want to access and click its highlighted name to view the details page for the cluster.
 
-    ![](./images/Lab4/exavmclusters.png " ")
+    ![](./Images/Lab4/exavmclusters.png " ")
 
 4.  Under **Resources**, click **Databases**, Then Click **Create Database**.
 
-    ![](./images/Lab5/createdb.png " ")
+    ![](./Images/Lab5/createdb.png " ")
 
 5.  In the Create Database dialog, enter the following:
 
-    ![](./images/Lab5/dbname.png " ")
+    ![](./Images/Lab5/dbname.png " ")
 
     **Database name**: The name for the database. The database name must meet the requirements:
     * Maximum of 8 characters
@@ -82,18 +82,18 @@ Estimated Lab Time: 10 minutes
 
     **Database version**: The version of the database. You can mix database versions on the Exadata DB system.
 
-    ![](./images/Lab5/dbversion.png " ")
+    ![](./Images/Lab5/dbversion.png " ")
 
     **PDB name**:*(Optional)* For Oracle Database 12c (12.1.0.2) and later, you can specify the name of the pluggable database. The PDB name must begin with an alphabetic character, and can contain a maximum of eight alphanumeric characters. The only special character permitted is the underscore ( _).
 
-    ![](./images/Lab5/PDBname.png " ")
+    ![](./Images/Lab5/PDBname.png " ")
 
     **Database Home**: The Oracle Database Home for the database. Choose the applicable option:
 
     *Note: For the Database Home, you can select an existing Database Home created from Lab 4 OR Create a new Database Home*
     *For this Lab, we will be using an existing Database Home created from Lab 4*
 
-    ![](./images/Lab5/dbhselect.png " ")
+    ![](./Images/Lab5/dbhselect.png " ")
 
     * **Select an existing Database Home**: The Database Home display name field allows you to choose the Database Home from the existing homes for the database version you specified. If no Database Home with that version exists, you must create a new one.
 
@@ -109,7 +109,7 @@ Estimated Lab Time: 10 minutes
 
        * **Confirm password**: Re-enter the SYS password you specified.
 
-    ![](./images/Lab5/admincredentials.png " ")
+    ![](./Images/Lab5/admincredentials.png " ")
 
     Using a TDE wallet password is optional. If you are using customer-managed encryption keys stored in a vault in your tenancy, the TDE wallet password is not applicable to your DB system.
 
@@ -123,7 +123,7 @@ Estimated Lab Time: 10 minutes
        * **Data Warehouse** configures the database for a decision support or data warehouse
          workload, with a bias towards large data scanning operations.
 
-    ![](./images/Lab5/WT.png " ")
+    ![](./Images/Lab5/WT.png " ")
 
     **Configure database backups**: Specify the settings for backing up the database to Object Storage:
 
@@ -131,17 +131,17 @@ Estimated Lab Time: 10 minutes
 
     *Note*: All [pre-requisites](https://docs.oracle.com/en-us/iaas/exadatacloud/exacs/ecs-managing-db-backup-and-recovery.html#GUID-41586B8E-FF2F-44B7-827B-D9122289C8AE) for backing up to Oracle Cloud Infrastructure Object Storage must be met for automatic backups to work
 
-    ![](./images/Lab5/enableautomatic.png " ")
+    ![](./Images/Lab5/enableautomatic.png " ")
 
     * **Backup retention period**: If you enable automatic backups, you can choose one of the following preset retention periods: 7 days, 15 days, 30 days, 45 days, or 60 days. The default selection is 30 days.
 
-    ![](./images/Lab5/retentionperiod.png " ")
+    ![](./Images/Lab5/retentionperiod.png " ")
 
-    ![](./images/Lab5/retentionperiod2.png " ")
+    ![](./Images/Lab5/retentionperiod2.png " ")
 
     * **Backup Scheduling**: If you enable automatic backups, you can choose a two-hour scheduling window to control when backup operations begin. If you do not specify a window, the six-hour default window of 00:00 to 06:00 (in the time zone of the DB system's region) is used for your database.
 
-    ![](./images/Lab5/backupsched.png " ")
+    ![](./Images/Lab5/backupsched.png " ")
 
 6. Click **Show Advanced Options** to specify advanced options for the database:
 
@@ -159,17 +159,17 @@ Estimated Lab Time: 10 minutes
 
     **Character set**: The character set for the database. The default is AL32UTF8.
 
-    ![](./images/Lab5/sidprefix.png " ")
+    ![](./Images/Lab5/sidprefix.png " ")
 
     **National character set**: The national character set for the database. The default is AL16UTF16.
 
-    ![](./images/Lab5/national.png " ")
+    ![](./Images/Lab5/national.png " ")
 
     **Encryption**: If you are creating a database in an Exadata Cloud Service VM cluster, then you can choose to use encryption based on encryption keys that you manage. By default, the database is configured using Oracle-managed encryption keys.
 
      *Note: For this Lab we will use Oracle-Managed encryption keys*
 
-     ![](./images/Lab5/encryption.png " ")
+     ![](./Images/Lab5/encryption.png " ")
 
      *Optional* To configure the database with encryption based on encryption keys you manage:
 
@@ -183,18 +183,18 @@ Estimated Lab Time: 10 minutes
 
     **Tags**: If you have permissions to create a resource, then you also have permissions to apply free-form tags to that resource. To apply a defined tag, you must have permissions to use the tag namespace.
 
-     ![](./images/Lab5/tags.png " ")
+     ![](./Images/Lab5/tags.png " ")
 
 7. Click **Create Database**
 
-     ![](./images/Lab5/createdatabaseclick.png " ")
+     ![](./Images/Lab5/createdatabaseclick.png " ")
 
 
    After database creation is complete, the status changes from **Provisioning** to **Available**
 
-   ![](./images/Lab5/provisioning.png " ")
+   ![](./Images/Lab5/provisioning.png " ")
 
-   ![](./images/Lab5/available.png " ")
+   ![](./Images/Lab5/available.png " ")
 
    You may now **proceed to the next lab**
 

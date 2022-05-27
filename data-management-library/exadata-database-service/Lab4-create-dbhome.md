@@ -36,66 +36,66 @@ Estimated Lab Time: 10 minutes
 
 1.  Click the navigation menu Click **Oracle Database**, then click **Exadata on Oracle Public Cloud**.
 
-    ![](./images/Lab2/exacs.png " ")
+    ![](./Images/Lab2/exacs.png " ")
 
 2.  Choose your **Compartment**
 
-    ![](./images/Lab4/compartment.png " ")
+    ![](./Images/Lab4/compartment.png " ")
 
 
 3.  Navigate to the cloud VM cluster or DB system you want to create the new Database Home on:
 
     Under **Oracle Exadata Database Service on Dedicated Infrastructure**, Click **Exadata VM Clusters**. In the list of VM clusters, find the VM cluster you want to access and click its highlighted name to view the details page for the cluster.
 
-    ![](./images/Lab4/exavmclusters.png " ")
+    ![](./Images/Lab4/exavmclusters.png " ")
 
 4.  Under Resources, click Database Homes. A list of Database Homes is displayed.
 
-    ![](./images/Lab4/dbhomelist.png " ")
+    ![](./Images/Lab4/dbhomelist.png " ")
 
 5.  Click Create Database Home.
 
-    ![](./images/Lab4/createdbhome.png " ")
+    ![](./Images/Lab4/createdbhome.png " ")
 
 6.  In the **Create Database Home** dialog, enter the following:
 
     **Database Home display name**: The display name for the Database Home. Avoid entering confidential information.
 
-    ![](./images/Lab4/displayname.png " ")
+    ![](./Images/Lab4/displayname.png " ")
 
     **Database image**: Determines what Oracle Database version is used for the database. You can have databases with different minor versions the same database home. The major versions must remain the same. By default, the latest Oracle-published database software image is selected.
 
     Click **Change Database Image** to use an older Oracle-published image or a custom database software image that you have created in advance, then select an Image Type:
 
-    ![](./images/Lab4/changedbimage.png " ")
+    ![](./Images/Lab4/changedbimage.png " ")
 
        * **Oracle Provided Database Software Images**: These images contain generally available versions of Oracle Database software.
 
        * **Custom Database Software Images**: These images are created by your organization and contain customized configurations of software updates and patches.
        Use the **Select a compartment** and **Select a Database version** selectors to limit the list of custom database software images to a specific compartment or Oracle Database software major release version.
 
-       ![](./images/Lab4/dbsoftwareimage.png " ")
+       ![](./Images/Lab4/dbsoftwareimage.png " ")
 
        After choosing a software image, click **Select** to return to the Create Database dialog.
 
-       ![](./images/Lab4/select.png " ")
+       ![](./Images/Lab4/select.png " ")
 
     Click **Show Advanced Options** to specify advanced options for the Database Home
 
        **Tags**: If you have permissions to create a resource, then you also have permissions to apply free-form tags to that resource. To apply a defined tag, you must have permissions to use the tag namespace.
 
-       ![](./images/Lab4/AOTags.png " ")
+       ![](./Images/Lab4/AOTags.png " ")
 
 7. Click **Create**
 
-   ![](./images/Lab4/clickcreate.png " ")
+   ![](./Images/Lab4/clickcreate.png " ")
 
 
    When the Database Home creation is complete, the status changes from **Provisioning** to **Available**.
 
-   ![](./images/Lab4/provisioning.png " ")
+   ![](./Images/Lab4/provisioning.png " ")
 
-   ![](./images/Lab4/available.png " ")
+   ![](./Images/Lab4/available.png " ")
 
    You may now **proceed to the next lab**
 
@@ -103,11 +103,11 @@ Estimated Lab Time: 10 minutes
 
 1.  Click the navigation menu Click **Oracle Database**, then click **Exadata on Oracle Public Cloud**.
 
-    ![](./images/Lab2/exacs.png " ")
+    ![](./Images/Lab2/exacs.png " ")
 
 2.  Choose your **Compartment**
 
-    ![](./images/Lab4/compartment.png " ")
+    ![](./Images/Lab4/compartment.png " ")
 
 
 

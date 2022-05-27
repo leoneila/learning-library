@@ -37,39 +37,39 @@ Estimated Lab Time: 10 minutes
 
 1.  Click the navigation menu Click **Oracle Database**, then click **Exadata on Oracle Public Cloud**.
 
-    ![](./images/Lab2/exacs.png " ")
+    ![](./Images/Lab2/exacs.png " ")
 
 2.  Choose your **Compartment** that contains the Exadata Cloud Infrastructure instance with the database for which you want to enable Oracle Data Guard
 
-    ![](./images/Lab4/compartment.png " ")
+    ![](./Images/Lab4/compartment.png " ")
 
 
 3.  Navigate to the cloud VM cluster that contains a database you want to assume the primary role:
 
     Under **Oracle Exadata Database Service on Dedicated Infrastructure**, Click **Exadata VM Clusters**. In the list of VM clusters, find the VM cluster you want to access and click its highlighted name to view the details page for the cluster.
 
-    ![](./images/Lab4/exavmclusters.png " ")
+    ![](./Images/Lab4/exavmclusters.png " ")
 
 
 4. In the list of **Databases**, click the name of the database you want to make primary.
 
-   ![](./images/Lab8/dbdetails.png " ")
+   ![](./Images/Lab8/dbdetails.png " ")
 
-   ![](./images/Lab8/dgdetails.png " ")
+   ![](./Images/Lab8/dgdetails.png " ")
 
 
 
 5. On the Database Details page, under **Resources**, click **Data Guard Associations**.
 
-   ![](./images/Lab8/dgassociation.png " ")
+   ![](./Images/Lab8/dgassociation.png " ")
 
 6. In the **Data Guard Associations** section, click **Enable Data Guard**.
 
-   ![](./images/Lab8/enabledg.png " ")
+   ![](./Images/Lab8/enabledg.png " ")
 
 7. On the Enable Data Guard page, configure your Data Guard association.
 
-   ![](./images/Lab8/peer.png " ")
+   ![](./Images/Lab8/peer.png " ")
 
       * In the **Select peer DB system** section, provide the following information for the standby database to obtain a list of available Exadata systems in which to locate the standby database:
 
@@ -81,7 +81,7 @@ Estimated Lab Time: 10 minutes
 
       * **Data Guard association details**:
 
-   ![](./images/Lab8/dgtype.png " ")
+   ![](./Images/Lab8/dgtype.png " ")
 
       * Data Guard Type: Select Active Data Guard or Data Guard. Active Data Guard provides additional features including: Real-Time Query and DML Offload, Automatic Block Repair, Standby Block Change Tracking, Far Sync, Global Data Services, and Application Continuity. Note that Active Data Guard requires an Oracle Active Data Guard license. For more information on Active Data Guard, see Active Data Guard. For a complete overview of both Data Guard types, see Introduction to Oracle Data Guard
 
@@ -91,7 +91,7 @@ Estimated Lab Time: 10 minutes
 
       * In the **Choose Database Home** section, choose one of the following:
 
-  ![](./images/Lab8/dbhome.png " ")
+  ![](./Images/Lab8/dbhome.png " ")
 
      * **Select an existing Database Home**: If you use this option, select a home from the Database Home display name drop-down list.
 
@@ -106,7 +106,7 @@ Estimated Lab Time: 10 minutes
 
     * In the **Configure standby database**: section, provide standby database details.
 
-     ![](./images/Lab8/stand.png " ")
+     ![](./Images/Lab8/stand.png " ")
 
      * **Database unique name**: Optionally, specify a value for the DB\_UNIQUE\_NAME database parameter. This value must be unique across the primary and standby cloud VM clusters. The unique name must meet the requirements:
 
@@ -125,7 +125,7 @@ Estimated Lab Time: 10 minutes
 
 8. Click **Show Advanced Options** to specify advanced options for the standby database:
 
-      ![](./images/Lab8/stand.png " ")
+      ![](./Images/Lab8/stand.png " ")
 
       * **Management**:
 
@@ -142,15 +142,15 @@ Estimated Lab Time: 10 minutes
 
 9. Click **Enable Data Guard**.       
 
-      ![](./images/Lab8/enable2.png " ")
+      ![](./Images/Lab8/enable2.png " ")
 
       When the association is created, the details for a database and its peer display their respective roles as **Primary** or **Standby**.
 
-      ![](./images/Lab8/enabledp.png " ")
+      ![](./Images/Lab8/enabledp.png " ")
 
-      ![](./images/Lab8/standbyd.png " ")
+      ![](./Images/Lab8/standbyd.png " ")
 
-      ![](./images/Lab8/standdy.png " ")
+      ![](./Images/Lab8/standdy.png " ")
 
 
 
