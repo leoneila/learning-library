@@ -35,7 +35,7 @@ Oracle Database uses this network for Oracle RAC cluster interconnect traffic an
 
 **Service Architecture: Exadata Database Service**
 
-![](./images/Introduction/service.png " ")
+![](./Images/Introduction/service.png " ")
 
 
 Oracle Exadata Database Service on Dedicated Infrastructure provides Oracle's Exadata Database Machine as a service in an Oracle Cloud Infrastructure (OCI) data center. Alternatively, you can choose Oracle Exadata Database Service on Exadata Cloud@Customer, which provides Exadata Database Service that is hosted in your data center.
