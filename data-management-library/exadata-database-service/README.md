@@ -9,7 +9,7 @@ Exadata Database Service allows you to leverage the power of Exadata in the clou
 Built-in Oracle Maximum Availability Architecture (Oracle MAA) best practices increase database availability, Exadata Database Service reduces downtime and simplifies operational management with zero downtime maintenance, online scaling, and one-click provisioning of Oracle Real Application Clusters (Oracle RAC) and Oracle Active Data Guard using built-in cloud automation
 
 **Network Overview: Exadata Database Service**
-![](./Images/Introduction/Architecture.png " ")
+![](./images/Introduction/Architecture.png " ")
 
 
 The Diagram outlines the high-level network architecture for Exadata Database Service.
