@@ -198,15 +198,16 @@ Estimated Lab Time: 10 minutes
 
    You may now **proceed to the next lab**
 
-<!--## Additional Lab: Create a Database from Backup -->
-
-<!--
 
 ## Want to Learn More?
 
-Click [here](https://docs.oracle.com/en/cloud/paas/autonomous-data-warehouse-cloud/user/autonomous-workflow.html#GUID-5780368D-6D40-475C-8DEB-DBA14BA675C3) for documentation on the typical workflow for using Autonomous Data Warehouse.
+Click [here](https://docs.oracle.com/en-us/iaas/exadatacloud/exacs/manage-databases.html) for documentation on Managing Oracle Databases on an Exadata Cloud Infrastructure Instance.
+
 
 ## Acknowledgements
 
-- **Author** - Leo Alvarado, Product Management
-- **Last Updated By/Date** - Leo Alvarado, April 2022 -->
+* **Author** - Leo Alvarado, Product Management
+
+* **Contributors** - Tammy Bednar, Eddie Ambler, Product Management
+
+* **Last Update** - May 2022.

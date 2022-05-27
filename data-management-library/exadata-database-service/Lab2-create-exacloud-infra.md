@@ -25,7 +25,7 @@ Estimated Lab Time: 10 minutes
 * A correctly configured virtual cloud network (VCN) to launch the system in. Its related networking resources (gateways, route tables, security lists, DNS, and so on) must also be configured as necessary for the system
 * The proper IAM policy is required to proceed See <a href="https://docs.oracle.com/en-us/iaas/exadatacloud/exacs/preparing-for-ecc-deployment.html#GUID-EA03F7BC-7D8E-4177-AFF4-615F71C390CD" target="\_blank">Required IAM Policy for Exadata Cloud Service</a>.
  <!-- add hyperlink for policies -->
-* The public key, in OpenSSH format, from the key pair that you plan to use for connecting to the system via SSH  
+
 
 ## Task 1: Create Cloud Exadata Infrastructure Resource
 
@@ -128,12 +128,17 @@ Estimated Lab Time: 10 minutes
 
 
 
-<!--
+
 ## Want to Learn More?
 
-Click [here](https://docs.oracle.com/en-us/iaas/exadatacloud/exacs/ecs-create-instance.html#GUID-D10305FE-BD20-45D0-B5AE-9B1F3589E18E) for documentation on Creating an Exadata Database Service Instance.
+
+Click [here](https://docs.oracle.com/en-us/iaas/exadatacloud/exacs/ecs-manage-infrastructure.html) for Managing Exadata Cloud Infrastructure Instance.
+
 
 ## Acknowledgements
 
-- **Author** - Leo Alvarado, Product Management
-- **Last Updated By/Date** - Leo Alvarado, April 2022 -->
+* **Author** - Leo Alvarado, Product Management
+
+* **Contributors** - Tammy Bednar, Eddie Ambler, Product Management
+
+* **Last Update** - May 2022.

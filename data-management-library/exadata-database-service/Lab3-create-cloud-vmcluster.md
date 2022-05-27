@@ -24,6 +24,7 @@ Estimated Lab Time: 10 minutes
 * Completion of [Lab 2: Create an Exadata Cloud Infrastructure resource](?lab=Lab2-create-exacloud-infra) section.
 * A correctly configured virtual cloud network (VCN) to launch the system in. Its related networking resources (gateways, route tables, security lists, DNS, and so on) must also be configured as necessary for the system
 * The proper IAM policy is required to proceed See <a href="https://docs.oracle.com/en-us/iaas/exadatacloud/exacs/preparing-for-ecc-deployment.html#GUID-EA03F7BC-7D8E-4177-AFF4-615F71C390CD" target="\_blank">Required IAM Policy for Exadata Cloud Service</a>.
+* The public key, in OpenSSH format, from the key pair that you plan to use for connecting to the system via SSH  
 
 
  <!-- add hyperlink for policies -->
@@ -157,13 +158,16 @@ Estimated Lab Time: 10 minutes
      You may now **proceed to the next lab**
 
 
-<!--
 
 ## Want to Learn More?
 
-Click [here](https://docs.oracle.com/en/cloud/paas/autonomous-data-warehouse-cloud/user/autonomous-workflow.html#GUID-5780368D-6D40-475C-8DEB-DBA14BA675C3) for documentation on the typical workflow for using Autonomous Data Warehouse.
+Click [here](https://docs.oracle.com/en-us/iaas/exadatacloud/exacs/manage-vm-clusters.html) for documentation on Managing VM Clusters
+
 
 ## Acknowledgements
 
-- **Author** - Richard Green, Principal Developer, Database User Assistance
-- **Last Updated By/Date** - Richard Green, April 2021 -->
+* **Author** - Leo Alvarado, Product Management
+
+* **Contributors** - Tammy Bednar, Eddie Ambler, Product Management
+
+* **Last Update** - May 2022.

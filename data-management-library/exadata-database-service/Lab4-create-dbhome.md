@@ -99,25 +99,62 @@ Estimated Lab Time: 10 minutes
 
    You may now **proceed to the next lab**
 
-## Additional Lab: Create Custom Database Software Image
+## Additional Task (Optional): Create Custom Database Software Image
+
 
 1.  Click the navigation menu Click **Oracle Database**, then click **Exadata on Oracle Public Cloud**.
 
     ![](./Images/Lab2/exacs.png " ")
 
-2.  Choose your **Compartment**
+2.  Under **Resources**, click **Database Software Images**.
 
-    ![](./Images/Lab4/compartment.png " ")
+    ![](./Images/Lab4/dbsimage.png " ")
 
+3.  Click **Create Database Software Image**.
 
+    ![](./Images/Lab4/createdbsimage.png " ")
 
-<!--
+4.  In the **Display name** field, provide a display name for your image. Avoid entering confidential information.
+
+    ![](./Images/Lab4/shapef.png " ")
+
+    Choose your **Compartment**.
+
+    Choose a **Shape family**. A custom database software image is compatible with only one shape family. Available shape families are
+    the following:
+
+       * Bare metal and virtual machine DB systems
+       * Exadata Cloud Service instances
+
+5.  Choose the **Database version** for your image. You can create a database software image using any supported Oracle Database release
+    update (RU).
+
+    ![](./Images/Lab4/dbversion.png " ")
+
+6.  Choose the **patch set update, proactive bundle patch, or release update**.
+
+    ![](./Images/Lab4/psu.png " ")
+
+       * *Optionally*, you can enter a comma-separated list of one-off (interim) patch numbers.
+
+       * *Optionally*, you can upload an Oracle Home inventory file from an existing Oracle Database.
+
+    ![](./Images/Lab4/optional.png " ")
+
+7.  Click Create Database Software Image.
+
+    ![](./Images/Lab4/createdbs.png " ")
+
 
 ## Want to Learn More?
 
-Click [here](https://docs.oracle.com/en/cloud/paas/autonomous-data-warehouse-cloud/user/autonomous-workflow.html#GUID-5780368D-6D40-475C-8DEB-DBA14BA675C3) for documentation on the typical workflow for using Autonomous Data Warehouse.
+Click [here](https://docs.oracle.com/en-us/iaas/exadatacloud/exacs/ecs-manage-dbhomes.html) for documentation on Managing Oracle Database Homes on an Exadata Cloud Infrastructure Instance.
+
 
 ## Acknowledgements
 
-- **Author** - Leo Alvarado, Product Management
-- **Last Updated By/Date** - Leo Alvarado, April 2022 -->
+* **Author** - Leo Alvarado, Product Management
+
+* **Contributors** - Tammy Bednar, Eddie Ambler, Product Management
+
+* **Last Update** - May 2022.
