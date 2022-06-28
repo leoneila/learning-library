@@ -1,20 +1,28 @@
 ## Introduction
 
-The labs in this workshop walk you through all the steps to get started using the Oracle Exadata Database Service to perform lifecycle tasks and procedures.
 
-**What is an Oracle Exadata Database Service?**
+**Oracle Exadata Database Service**
+
+Oracle Exadata Database Service is an automated Oracle Database service that allows organizations to run databases with the highest performance, availability, security, and cost effectiveness. Databases run faster and with fewer resources on scale-out Exadata infrastructure that includes unique optimizations for transaction processing, analytics, and mixed workloads. Online scaling of compute resources enables customers to quickly adjust consumption to match workload demands without interrupting operations while efficient database consolidation lowers total costs. Full compatibility with on-premises Oracle Database and Exadata environments makes it easy for customers to migrate workloads to the cloud.
 
 Exadata Database Service allows you to leverage the power of Exadata in the cloud. Exadata Database Service’s scale-out architecture allows customers to provision more compute and storage independently easily, right-sizing their service to meet growing demands. Exadata Database Service offer RDMA over Converged Ethernet (RoCE) networking for high bandwidth and low latency, persistent memory (PMEM) modules, and intelligent Exadata software.
 
 Built-in Oracle Maximum Availability Architecture (Oracle MAA) best practices increase database availability, Exadata Database Service reduces downtime and simplifies operational management with zero downtime maintenance, online scaling, and one-click provisioning of Oracle Real Application Clusters (Oracle RAC) and Oracle Active Data Guard using built-in cloud automation
 
-**Network Overview: Exadata Database Service**
+**Deployment Models**
+
+* Exadata Database Service on Dedicated Infrastructure - Exadata Database Service running in the public cloud (OCI)
+* Exadata Database Service on Cloud@Customer - Exadata Database Service running on Exadata Cloud@Customer in your data center
+
+The labs in this workshop walk you through all the steps to get started using the Oracle Exadata Database Service on Dedicated Infrastructure to perform lifecycle tasks and procedures.
+
+**Network Overview: Exadata Database Service on Dedicated Infrastructure**
 ![](./Images/Introduction/Architecture.png " ")
 
 
-The Diagram outlines the high-level network architecture for Exadata Database Service.
+The Diagram outlines the high-level network architecture for Exadata Database Service on Dedicated Infrastructure.
 
-**The Exadata Database Service** runs on the Exadata hosts which are virtualized with Dom0 for Oracle managed components and DomU for user managed components.
+**The Exadata Database Service on Dedicated Infrastructure** runs on the Exadata hosts which are virtualized with Dom0 for Oracle managed components and DomU for user managed components.
 Your databases run on one or more virtual machines (VM) hosted on DomU.
 Each Exadata Database Service instance provides two 25 Gbps networks for customer access: (Client and Backup)
 Each Exadata Database Service instance provides a 1Gbps Cloud Operations network for use by the Oracle Cloud Operation team for Infrastructure maintenance.
@@ -33,30 +41,11 @@ This network is solely for infrastructure management purposes conducted by the O
 Each Database server and Storage server contains two ROCE interface (re0 and re1) that are connected to separate ROCE switches in the rack.
 Oracle Database uses this network for Oracle RAC cluster interconnect traffic and for accessing data on Exadata Storage Servers.
 
-**Service Architecture: Exadata Database Service**
-
-![](./Images/Introduction/service.png " ")
-
-
-Oracle Exadata Database Service on Dedicated Infrastructure provides Oracle's Exadata Database Machine as a service in an Oracle Cloud Infrastructure (OCI) data center. Alternatively, you can choose Oracle Exadata Database Service on Exadata Cloud@Customer, which provides Exadata Database Service that is hosted in your data center.
-
-The Oracle Exadata Database Service is a virtual machine (VM) cluster that resides on Exadata infrastructure.
-The Exadata Database Service System configuration starts with a fixed amount of OCPU, MEMORY, STORAGE, & NETWORK resources.
-
-The Exadata Database Service architecture includes a minimum of 2 Exadata database servers and 3 Exadata storage servers connected by a high-speed, low-latency internal RoCE network fabric.
-This minimum configuration provides HA protection from equipment failure and allows for the ASM in the storage layer to be provisioned in High Redundancy mode (Triple Mirroring of data across storage servers). The service in the Public cloud is scaled by simply adding additional Database or Storage servers required to your cloud Exadata Infrastructure resource to meet your needs.
-
-When you subscribe to the Exadata Database Service, Oracle owns and manages the Exadata Infrastructure, and customers manage everything that runs in the database VM. The Customer VM known as DOMU includes the database software, grid infrastructure, data, schema, and encryption keys.
+When you subscribe to the Exadata Database Service on Dedicated Infrastructure, Oracle owns and manages the Exadata Infrastructure, and customers manage everything that runs in the database VM. The Customer VM known as DOMU includes the database software, grid infrastructure, data, schema, and encryption keys.
 
 The Exadata Database Service simplifies lifecycle tasks, such as provisioning, scaling, patching, backup, and disaster recovery through Cloud Automation.
 
-Application users and administrators can connect only to the database servers, using the CLIENT and BACKUP networks that you create while provisioning the Exadata Infrastructure & VM Cluster Resources. You access your database through standard Oracle database connection methods, such as Oracle Net. You access the VM cluster through standard Oracle Linux methods, such as token-based Secure Shell (SSH). Your administrator can use the web-based OCI Console, OCI command-line interface (CLI), and REST APIs to connect to your Exadata Database Service over an HTTPS connection.
-
-The Physical database and storage servers are connected via the internal RoCE fabric network.
-The VMs run on physical Exadata database servers and the VMs from each Exadata database server form a VM Cluster.
-VMs can host one or more database homes and Database homes can host one or more RAC databases.
-The Database Service can be Scaled Vertically and Horizontally online for performance and capacity by adding database servers and storage servers to the VM cluster.
-The data is protected with ASM triple-mirroring which distributes copies of the data across the storage servers providing disk and storage server failure protection.
+Application users and administrators can connect only to the database servers, using the CLIENT and BACKUP networks that you create while provisioning the Exadata Cloud Infrastructure & VM Cluster Resources. You access your database through standard Oracle database connection methods, such as Oracle Net. You access the VM cluster through standard Oracle Linux methods, such as token-based Secure Shell (SSH). Your administrator can use the web-based OCI Console, OCI command-line interface (CLI), and REST APIs to connect to your Exadata Database Service over an HTTPS connection.
 
 Oracle owns and manages the infrastructure. This include the database servers, storage servers, and the internal fabric network
 Oracle Operations manages the infrastructure through the management network, which connects the database and storage server hardware.
