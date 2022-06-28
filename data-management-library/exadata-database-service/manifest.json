@@ -1,5 +1,5 @@
 {
-    "workshoptitle": "Get Started with Oracle Exadata Database Service",
+    "workshoptitle": "Get Started with Oracle Exadata Database Service on Dedicated Infrastructure",
 
     "help": "livelabs-help-db_us@oracle.com",
 
@@ -17,7 +17,7 @@
 
         {
             "title": "Lab 1: Create your Virtual Cloud Network (VCN) and Required IAM Policy for Exadata Database Service on Dedicated Infrastructure",
-            "description": "Provision Autonomous Database",
+            "description": "Create your Virtual Cloud Network (VCN) and Required IAM Policy",
             "filename": "./Lab1-prepare-network-and-iam.md"
         },
         {

@@ -6,7 +6,7 @@
 
 ## Introduction
 
-This lab walks you through the steps to Prepare and describe the recommended configuration for your Network and Required IAM Policy for Exadata Cloud Infrastructure instance.<!--You will use this database in subsequent labs of this workshop.-->
+This lab walks you through the steps to Prepare and describe the recommended configuration for your Network and Required IAM Policy for Exadata Database Service on Dedicated Infrastructure.<!--You will use this database in subsequent labs of this workshop.-->
 
 Estimated Lab Time: 10 minutes
 
@@ -15,7 +15,7 @@ Estimated Lab Time: 10 minutes
 
 ### Objectives
 
--   Prepare and Create the recommended configuration for your Network and Required IAM Policy for Exadata Cloud Infrastructure instance.
+-   Prepare and Create the recommended configuration for your Network and Required IAM Policy for Exadata Database Service on Dedicated Infrastructure.
 
 ### Prerequisites
 
@@ -26,7 +26,7 @@ Estimated Lab Time: 10 minutes
 
 
 
-## Task 1: Required IAM Policy for Exadata Cloud Infrastructure
+## Task 1: Required IAM Policy for Exadata Database Service on Dedicated Infrastructure.
 
 1. Review the identity access management (IAM) policy for provisioning Oracle Exadata Database Service on Dedicated Infrastructure systems.
 
@@ -55,7 +55,7 @@ Estimated Lab Time: 10 minutes
 
      If you're new to policies, then see "Getting Started with Policies" and "Common Policies". If you want to dig deeper into writing policies for databases, then see "Details for the Database Service".
 
-## Task 2: Prepare the Network Setup for Exadata Cloud Infrastructure Instances
+## Task 2: Prepare the Network Setup for Exadata Database Service on Dedicated Infrastructure
 
  To launch an Exadata Cloud Infrastructure instance, you must have a Virtual Cloud Network and at least two subnets:
 

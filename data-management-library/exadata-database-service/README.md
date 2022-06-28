@@ -1,5 +1,7 @@
 ## Introduction
 
+The labs in this workshop walk you through all the steps to get started using the Oracle Exadata Database Service on Dedicated Infrastructure to perform lifecycle tasks and procedures.
+
 
 **Oracle Exadata Database Service**
 
@@ -14,7 +16,6 @@ Built-in Oracle Maximum Availability Architecture (Oracle MAA) best practices in
 * Exadata Database Service on Dedicated Infrastructure - Exadata Database Service running in the public cloud (OCI)
 * Exadata Database Service on Cloud@Customer - Exadata Database Service running on Exadata Cloud@Customer in your data center
 
-The labs in this workshop walk you through all the steps to get started using the Oracle Exadata Database Service on Dedicated Infrastructure to perform lifecycle tasks and procedures.
 
 **Network Overview: Exadata Database Service on Dedicated Infrastructure**
 ![](./Images/Introduction/Architecture.png " ")
