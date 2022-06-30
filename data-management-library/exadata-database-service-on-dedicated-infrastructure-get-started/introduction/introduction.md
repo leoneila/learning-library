@@ -42,15 +42,11 @@ This network is solely for infrastructure management purposes conducted by the O
 Each Database server and Storage server contains two ROCE interface (re0 and re1) that are connected to separate ROCE switches in the rack.
 Oracle Database uses this network for Oracle RAC cluster interconnect traffic and for accessing data on Exadata Storage Servers.
 
-When you subscribe to the Exadata Database Service on Dedicated Infrastructure, Oracle owns and manages the Exadata Infrastructure, and customers manage everything that runs in the database VM. The Customer VM known as DOMU includes the database software, grid infrastructure, data, schema, and encryption keys.
+When you subscribe to the Exadata Database Service on Dedicated Infrastructure, Oracle owns and manages the Exadata Infrastructure, and customers manage everything that runs in the database VM. The Customer VM known as DOMU includes the database software, grid infrastructure, data, schema, and encryption keys. You can schedule maintenance windows for Oracle to performance infrastructure maintenance during a window that best aligns with their business needs.
 
 The Exadata Database Service simplifies lifecycle tasks, such as provisioning, scaling, patching, backup, and disaster recovery through Cloud Automation.
 
 Application users and administrators can connect only to the database servers, using the CLIENT and BACKUP networks that you create while provisioning the Exadata Cloud Infrastructure & VM Cluster Resources. You access your database through standard Oracle database connection methods, such as Oracle Net. You access the VM cluster through standard Oracle Linux methods, such as token-based Secure Shell (SSH). Your administrator can use the web-based OCI Console, OCI command-line interface (CLI), and REST APIs to connect to your Exadata Database Service over an HTTPS connection.
-
-Oracle owns and manages the infrastructure. This include the database servers, storage servers, and the internal fabric network
-Oracle Operations manages the infrastructure through the management network, which connects the database and storage server hardware.
-You can schedule maintenance windows for Oracle to performance infrastructure maintenance during a window that best aligns with their business needs.
 
 These hands-on lab guides provide step-by-step directions to setting up and using your Exadata Database Service on Dedicated Infrastructure
 
