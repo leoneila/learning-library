@@ -6,7 +6,7 @@
 
 ## Introduction
 
-This lab walks you through the steps to create Oracle Database on Exadata Database Service on Dedicated Infrastructure <!--You will use this database in subsequent labs of this workshop.-->
+This lab walks you through the steps to create Oracle Database on Exadata Database Service on Dedicated Infrastructure
 
 Estimated Time: 10 minutes
 
@@ -23,13 +23,10 @@ This lab requires completion of the following:
 
 * Completion of [Lab 4: Create Oracle Database Home on an Exadata Database Service on Dedicated Infrastructure](?lab=lab4-create-dbhome) section.
 * A correctly configured virtual cloud network (VCN) to launch the system in. Its related networking resources (gateways, route tables, security lists, DNS, and so on) must also be configured as necessary for the system
-* The proper IAM policy is required to proceed See <a href="https://docs.oracle.com/en-us/iaas/exadatacloud/exacs/preparing-for-ecc-deployment.html#GUID-EA03F7BC-7D8E-4177-AFF4-615F71C390CD" target="\_blank">Required IAM Policy for Exadata Cloud Service</a>.
+* The proper IAM policy is required to proceed See [Required IAM Policy for Exadata Cloud Service](https://docs.oracle.com/en-us/iaas/exadatacloud/exacs/preparing-for-ecc-deployment.html#GUID-EA03F7BC-7D8E-4177-AFF4-615F71C390CD).
 
 
- <!-- add hyperlink for policies -->
 
- <!--
-* The public key, in OpenSSH format, from the key pair that you plan to use for connecting to the system via SSH  -->
 
 ## Task 1: Create Oracle Database
 
@@ -76,7 +73,7 @@ This lab requires completion of the following:
 
     If not specified, the system automatically generates a unique name value, as follows:
 
-            <db_name>_<3_chars_unique_string>_<region-name>
+    > *< db\_name >\_< 3\_chars\_unique\_string >\_< region-name >*
 
 
 

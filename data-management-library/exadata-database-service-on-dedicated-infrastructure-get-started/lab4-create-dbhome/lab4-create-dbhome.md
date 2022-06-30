@@ -6,7 +6,8 @@
 
 ## Introduction
 
-This lab walks you through the steps to Create Oracle Database Home on Exadata Database Service on Dedicated Infrastructure <!--You will use this database in subsequent labs of this workshop.-->
+This lab walks you through the steps to Create Oracle Database Home on Exadata Database Service on Dedicated Infrastructure
+
 
 Estimated Time: 10 minutes
 
@@ -23,13 +24,11 @@ This lab requires completion of the following:
 
 * Completion of [Lab 3: Create a Cloud VM Cluster resource](?lab=lab3-create-cloud-vmcluster) section.
 * A correctly configured virtual cloud network (VCN) to launch the system in. Its related networking resources (gateways, route tables, security lists, DNS, and so on) must also be configured as necessary for the system
-* The proper IAM policy is required to proceed See <a href="https://docs.oracle.com/en-us/iaas/exadatacloud/exacs/preparing-for-ecc-deployment.html#GUID-EA03F7BC-7D8E-4177-AFF4-615F71C390CD" target="\_blank">Required IAM Policy for Exadata Cloud Service</a>.
+* The proper IAM policy is required to proceed See [Required IAM Policy for Exadata Cloud Service](https://docs.oracle.com/en-us/iaas/exadatacloud/exacs/preparing-for-ecc-deployment.html#GUID-EA03F7BC-7D8E-4177-AFF4-615F71C390CD).
 
 
- <!-- add hyperlink for policies -->
 
- <!--
-* The public key, in OpenSSH format, from the key pair that you plan to use for connecting to the system via SSH  -->
+
 
 ## Task 1: Create Oracle Database Home
 
@@ -69,16 +68,15 @@ This lab requires completion of the following:
 
     ![Change Database Image](./images/change-db-image.png " ")
 
-       * **Oracle Provided Database Software images**: These images contain generally available versions of Oracle Database software.
+    * **Oracle Provided Database Software images**: These images contain generally available versions of Oracle Database software.
 
-       * **Custom Database Software images**: These images are created by your organization and contain customized configurations of software updates and patches.
-       Use the **Select a compartment** and **Select a Database version** selectors to limit the list of custom database software images to a specific compartment or Oracle Database software major release version.
+    * **Custom Database Software images**: These images are created by your organization and contain customized configurations of software updates and patches. Use the **Select a compartment** and **Select a Database version** selectors to limit the list of custom database software images to a specific compartment or Oracle Database software major release version.
 
-       ![Choose Database Software Image](./images/choose-db-software-image.png " ")
+    ![Choose Database Software Image](./images/choose-db-software-image.png " ")
 
        After choosing a software image, click **Select** to return to the Create Database dialog.
 
-       ![Select Database Software Image](./images/select-db-software-image.png " ")
+    ![Select Database Software Image](./images/select-db-software-image.png " ")
 
     Click **Show Advanced Options** to specify advanced options for the Database Home
 

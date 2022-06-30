@@ -23,7 +23,7 @@ Built-in Oracle Maximum Availability Architecture (Oracle MAA) best practices in
 
 The Diagram outlines the high-level network architecture for Exadata Database Service on Dedicated Infrastructure.
 
-**The Exadata Database Service on Dedicated Infrastructure** runs on the Exadata hosts which are virtualized with Dom0 for Oracle managed components and DomU for user managed components.
+**The Exadata Database Service on Dedicated Infrastructure** runs on the Exadata hosts which are virtualized with **Dom0** for Oracle managed components and **DomU** for user managed components.
 Your databases run on one or more virtual machines (VM) hosted on DomU.
 Each Exadata Database Service instance provides two 25 Gbps networks for customer access: (Client and Backup)
 Each Exadata Database Service instance provides a 1Gbps Cloud Operations network for use by the Oracle Cloud Operation team for Infrastructure maintenance.
@@ -32,7 +32,7 @@ Each Exadata Database Service instance provides a 1Gbps Cloud Operations network
 Applications access databases on Exadata Database Service through this network using Single Client Access Name (SCAN) and Oracle Real Application Clusters (Oracle RAC) Virtual IP (VIP) interfaces.
 The client access network uses a pair of network interfaces on each database server, which are connected to the customer network.
 
-**The Backup Network** is similar to the client access network, as it connects the Exadata Database serversis provided to separates backup traffic and bulk transfers from application traffic.
+**The Backup Network** is similar to the client access network, as it connects the Exadata Database servers provided to separates backup traffic and bulk transfers from application traffic.
 Like the client network, the backup network uses a pair of network interfaces on each database server, which are connected to the customer network.
 
 **The Oracle Cloud Operations Network** is a dedicated network connection used to perform infrastructure management tasks.
@@ -56,6 +56,8 @@ These hands-on lab guides provide step-by-step directions to setting up and usin
 
 
 ## Lab Breakdown
+
+
 * Lab 1. Create your Virtual Cloud Network (VCN) and Required IAM Policy for Exadata Database Service on Dedicated Infrastructure
 * Lab 2. Create an Exadata Cloud Infrastructure resource
 * Lab 3. Create a Cloud VM Cluster resource

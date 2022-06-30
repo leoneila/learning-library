@@ -6,7 +6,7 @@
 
 ## Introduction
 
-This lab walks you through the steps to Prepare and describe the recommended configuration for your Network and Required IAM Policy for Exadata Database Service on Dedicated Infrastructure.<!--You will use this database in subsequent labs of this workshop.-->
+This lab walks you through the steps to Prepare and describe the recommended configuration for your Network and Required IAM Policy for Exadata Database Service on Dedicated Infrastructure.
 
 Estimated Time: 10 minutes
 
@@ -51,9 +51,9 @@ This lab requires completion of the following:
 
      For administrators: The policy in "Let database admins manage DB systems" lets the specified group do everything with databases, and related database resources.
 
-     ![Policy Statement](./images/policy-statement.png " ")
+    ![Policy Statement](./images/policy-statement.png " ")
 
-     If you're new to policies, then see <a href="https://docs.oracle.com/en-us/iaas/Content/Identity/Concepts/policygetstarted.htm" target="\_blank">Getting Started with Policies</a>  and <a href="https://docs.oracle.com/en-us/iaas/Content/Identity/policiescommon/commonpolicies.htm" target="\_blank">Common Policies</a>. If you want to dig deeper into writing policies for databases, then see <a href="https://docs.oracle.com/en-us/iaas/Content/Identity/Reference/databasepolicyreference.htm" target="\_blank">Details for the Database Service</a>.
+     If you're new to policies, then see [Getting Started with Policies](https://docs.oracle.com/en-us/iaas/Content/Identity/Concepts/policygetstarted.htm) and [Common Policies] (https://docs.oracle.com/en-us/iaas/Content/Identity/policiescommon/commonpolicies.htm). If you want to dig deeper into writing policies for databases, then see [Details for the Database Service](https://docs.oracle.com/en-us/iaas/Content/Identity/Reference/databasepolicyreference.htm).
 
 ## Task 2: Prepare the Network Setup for Exadata Database Service on Dedicated Infrastructure
 
@@ -81,11 +81,11 @@ This lab requires completion of the following:
 
    **Create in Compartment**: Select a compartment
 
-   **IPv4 CIDR Blocks**: Up to five but at least one non-overlapping IPv4 CIDR blocks for the VCN. For example: 172.16.0.0/16. You can add or remove CIDR blocks later. See <a href="https://docs.oracle.com/en-us/iaas/Content/Network/Concepts/overview.htm#Allowed" target="\_blank">Allowed VCN Size and Address Ranges</a>
+   **IPv4 CIDR Blocks**: Up to five but at least one non-overlapping IPv4 CIDR blocks for the VCN. For example: 172.16.0.0/16. You can add or remove CIDR blocks later. See [Allowed VCN Size and Address Ranges](https://docs.oracle.com/en-us/iaas/Content/Network/Concepts/overview.htm#Allowed)
 
-   **Use DNS Hostnames in this VCN**: Required for assignment of DNS hostnames to hosts in the VCN, and required if you plan to use the VCN's default DNS feature (called the Internet and VCN Resolver). If the check box is selected, you can specify a DNS label for the VCN, or allow the Console to generate one for you. The dialog box automatically displays the corresponding **DNS Domain Name** for the VCN (<VCN DNS label>.oraclevcn.com). For more information, See <a href="https://docs.oracle.com/en-us/iaas/Content/Network/Concepts/dns.htm#DNS_in_Your_Virtual_Cloud_Network" target="\_blank">DNS in Your Virtual Cloud Network</a>.
+   **Use DNS Hostnames in this VCN**: Required for assignment of DNS hostnames to hosts in the VCN, and required if you plan to use the VCN's default DNS feature (called the Internet and VCN Resolver). If the check box is selected, you can specify a DNS label for the VCN, or allow the Console to generate one for you. The dialog box automatically displays the corresponding **DNS Domain Name** for the VCN (<VCN DNS label>.oraclevcn.com). For more information, See [DNS in Your Virtual Cloud Network](https://docs.oracle.com/en-us/iaas/Content/Network/Concepts/dns.htm#DNS_in_Your_Virtual_Cloud_Network).
 
-   **IPv6 prefixes**: You can request that a single Oracle-allocated IPv6 /56 prefix is assigned to this VCN. Alternately, you can assign a BYOIPv6 prefix or ULA prefix to the VCN. This option is available for all commercial and government regions. For more information on IPv6, See <a href="https://docs.oracle.com/en-us/iaas/Content/Network/Concepts/ipv6.htm#IPv6_Addresses" target="\_blank">IPv6 Addresses</a>.
+   **IPv6 prefixes**: You can request that a single Oracle-allocated IPv6 /56 prefix is assigned to this VCN. Alternately, you can assign a BYOIPv6 prefix or ULA prefix to the VCN. This option is available for all commercial and government regions. For more information on IPv6, See [IPv6 Addresses](https://docs.oracle.com/en-us/iaas/Content/Network/Concepts/ipv6.htm#IPv6_Addresses).
 
    Click **Create VCN**.
 
@@ -97,29 +97,29 @@ This lab requires completion of the following:
 
     ![VCN Details Page](./images/vcn-details-page.png " ")
 
-    In general, Oracle recommends using **regional subnets** , which span all **availability domains** in the region. For more information, See <a href="https://docs.oracle.com/iaas/Content/Network/Tasks/managingVCNs_topic-Overview_of_VCNs_and_Subnets.htm#Overview" target="\_blank">Overview of VCNs and Subnets</a>.
+    In general, Oracle recommends using **regional subnets** , which span all **availability domains** in the region. For more information, See [Overview of VCNs and Subnets](https://docs.oracle.com/iaas/Content/Network/Tasks/managingVCNs_topic-Overview_of_VCNs_and_Subnets.htm#Overview).
 
     You will create custom route tables for each subnet. You will also create security rules to control traffic to and from the client network and backup network of the Exadata compute nodes (for The Cloud VM Cluster Resource, nodes are called virtual machines). More information follows about those items.
 
-      * <a href="https://docs.oracle.com/en-us/iaas/exadatacloud/exacs/ecs-network-setup.html#GUID-D8296957-E344-4688-B626-42A99E1D164B" target="\_blank">Option 1: Public Client Subnet with Internet Gateway</a>
+      * [Option 1: Public Client Subnet with Internet Gateway](https://docs.oracle.com/en-us/iaas/exadatacloud/exacs/ecs-network-setup.html#GUID-D8296957-E344-4688-B626-42A99E1D164B)
 
         This option can be useful when doing a proof-of-concept or development work.
 
-      * <a href="https://docs.oracle.com/en-us/iaas/exadatacloud/exacs/ecs-network-setup.html#GUID-51C3EC2C-20DA-4EE5-B882-CD500FA6F7C6" target="\_blank">Option 2: Private Subnets</a>
+      * [Option 2: Private Subnets](https://docs.oracle.com/en-us/iaas/exadatacloud/exacs/ecs-network-setup.html#GUID-51C3EC2C-20DA-4EE5-B882-CD500FA6F7C6)
 
         Oracle recommends private subnets for a production system.
 
-      * <a href="https://docs.oracle.com/en-us/iaas/exadatacloud/exacs/ecs-network-setup.html#GUID-D5C577A1-BC11-470F-8A91-77609BBEF1EA" target="\_blank">Requirements for IP Address Space</a>
+      * [Requirements for IP Address Space](https://docs.oracle.com/en-us/iaas/exadatacloud/exacs/ecs-network-setup.html#GUID-D5C577A1-BC11-470F-8A91-77609BBEF1EA)
 
         IP addresses must not overlap, especially when Exadata Cloud Infrastructure instances (and thus VCNs) are in more than one region.
 
-      * <a href="https://docs.oracle.com/en-us/iaas/exadatacloud/exacs/ecs-network-setup.html#GUID-0D0C113E-602F-4736-936F-9619A0465467" target="\_blank">Configuring a Static Route for Accessing the Object Store</a>
+      * [Configuring a Static Route for Accessing the Object Store](https://docs.oracle.com/en-us/iaas/exadatacloud/exacs/ecs-network-setup.html#GUID-0D0C113E-602F-4736-936F-9619A0465467)
 
-      * <a href="https://docs.oracle.com/en-us/iaas/exadatacloud/exacs/ecs-network-setup.html#GUID-2AE89C4B-71F5-4B97-AC42-54FE395CA87F" target="\_blank">Setting Up DNS for an Exadata Cloud Infrastructure Instance</a>
+      * [Setting Up DNS for an Exadata Cloud Infrastructure Instance](https://docs.oracle.com/en-us/iaas/exadatacloud/exacs/ecs-network-setup.html#GUID-2AE89C4B-71F5-4B97-AC42-54FE395CA87F)
 
-      * <a href="https://docs.oracle.com/en-us/iaas/exadatacloud/exacs/ecs-network-setup.html#GUID-7ADB66F2-A2B3-4764-89B8-826BBA0A5BBA" target="\_blank">DNS: Short Names for the VCN, Subnets, and Exadata Cloud Infrastructure instance</a>
+      * [DNS: Short Names for the VCN, Subnets, and Exadata Cloud Infrastructure instance](https://docs.oracle.com/en-us/iaas/exadatacloud/exacs/ecs-network-setup.html#GUID-7ADB66F2-A2B3-4764-89B8-826BBA0A5BBA)
 
-      * <a href="https://docs.oracle.com/en-us/iaas/exadatacloud/exacs/ecs-network-setup.html#GUID-EA1739CF-001D-4D42-A839-C7BD5B4BA524" target="\_blank">DNS: Between On-Premises Network and VCN</a>
+      * [DNS: Between On-Premises Network and VCN](https://docs.oracle.com/en-us/iaas/exadatacloud/exacs/ecs-network-setup.html#GUID-EA1739CF-001D-4D42-A839-C7BD5B4BA524)
 
 
 

@@ -23,7 +23,7 @@ This lab requires completion of the following:
 
 * Completion of [Lab 5: Create Oracle Database on Exadata Database Service on Dedicated Infrastructure](?lab=lab5-create-database) section.
 * A correctly configured virtual cloud network (VCN) to launch the system in. Its related networking resources (gateways, route tables, security lists, DNS, and so on) must also be configured as necessary for the system
-* The proper IAM policy is required to proceed See <a href="https://docs.oracle.com/en-us/iaas/exadatacloud/exacs/preparing-for-ecc-deployment.html#GUID-EA03F7BC-7D8E-4177-AFF4-615F71C390CD" target="\_blank">Required IAM Policy for Exadata Cloud Service</a>.
+* The proper IAM policy is required to proceed See [Required IAM Policy for Exadata Cloud Service](https://docs.oracle.com/en-us/iaas/exadatacloud/exacs/preparing-for-ecc-deployment.html#GUID-EA03F7BC-7D8E-4177-AFF4-615F71C390CD).
 * The full path to the file that contains the private key associated with the public key used when the system was launched.
 * The public or private IP address of the Exadata Cloud Infrastructure instance.
 
@@ -84,9 +84,10 @@ You can connect to the virtual machines in an Exadata Cloud Infrastructure syste
 
 
     > **Note:** Follow this procedure if you want to access a virtual machine from a Microsoft Windows system using PuTTY.  
-    See <a href="https://docs.oracle.com/en-us/iaas/exadatacloud/exacs/ecs-connecting-to-service-inst.html#GUID-8D940FEF-2705-4502-95EA-665906606F3C" target="\_blank">Connecting to a Virtual Machine from a Microsoft Windows System Using PuTTY</a>
+    See [Connecting to a Virtual Machine from a Microsoft Windows System Using PuTTY](https://docs.oracle.com/en-us/iaas/exadatacloud/exacs/ecs-connecting-to-service-inst.html#GUID-8D940FEF-2705-4502-95EA-665906606F3C)
 
 
+You may now **proceed to the next lab**
 
 ## Want to Learn More?
 

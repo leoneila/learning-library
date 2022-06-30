@@ -23,7 +23,7 @@ This lab requires completion of the following:
 
 * Completion of [Lab 5: Create Oracle Database on Exadata Database Service on Dedicated Infrastructure](?lab=lab5-create-database) section.
 * A correctly configured virtual cloud network (VCN) to launch the system in. Its related networking resources (gateways, route tables, security lists, DNS, and so on) must also be configured as necessary for the system
-* The proper IAM policy is required to proceed See <a href="https://docs.oracle.com/en-us/iaas/exadatacloud/exacs/preparing-for-ecc-deployment.html#GUID-EA03F7BC-7D8E-4177-AFF4-615F71C390CD" target="\_blank">Required IAM Policy for Exadata Cloud Service</a>.
+* The proper IAM policy is required to proceed See [Required IAM Policy for Exadata Cloud Service](https://docs.oracle.com/en-us/iaas/exadatacloud/exacs/preparing-for-ecc-deployment.html#GUID-EA03F7BC-7D8E-4177-AFF4-615F71C390CD).
 
 
 
@@ -81,7 +81,7 @@ This lab requires completion of the following:
    ![Automatic Backup Enabled](./images/automatic-backup-enabled.png " ")
 
 
-
+You may now **proceed to the next lab**
 
 ## Want to Learn More?
 

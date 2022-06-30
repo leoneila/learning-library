@@ -6,7 +6,7 @@
 
 ## Introduction
 
-This lab walks you through the steps to create an Exadata Cloud Infrastructure resource <!--You will use this database in subsequent labs of this workshop.-->
+This lab walks you through the steps to create an Exadata Cloud Infrastructure resource
 
 Estimated Time: 10 minutes
 
@@ -21,10 +21,9 @@ Estimated Time: 10 minutes
 This lab requires completion of the following:
 
 * Completion of [Lab 1: Create your Virtual Cloud Network (VCN) and Required IAM Policy for Exadata Database Service on Dedicated Infrastructure](?lab=lab1-prepare-network-and-iam) section.
-<!-- <a href=?lab=Lab1-prepare-network-and-iam target="\_blank">Lab 1: Prepare your Network Setup and Required IAM Policy for Exadata Database Service</a> -->
 * A correctly configured virtual cloud network (VCN) to launch the system in. Its related networking resources (gateways, route tables, security lists, DNS, and so on) must also be configured as necessary for the system
-* The proper IAM policy is required to proceed See <a href="https://docs.oracle.com/en-us/iaas/exadatacloud/exacs/preparing-for-ecc-deployment.html#GUID-EA03F7BC-7D8E-4177-AFF4-615F71C390CD" target="\_blank">Required IAM Policy for Exadata Cloud Service</a>.
- <!-- add hyperlink for policies -->
+* The proper IAM policy is required to proceed See [Required IAM Policy for Exadata Cloud Service](https://docs.oracle.com/en-us/iaas/exadatacloud/exacs/preparing-for-ecc-deployment.html#GUID-EA03F7BC-7D8E-4177-AFF4-615F71C390CD).
+
 
 
 ## Task 1: Create Cloud Exadata Infrastructure Resource

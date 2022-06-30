@@ -23,7 +23,7 @@ This lab requires completion of the following:
 
 * Completion of [Lab 5: Create Oracle Database on Exadata Database Service on Dedicated Infrastructure](?lab=lab5-create-database) section.
 * A correctly configured virtual cloud network (VCN) to launch the system in. Its related networking resources (gateways, route tables, security lists, DNS, and so on) must also be configured as necessary for the system
-* The proper IAM policy is required to proceed See <a href="https://docs.oracle.com/en-us/iaas/exadatacloud/exacs/preparing-for-ecc-deployment.html#GUID-EA03F7BC-7D8E-4177-AFF4-615F71C390CD" target="\_blank">Required IAM Policy for Exadata Cloud Service</a>.
+* The proper IAM policy is required to proceed See [Required IAM Policy for Exadata Cloud Service](https://docs.oracle.com/en-us/iaas/exadatacloud/exacs/preparing-for-ecc-deployment.html#GUID-EA03F7BC-7D8E-4177-AFF4-615F71C390CD)
 
 
 
@@ -57,7 +57,7 @@ This lab requires completion of the following:
 
 5. On the Database Details page, under **Resources**, click **Data Guard Associations**.
 
-   ![Data Guard Associations Page](./images/dg-associations.png " ")
+   ![Data Guard Association Page](./images/dg-associations.png " ")
 
 6. In the **Data Guard Associations** section, click **Enable Data Guard**.
 
@@ -102,7 +102,7 @@ This lab requires completion of the following:
 
     * In the **Configure standby database**: section, provide standby database details.
 
-     ![Configure standby database](./images/configure-standby-db.png " ")
+  ![Configure standby database](./images/configure-standby-db.png " ")
 
      * **Database unique name**: Optionally, specify a value for the DB\_UNIQUE\_NAME database parameter. This value must be unique across the primary and standby cloud VM clusters. The unique name must meet the requirements:
 
@@ -113,7 +113,7 @@ This lab requires completion of the following:
 
      If not specified, the system automatically generates a unique name value, as follows:
 
-                 <db_name>_<3_chars_unique_string>_<region-name>  
+        >  *< db\_name >\_< 3\_chars\_unique\_string >_< region-name >*  
 
      * **Database password**: Enter the database administrator password of the primary database. Use this same database administrator password for the standby database.
 
@@ -127,14 +127,14 @@ This lab requires completion of the following:
 
         **Oracle SID prefix**: The Oracle Database instance number is automatically added to the SID prefix to create the **INSTANCE\_NAME** database parameter. The **INSTANCE\_NAME** parameter is also known as the SID. If not provided, then the SID prefix defaults to the first 12 characters of the **db\_unique\_name**.
 
-      >  **Note:** Entering an SID prefix is only available for Oracle 12.1 databases and above.
+        >  **Note:** Entering an SID prefix is only available for Oracle 12.1 databases and above.
 
-        The SID prefix must meet the requirements:
+          The SID prefix must meet the requirements:
 
            * Maximum of 12 characters
            * Contain only alphanumeric characters
            * Begin with an alphabetic character
-           * Unique in the VM cluster and across primary and standby databases
+           * Unique in the VM cluster and across primary and standby databases      
 
 9. Click **Enable Data Guard**.       
 
@@ -144,7 +144,7 @@ This lab requires completion of the following:
 
       ![Database Data Guard role primary display](./images/dg-association-role-primary.png " ")
 
-      ![Database Data Guard Associations role details](./images/dg-associations-peeer-database.png " ")
+      ![Database Data Guard Association role details](./images/dg-associations-peer-database.png " ")
 
       ![Database Data Guard role standby display](./images/dg-association-role-standby.png " ")
 
