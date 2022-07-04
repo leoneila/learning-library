@@ -6,7 +6,7 @@
 
 ## Introduction
 
-This lab walks you through the steps on how to connect to an Exadata Cloud Infrastructure instance using SSH or SQL Developer.
+This lab walks you through how to connect to an Exadata Cloud Infrastructure instance using SSH or SQL Developer.
 
 Estimated Time: 10 minutes
 
@@ -22,8 +22,8 @@ Estimated Time: 10 minutes
 This lab requires completion of the following:
 
 * Completion of [Lab 5: Create Oracle Database on Exadata Database Service on Dedicated Infrastructure](?lab=lab5-create-database) section.
-* A correctly configured virtual cloud network (VCN) to launch the system in. Its related networking resources (gateways, route tables, security lists, DNS, and so on) must also be configured as necessary for the system
-* The proper IAM policy is required to proceed See [Required IAM Policy for Exadata Cloud Infrastructure](https://docs.oracle.com/en-us/iaas/exadatacloud/exacs/preparing-for-ecc-deployment.html#GUID-EA03F7BC-7D8E-4177-AFF4-615F71C390CD).
+* A correctly configured virtual cloud network (VCN) to launch the system. It's related networking resources (gateways, route tables, security lists, DNS, and so on) must also be configured as necessary for the system
+* The proper IAM policy is required to proceed. See [Required IAM Policy for Exadata Cloud Infrastructure](https://docs.oracle.com/en-us/iaas/exadatacloud/exacs/preparing-for-ecc-deployment.html#GUID-EA03F7BC-7D8E-4177-AFF4-615F71C390CD).
 * The full path to the file that contains the private key associated with the public key used when the system was launched.
 * The public or private IP address of the Exadata Cloud Infrastructure instance.
 
@@ -48,7 +48,7 @@ This lab requires completion of the following:
 
     ![Exadata VM Clusters Page](./images/exavmclusters.png " ")
 
-4.  Under **Resources**, click **Virutal Machines**.
+4.  Under **Resources**, click **Virtual Machines**.
 
     ![View Virtual Machines Page](./images/view-vmcluster.png " ")
 
@@ -56,13 +56,13 @@ This lab requires completion of the following:
 
     The values are displayed in the **Public IP Address** and **Private IP Address & DNS Name** columns of the table displaying the **Virtual Machines** of the Exadata Cloud Infrastructure instance.
 
-    Use the private IP address to connect to the system from your on-premises network, or from within the virtual cloud network (VCN). This includes connecting from a host located on-premises connecting through a VPN or FastConnect to your VCN, or from another host in the same VCN. Use the public IP address to connect to the system from outside the cloud (with no VPN).
+    Use the private IP address to connect to the system from your on-premises network or from within the virtual cloud network (VCN). This includes connecting from a host on-premises through a VPN or FastConnect to your VCN or from another host in the same VCN. Use the public IP address to connect to the system from outside the cloud (with no VPN).
 
 ## Task 2: Connecting to a Virtual Machine with SSH
 
-You can connect to the virtual machines in an Exadata Cloud Infrastructure system by using a Secure Shell (SSH) connection.
+You can connect to the virtual machines in an Exadata Cloud Infrastructure system using a Secure Shell (SSH) connection.
 
-1.  To access a virtual machine on an Oracle ExaDB-D system from a Unix-style system using SSH, use this procedure.
+1.  This procedure is used to access a virtual machine on an Oracle ExaDB-D system from a Unix-style system using SSH.
 
     Enter the following SSH command to access the virtual machine:     
 
@@ -72,11 +72,11 @@ You can connect to the virtual machines in an Exadata Cloud Infrastructure syste
 
     In the preceding syntax:
 
-    * *<code>  private-key  </code>* is the full path and name of the file that contains the SSH private key that corresponds to a public key that is registered in the system.
+    * *<code>  private-key  </code>* is the full path and name of the file that contains the SSH private key that corresponds to a public key registered in the system.
     * *<code>  user  </code>* is the operating system user that you want to use to connect:
          * To perform operations as the Oracle Database software owner, connect as as *<code>  opc  </code>* and *<code>  su oracle  </code>*. The *<code>  oracle  </code>* user does not have root user access to the virtual machine.
          * To perform operations that require *<code>  root  </code>* access to the virtual machine, such as patching, connect as *<code>  opc  </code>*. The *<code>  opc  </code>* user can use the *<code>  sudo -s  </code>* command to gain *<code>  root  </code>* access to the virtual machine.
-    * *<code>  node  </code>* is the host name or IP address for the virtual machine that you want to access.
+    * *<code>  node  </code>* is the hostname or IP address for the virtual machine you want to access.
 
     ![connect via ssh screen](./images/connect-ssh.png " ")
 

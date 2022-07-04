@@ -6,7 +6,7 @@
 
 ## Introduction
 
-This lab walks you through the steps on how to Enable Automatic Backups for a Database.
+This lab walks you through how to Enable Automatic Backups for a Database.
 
 Estimated Time: 5 minutes
 
@@ -22,8 +22,8 @@ Estimated Time: 5 minutes
 This lab requires completion of the following:
 
 * Completion of [Lab 5: Create Oracle Database on Exadata Database Service on Dedicated Infrastructure](?lab=lab5-create-database) section.
-* A correctly configured virtual cloud network (VCN) to launch the system in. Its related networking resources (gateways, route tables, security lists, DNS, and so on) must also be configured as necessary for the system
-* The proper IAM policy is required to proceed See [Required IAM Policy for Exadata Cloud Infrastructure](https://docs.oracle.com/en-us/iaas/exadatacloud/exacs/preparing-for-ecc-deployment.html#GUID-EA03F7BC-7D8E-4177-AFF4-615F71C390CD).
+* A correctly configured virtual cloud network (VCN) to launch the system. It's related networking resources (gateways, route tables, security lists, DNS, and so on) must also be configured as necessary for the system
+* The proper IAM policy is required to proceed. See [Required IAM Policy for Exadata Cloud Infrastructure](https://docs.oracle.com/en-us/iaas/exadatacloud/exacs/preparing-for-ecc-deployment.html#GUID-EA03F7BC-7D8E-4177-AFF4-615F71C390CD).
 
 
 
@@ -46,7 +46,7 @@ This lab requires completion of the following:
     ![Exadata VM Clusters Page](./images/exavmclusters.png " ")
 
 
-4. In the list of databases, find the database for which you want to enable or disable automatic backups, and click its name to
+4. In the list of databases, find the database for which you want to enable or disable automatic backups and click its name to
    display database details.
 
    ![List of Databases Page](./images/db-list.png " ")
@@ -76,7 +76,7 @@ This lab requires completion of the following:
 
    ![Save Changes Page](./images/save-changes.png " ")
 
-   Once Automatic Backup is configured for a database, you can see from the Database details page that automatic backups are enabled
+   Once Automatic Backup is configured for a database, you can see that automatic backups are enabled from the Database details page.
 
    ![Automatic Backup Enabled](./images/automatic-backup-enabled.png " ")
 
@@ -85,7 +85,7 @@ You may now **proceed to the next lab**
 
 ## Learn More
 
-Click [here](https://docs.oracle.com/en-us/iaas/exadatacloud/exacs/ecs-managing-db-backup-and-recovery.html) for documentation on how to Manage Database Backup and Recovery on Oracle Exadata Database Service on Dedicated Infrastructure.
+Click [here](https://docs.oracle.com/en-us/iaas/exadatacloud/exacs/ecs-managing-db-backup-and-recovery.html) for documentation to Manage Database Backup and Recovery on Oracle Exadata Database Service on Dedicated Infrastructure.
 
 
 ## Acknowledgements

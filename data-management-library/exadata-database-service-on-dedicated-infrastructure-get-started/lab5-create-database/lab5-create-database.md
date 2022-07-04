@@ -6,7 +6,7 @@
 
 ## Introduction
 
-This lab walks you through the steps to create Oracle Database on Exadata Database Service on Dedicated Infrastructure
+This Lab walks you through the steps to create Oracle Database on Exadata Database Service on Dedicated Infrastructure.
 
 Estimated Time: 10 minutes
 
@@ -22,8 +22,8 @@ Estimated Time: 10 minutes
 This lab requires completion of the following:
 
 * Completion of [Lab 4: Create Oracle Database Home on an Exadata Database Service on Dedicated Infrastructure](?lab=lab4-create-dbhome) section.
-* A correctly configured virtual cloud network (VCN) to launch the system in. Its related networking resources (gateways, route tables, security lists, DNS, and so on) must also be configured as necessary for the system
-* The proper IAM policy is required to proceed See [Required IAM Policy for Exadata Cloud Infrastructure](https://docs.oracle.com/en-us/iaas/exadatacloud/exacs/preparing-for-ecc-deployment.html#GUID-EA03F7BC-7D8E-4177-AFF4-615F71C390CD).
+* A correctly configured virtual cloud network (VCN) to launch the system. It's related networking resources (gateways, route tables, security lists, DNS, and so on) must also be configured as necessary for the system
+* The proper IAM policy is required to proceed. See [Required IAM Policy for Exadata Cloud Infrastructure](https://docs.oracle.com/en-us/iaas/exadatacloud/exacs/preparing-for-ecc-deployment.html#GUID-EA03F7BC-7D8E-4177-AFF4-615F71C390CD).
 
 
 
@@ -58,7 +58,7 @@ This lab requires completion of the following:
     * Maximum of 8 characters
     * Contain only alphanumeric characters
     * Begin with an alphabetic character
-    * Cannot be part of first 8 characters of a **DB\_UNIQUE_NAME** on the VM cluster
+    * Cannot be part of the first eight characters of a **DB\_UNIQUE_NAME** on the VM cluster
     * DO NOT use the following reserved names: grid, ASM
 
     **Database unique name suffix**:
@@ -92,15 +92,15 @@ For this Lab, we will be using an existing Database Home created from (Lab 4)
 
     ![Select Database Home](./images/select-db-home.png " ")
 
-    * **Select an existing Database Home**: The Database Home display name field allows you to choose the Database Home from the existing homes for the database version you specified. If no Database Home with that version exists, you must create a new one.
+    * **Select an existing Database Home**: The Database Home display name field allows you to choose the Database Home from the existing homes for the specified database version. If no Database Home with that version exists, you must create a new one.
 
     * **Create a new Database Home**: Use this option to provision a new Database Home for your database.
 
 
-    **Create administrator credentials**: *(Read only)* A database administrator SYS user will be created with the password you supply.
+    **Create administrator credentials**: *(Read only)* A database administrator SYS user will be created with the Password you supply.
 
        * **Username**: SYS
-       * **Password**: Supply the password for this user. The password must meet the following criteria:
+       * **Password**: Supply the Password for this user. The Password must meet the following criteria:
 
          A strong password for SYS, SYSTEM, TDE wallet, and PDB Admin. The password must be 9 to 30 characters and contain at least two uppercase, two lowercase, two numeric, and two special characters. The special characters must be _, #, or -. The password must not contain the username (SYS, SYSTEM, and so on) or the word "oracle" either in forward or reversed order and regardless of casing.
 
@@ -114,10 +114,10 @@ For this Lab, we will be using an existing Database Home created from (Lab 4)
 
     **Select workload type**: Choose the workload type that best suits your application:
 
-       * **Transaction Processing** configures the database for a transactional workload, with a  
+       * **Transaction Processing** configures the database for a transactional workload with a  
          bias towards high volumes of random data access.
 
-       * **Data Warehouse** configures the database for a decision support or data warehouse
+       * **Data Warehouse** configures the database for decision support or data warehouse
          workload, with a bias towards large data scanning operations.
 
     ![Select Workload Type](./images/select-workload-type.png " ")
@@ -164,13 +164,13 @@ For this Lab, we will be using an existing Database Home created from (Lab 4)
 
     **Encryption**: If you are creating a database in an Exadata Cloud Service VM cluster, then you can choose to use encryption based on encryption keys that you manage. By default, the database is configured using Oracle-managed encryption keys.
 
-     > **Note:** For this Lab we will use Oracle-Managed encryption keys
+     > **Note:** For this Lab, we will use Oracle-Managed encryption keys
 
      ![Select Encryption](./images/encryption.png " ")
 
      *Optional* To configure the database with encryption based on encryption keys you manage:
 
-     * Select **Use customer-managed keys**. You must have a valid encryption key in Oracle Cloud Infrastructure Vault service. [See Let security admins manage vaults, keys, and secrets](https://docs.oracle.com/iaas/Content/Identity/Concepts/commonpolicies.htm#sec-admins-manage-vaults-keys)
+     * Select **Use customer-managed keys**. You must have a valid encryption key in the Oracle Cloud Infrastructure Vault service. [See Let security admins manage vaults, keys, and secrets](https://docs.oracle.com/iaas/Content/Identity/Concepts/commonpolicies.htm#sec-admins-manage-vaults-keys)
 
      > **Note:** You must use AES-256 encryption keys for your database.*
 
@@ -178,7 +178,7 @@ For this Lab, we will be using an existing Database Home created from (Lab 4)
      * Select a **Master encryption key**.
      * To specify a key version other than the latest version of the selected key, check **Choose the key version** and enter the OCID of the key you want to use in the **Key version OCID** field.
 
-    **Tags**: If you have permissions to create a resource, then you also have permissions to apply free-form tags to that resource. To apply a defined tag, you must have permissions to use the tag namespace.
+    **Tags**: If you have permission to create a resource, you also have permission to apply free-form tags to that resource. To apply a defined tag, you must have permission to use the tag namespace.
 
      ![Manage Tags](./images/tags.png " ")
 

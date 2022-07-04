@@ -6,7 +6,7 @@
 
 ## Introduction
 
-This lab walks you through the steps to create a Cloud VM Cluster resource
+This lab walks you through the steps to create a Cloud VM Cluster resource.
 
 
 Estimated Time: 10 minutes
@@ -23,8 +23,8 @@ Estimated Time: 10 minutes
 This lab requires completion of the following:
 
 * Completion of [Lab 2: Create an Exadata Cloud Infrastructure resource](?lab=lab2-create-exacloud-infra) section.
-* A correctly configured virtual cloud network (VCN) to launch the system in. Its related networking resources (gateways, route tables, security lists, DNS, and so on) must also be configured as necessary for the system
-* The proper IAM policy is required to proceed See [Required IAM Policy for Exadata Cloud Infrastructure](https://docs.oracle.com/en-us/iaas/exadatacloud/exacs/preparing-for-ecc-deployment.html#GUID-EA03F7BC-7D8E-4177-AFF4-615F71C390CD).
+* A correctly configured virtual cloud network (VCN) to launch the system in. It's related networking resources (gateways, route tables, security lists, DNS, and so on) must also be configured as necessary for the system
+* The proper IAM policy is required to proceed. See [Required IAM Policy for Exadata Cloud Infrastructure](https://docs.oracle.com/en-us/iaas/exadatacloud/exacs/preparing-for-ecc-deployment.html#GUID-EA03F7BC-7D8E-4177-AFF4-615F71C390CD).
 * The public key, in OpenSSH format, from the key pair that you plan to use for connecting to the system via SSH  
 
 
@@ -32,7 +32,7 @@ This lab requires completion of the following:
 
 ## Task 1: Create a Cloud VM Cluster resource
 
-1. Log in to the Oracle Cloud, Once you are logged in, you are taken to the cloud services dashboard where you can see all the services available to you.
+1. Log in to the Oracle Cloud. Once logged in, you are taken to the cloud services dashboard, where you can see all the services available.
 
     ![OCI Navigation Menu](./images/oci-navigation-menu.png " ")
 
@@ -69,9 +69,9 @@ This lab requires completion of the following:
 
 9. **Configure Exadata storage**: Specify the following:
 
-   **Allocate storage for Exadata sparse snapshots**: Select this configuration option if you intend to use snapshot functionality within your VM cluster. If you select this option, the SPARSE disk group is created, which enables you to use VM cluster snapshot functionality for PDB sparse cloning. If you do not select this option, the SPARSE disk group is not created and snapshot functionality will not be available on any database deployments that are created in the environment.
+   **Allocate storage for Exadata sparse snapshots**: Select this configuration option if you intend to use snapshot functionality within your VM cluster. If you select this option, the SPARSE disk group is created, enabling you to utilize VM cluster snapshot functionality for PDB sparse cloning. If you do not choose this option, the SPARSE disk group is not created, and snapshot functionality will not be available on any database deployments that are created in the environment.
 
-   **Allocate storage for local backups**: Select this option if you intend to perform database backups to the local Exadata storage within your Exadata Cloud Service instance. If you select this option, more space is allocated to the RECO disk group, which is used to store backups on Exadata storage. If you do not select this option, more space is allocated to the DATA disk group, which enables you to store more information in your databases.
+   **Allocate storage for local backups**: Select this option if you intend to perform database backups to the local Exadata storage within your Exadata Cloud Service instance. If you select this option, more space is allocated to the RECO disk group, which is used to store backups on Exadata storage. If you do not choose this option, more space is allocated to the DATA disk group, enabling you to store more information in your databases.
 
       ![Configure Exadata Storage](./images/configure-exadata-storage.png " ")
 
@@ -79,7 +79,7 @@ This lab requires completion of the following:
 
     **Upload SSH key files**: Select this radio button to browse or drag and drop .pub files.
 
-    **Paste SSH keys**: Select this radio button to paste in individual public keys. To paste multiple keys, click + Another SSH Key, and supply a single key for each entry.
+    **Paste SSH keys**: Select this radio button to paste in individual public keys. To paste multiple keys, click + Another SSH Key and supply a single key for each entry.
 
       ![Add SSH Key](./images/SSH.png " ")
 
@@ -89,7 +89,7 @@ This lab requires completion of the following:
 
     **Client subnet**: The subnet to which the VM cluster should attach. Click Change Compartment to select a subnet in a different compartment.
 
-    > **Note**: Do not use a subnet that overlaps with 192.168.16.16/28, which is used by the Oracle Clusterware private interconnect on the database instance. Specifying an overlapping subnet causes the private interconnect to malfunction.
+    > **Note**: Do not use a subnet that overlaps with 192.168.16.16/28, which the Oracle Clusterware private interconnect uses on the database instance. Specifying an overlapping subnet causes the private interconnect to malfunction.
 
     **Backup subnet**: The subnet to use for the backup network, which is typically used to transport backup information to and from Oracle Cloud Infrastructure Object Storage, and for Data Guard replication. Click Change Compartment to select a subnet in a different compartment, if applicable.
 
@@ -97,23 +97,23 @@ This lab requires completion of the following:
 
     If you plan to back up databases to Object Storage, see the network prerequisites in [Managing Exadata Database Backups.](https://docs.oracle.com/en-us/iaas/exadatacloud/exacs/ecs-managing-db-backup-and-recovery.html#GUID-0CA094F9-7160-43FA-AB23-D51986CBBE85)
 
-    **Network Security Groups**: Optionally, you can specify one or more network security groups (NSGs);for both the client and backup networks. NSGs function as virtual firewalls, allowing you to apply a set of ingress and egress security rules to your Exadata Cloud Service VM cluster.
+    **Network Security Groups**: Optionally, you can specify one or more network security groups (NSGs); for both the client and backup networks. NSGs function as virtual firewalls, allowing you to apply a set of ingress and egress security rules to your Exadata Database Service VM cluster.
 
       ![Configure Network Settings](./images/configure-network-settings.png " ")
 
-    **Hostname prefix**: Your choice of host name for the Exadata DB system. The host name must begin with an alphabetic character, and can contain only alphanumeric characters and hyphens (-). The maximum number of characters allowed for an Exadata DB system is 12.
+    **Hostname prefix**: Your choice of hostname for the Exadata DB system. The hostname must begin with an alphabetic character and can contain only alphanumeric characters and hyphens (-). The maximum number of characters allowed for an Exadata DB system is 12.
 
-    > **Note**: The host name must be unique within the subnet. If it is not unique, the VM cluster will fail to provision.
+    > **Note**: The hostname must be unique within the subnet. If it is not unique, the VM cluster will fail to provision.
 
-    **Host domain name**: The domain name for the VM cluster. If the selected subnet uses the Oracle-provided Internet and VCN Resolver for DNS name resolution, this field displays the domain name for the subnet and it can't be changed. Otherwise, you can provide your choice of a domain name. Hyphens (-) are not permitted.
+    **Host domain name**: The domain name for the VM cluster. If the selected subnet uses the Oracle-provided Internet and VCN Resolver for DNS name resolution, this field displays the domain name for the subnet, and it can't be changed. Otherwise, you can provide your choice of a domain name. Hyphens (-) are not permitted.
 
-    If you plan to store database backups in Object Storage, Oracle recommends that you use a VCN Resolver for DNS name resolution for the client subnet because it automatically resolves the Swift endpoints used for backups.
+    Suppose you plan to store database backups in Object Storage. In that case, Oracle recommends using a VCN Resolver for DNS name resolution for the client subnet because it automatically resolves the Swift endpoints used for backups.
 
     **Host and domain URL**: This read-only field combines the host and domain names to display the fully qualified domain name (FQDN) for the database. The maximum length is 64 characters.
 
       ![Hostname, Host and domain URL](./images/hostname.png " ")  
 
-12. Choose a **license type**: The type of license you want to use for the VM cluster. Your choice affects metering
+12. Choose a **license type**: The type of License you want to use for the VM cluster. Your choice affects metering
     for billing.
 
     **License Included** means the cost of the cloud service includes a license for the Database service.
@@ -132,7 +132,7 @@ This lab requires completion of the following:
 
       ![SCAN Listener Port](./images/scan-listener-port.png " ")
 
-    **Tags**: If you have permissions to create a resource, then you also have permissions to apply free-form tags to that resource. To apply a defined tag, you must have permissions to use the tag namespace. For more information about tagging, see Resource Tags . If you are not sure whether to apply tags, skip this option (you can apply tags later) or ask your administrator.
+    **Tags**: If you have permission to create a resource, then you also have permission to apply free-form tags to that resource. To apply a defined tag, you must have permission to use the tag namespace. For more information about tagging, see Resource Tags. If you are unsure whether to apply tags, skip this option (you can apply tags later) or ask your administrator.
 
       ![Tags](./images/tags.png " ")
 
@@ -146,7 +146,7 @@ This lab requires completion of the following:
       ![Provisioning State](./images/provisioning-state.png " ")
 
 
-    After your VM cluster is successfully created, The VM Cluster's icon changes from yellow to green and in **Available** state. You can view the VM Cluster Details  page by clicking the name of the VM cluster in the list of clusters.
+    After your VM cluster is successfully created, The VM Cluster's icon changes from yellow to green and in **Available** state. You can view the VM Cluster Details page by clicking the name of the VM cluster in the list of clusters.
 
       ![Available State](./images/available-state.png " ")
 

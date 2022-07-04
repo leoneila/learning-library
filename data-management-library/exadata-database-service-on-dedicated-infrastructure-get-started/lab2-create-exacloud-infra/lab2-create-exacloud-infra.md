@@ -6,7 +6,7 @@
 
 ## Introduction
 
-This lab walks you through the steps to create an Exadata Cloud Infrastructure resource
+This lab walks you through the steps to create an Exadata Cloud Infrastructure resource.
 
 Estimated Time: 10 minutes
 
@@ -21,14 +21,14 @@ Estimated Time: 10 minutes
 This lab requires completion of the following:
 
 * Completion of [Lab 1: Create your Virtual Cloud Network (VCN) and Required IAM Policy for Exadata Database Service on Dedicated Infrastructure](?lab=lab1-prepare-network-and-iam) section.
-* A correctly configured virtual cloud network (VCN) to launch the system in. Its related networking resources (gateways, route tables, security lists, DNS, and so on) must also be configured as necessary for the system
-* The proper IAM policy is required to proceed See [Required IAM Policy for Exadata Cloud Infrastructure](https://docs.oracle.com/en-us/iaas/exadatacloud/exacs/preparing-for-ecc-deployment.html#GUID-EA03F7BC-7D8E-4177-AFF4-615F71C390CD).
+* A correctly configured virtual cloud network (VCN) to launch the system in. It's related networking resources (gateways, route tables, security lists, DNS, and so on) must also be configured as necessary for the system
+* The proper IAM policy is required to proceed. See [Required IAM Policy for Exadata Cloud Infrastructure](https://docs.oracle.com/en-us/iaas/exadatacloud/exacs/preparing-for-ecc-deployment.html#GUID-EA03F7BC-7D8E-4177-AFF4-615F71C390CD).
 
 
 
 ## Task 1: Create Cloud Exadata Infrastructure Resource
 
-1. Log in to the Oracle Cloud, Once you are logged in, you are taken to the cloud services dashboard where you can see all the services available to you.
+1. Log in to the Oracle Cloud. Once logged in, you are taken to the cloud services dashboard, where you can see all the services available.
 
     ![OCI Navigation Menu](./images/oci-navigation-menu.png " ")
 
@@ -46,7 +46,7 @@ This lab requires completion of the following:
 
     ![Create Exadata Cloud Infra](./images/create-exa-cloud-infra.png " ")
 
-    In the Create Exadata Infrastructure Page, Provide basic information for the Exadata Cloud Infrastructure
+    In the Create Exadata Infrastructure Page, Provide basic information for the Exadata Cloud Infrastructure.
 
  5. **Compartment**: Select a compartment for the Exadata infrastructure.
     ![Select Compartment](./images/select-compartment.png " ")
@@ -62,15 +62,15 @@ This lab requires completion of the following:
 
     **Exadata System Model:**
 
-    **X9M-2**: If you select the flexible X9M-2 cloud infrastructure model, your initial Exadata Cloud Infrastructure instance can have a minimum of 2 database servers and 3 storage servers up to 32 database servers and 64 storage servers. After provisioning, you can scale the service instance as needed by adding additional storage servers, compute servers, or both.
+    **X9M-2**: If you select the flexible X9M-2 cloud infrastructure model, your initial Exadata Cloud Infrastructure instance can have a minimum of 2 database servers and three storage servers, up to 32 database servers and 64 storage servers. After Provisioning, you can scale the service instance as needed by adding additional storage servers, compute servers or both.
 
-    **X8M-2**: If you select the flexible X8M-2 system model, you initial Exadata Cloud Service instance will have 2 database servers and 3 storage servers (the equivalents of an X8 quarter rack shape). After provisioning, you can scale the service instance as needed by adding additional storage servers, compute servers, or both.
+    **X8M-2**: If you select the flexible X8M-2 system model, your initial Exadata Cloud Service instance will have two database servers and three storage servers (the equivalents of an X8 quarter rack shape). After Provisioning, you can scale the service instance as needed by adding additional storage servers, compute servers or both.
 
     **X7 and X8**: If you select an X7 or X8 system, you are given the choice of provisioning a quarter, half, or full rack. See Exadata Fixed Hardware Shapes: X6, X7, X8 and Exadata Base for hardware and capacity details.
 
-    **Exadata Base**: The Exadata base shape comes in a single configuration, and provides an economical alternative to provisioning a quarter rack system. See Exadata Fixed Hardware Shapes: X6, X7, X8 and Exadata Base
+    **Exadata Base**: The Exadata base shape comes in a single configuration and provides an economical alternative to Provisioning a quarter rack system. See Exadata Fixed Hardware Shapes: X6, X7, X8 and Exadata Base
 
-    If you selected a flexible shape (X8M-2 or X9M-2) , specify the **Compute and storage configuration**. You can specify **Database servers** from minimum of 2 up to 32. You can specify **Storage servers** from minimum of 3 up to 64.
+    If you selected a flexible shape (X8M-2 or X9M-2), specify the **Compute and storage configuration**. You can specify **Database servers** from a minimum of 2 up to 32. You can specify **Storage servers** from a minimum of 3 up to 64.
 
     ![X8M-2 Exadata Cloud Infra](./images/x8m-infra.png " ")
 
@@ -102,12 +102,12 @@ This lab requires completion of the following:
 
     ![Maintenance Contacts](./images/maintenancecontacts.png " ")
 
-    Maintenance contacts are required for service request based communications for maintenance events.
+    Maintenance contacts are required for service request-based communications for maintenance events.
 
 
  10. Click **Show Advanced Options** to specify advanced options for the initial database.
 
-     In the **Tags** tab, you can add tags to the database. To apply a defined tag, you must have permissions to use the tag namespace. For more information about tagging, see Resource Tags . If you are not sure if you should apply tags, skip this option (you can apply tags later) or ask your administrator.
+     In the **Tags** tab, you can add tags to the database. To apply a defined tag, you must have permission to use the tag namespace. For more information about tagging, see Resource Tags. If you are unsure if you should apply tags, skip this option (you can apply tags later) or ask your administrator.
 
      ![Advanced Options](./images/advanced-options.png " ")
 

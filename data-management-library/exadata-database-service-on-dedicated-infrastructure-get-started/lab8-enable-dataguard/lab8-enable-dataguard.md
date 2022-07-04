@@ -22,8 +22,8 @@ Estimated Time: 10 minutes
 This lab requires completion of the following:
 
 * Completion of [Lab 5: Create Oracle Database on Exadata Database Service on Dedicated Infrastructure](?lab=lab5-create-database) section.
-* A correctly configured virtual cloud network (VCN) to launch the system in. Its related networking resources (gateways, route tables, security lists, DNS, and so on) must also be configured as necessary for the system
-* The proper IAM policy is required to proceed See [Required IAM Policy for Exadata Cloud Infrastructure](https://docs.oracle.com/en-us/iaas/exadatacloud/exacs/preparing-for-ecc-deployment.html#GUID-EA03F7BC-7D8E-4177-AFF4-615F71C390CD)
+* A correctly configured virtual cloud network (VCN) to launch the system. It's related networking resources (gateways, route tables, security lists, DNS, and so on) must also be configured as necessary for the system
+* The proper IAM policy is required to proceed. See [Required IAM Policy for Exadata Cloud Infrastructure](https://docs.oracle.com/en-us/iaas/exadatacloud/exacs/preparing-for-ecc-deployment.html#GUID-EA03F7BC-7D8E-4177-AFF4-615F71C390CD)
 
 
 
@@ -35,7 +35,7 @@ This lab requires completion of the following:
 
     ![Exadata on Oracle Public Cloud Menu](./images/exadb-d-menu.png " ")
 
-2.  Choose your **Compartment** that contains the Exadata Cloud Infrastructure instance with the database for which you want to enable Oracle Data Guard
+2.  Choose your **Compartment** that contains the Exadata Cloud Infrastructure instance with the Database for which you want to enable Oracle Data Guard
 
     ![Choose your Compartment Page](./images/choose-compartment.png " ")
 
@@ -47,7 +47,7 @@ This lab requires completion of the following:
     ![Exadata VM Clusters Page](./images/exavmclusters.png " ")
 
 
-4. In the list of **Databases**, click the name of the database you want to make primary.
+4. In the list of **Databases**, click the database name you want to make Primary.
 
    ![Database list Page](./images/db-list-page.png " ")
 
@@ -63,15 +63,15 @@ This lab requires completion of the following:
 
    ![Enable Data Guard](./images/enable-data-guard.png " ")
 
-7. On the Enable Data Guard page, configure your Data Guard association.
+7. Configure your Data Guard association on the Enable Data Guard page.
 
    ![Select peer database](./images/select-peer-db.png " ")
 
       * In the **Select peer DB system** section, provide the following information for the standby database to obtain a list of available Exadata systems in which to locate the standby database:
 
-        * **Region**: Select a region where you want to locate the standby database. The region where the primary database is located is selected, by default. You can choose to locate the standby database in a different region. The hint text associated with this field tells you in which region the primary database is located.
+        * **Region**: Select a region where you want to locate the standby database. The hint text associated with this field tells you in which Region the primary Database is located. The Region where the primary Database is located is selected by default. You can choose to locate the standby database in a different region.
         * **Availability domain**: Select an availability domain for the standby database. The hint text associated with this field tells you in which availability domain the primary database is located.
-        * **Shape**: Select the shape of the standby Exadata system.
+        * **Shape**: Select the Shape of the standby Exadata system.
         * **Data Guard peer resource type**: Select DB System or **VM Cluster**.
         * Select a DB system or cloud VM cluster from the drop-down list.
 
@@ -79,7 +79,7 @@ This lab requires completion of the following:
 
    ![Data Guard Type](./images/select-data-guard-type.png " ")
 
-      * Data Guard Type: Select Active Data Guard or Data Guard. Active Data Guard provides additional features including: Real-Time Query and DML Offload, Automatic Block Repair, Standby Block Change Tracking, Far Sync, Global Data Services, and Application Continuity. Note that Active Data Guard requires an Oracle Active Data Guard license. For more information on Active Data Guard, see Active Data Guard. For a complete overview of both Data Guard types, see Introduction to Oracle Data Guard
+      * Data Guard Type: Select Active Data Guard or Data Guard. Active Data Guard provides additional features, including Real-Time Query and DML Offload, Automatic Block Repair, Standby Block Change Tracking, Far Sync, Global Data Services, and Application Continuity. Note that Active Data Guard requires an Oracle Active Data Guard license. For more information on Active Data Guard, see Active Data Guard. For a complete overview of both Data Guard types, see Introduction to Oracle Data Guard
 
           * Protection mode: The protection mode can be Maximum Performance or Maximum Availability. See Oracle Data Guard Protection Modes for information on these options.
 
@@ -109,7 +109,7 @@ This lab requires completion of the following:
        * Maximum of 30 characters
        * Contain only alphanumeric or underscore (_) characters
        * Begin with an alphabetic character
-       * Unique across the VM cluster. Recommended to be unique across the tenancy.
+       * Unique across the VM cluster. It is recommended to be unique across the tenancy.
 
      If not specified, the system automatically generates a unique name value, as follows:
 
@@ -127,7 +127,7 @@ This lab requires completion of the following:
 
         **Oracle SID prefix**: The Oracle Database instance number is automatically added to the SID prefix to create the **INSTANCE\_NAME** database parameter. The **INSTANCE\_NAME** parameter is also known as the SID. If not provided, then the SID prefix defaults to the first 12 characters of the **db\_unique\_name**.
 
-        >  **Note:** Entering an SID prefix is only available for Oracle 12.1 databases and above.
+        >  **Note:** Entering a SID prefix is only available for Oracle 12.1 databases and above.
 
           The SID prefix must meet the requirements:
 

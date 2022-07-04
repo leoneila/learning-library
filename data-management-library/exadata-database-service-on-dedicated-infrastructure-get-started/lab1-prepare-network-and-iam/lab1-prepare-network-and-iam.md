@@ -6,7 +6,7 @@
 
 ## Introduction
 
-This lab walks you through the steps to Prepare and describe the recommended configuration for your Network and Required IAM Policy for Exadata Database Service on Dedicated Infrastructure.
+This lab walks you through the steps to Prepare and describe the recommended configuration for your Network and the Required IAM Policy for Exadata Database Service on Dedicated Infrastructure.
 
 Estimated Time: 10 minutes
 
@@ -21,7 +21,7 @@ Estimated Time: 10 minutes
 
 This lab requires completion of the following:
 
-* Setting Up Your Tenancy - After Oracle creates your tenancy in OCI, an administrator at your company will need to perform some set up tasks and establish an organization plan for your cloud resources and users.
+* Setting Up Your Tenancy - After Oracle creates your tenancy in OCI, an administrator at your company will need to perform some setup tasks and establish an organization plan for your cloud resources and users.
 
 
 
@@ -35,17 +35,17 @@ This lab requires completion of the following:
 
     Navigate to the compartment in which you want to create the new compartment:
 
-    * To create the compartment in the tenancy (root compartment) click Create Compartment.
-    * Otherwise, click through the hierarchy of compartments until you reach the detail page of the compartment in which you want to create the compartment. On the Compartment Details page, click Create Compartment.
+    * To create the Compartment in the tenancy (root compartment), click Create Compartment.
+    * Otherwise, click through the hierarchy of compartments until you reach the detail page of the Compartment in which you want to create the Compartment. On the Compartment Details page, click Create Compartment.
 
     ![Create a Compartment Page](./images/create-compartment-details.png " ")
 
     Enter the following:
 
-    * **Name**: A unique name for the compartment (maximum 100 characters, including letters, numbers, periods, hyphens, and underscores). The name must be unique across all the compartments in your tenancy.
+    * **Name**: A unique name for the compartment (maximum 100 characters, including letters, numbers, periods, hyphens, and underscores). The Name must be unique across all the compartments in your tenancy.
     * **Description**: A friendly description. You can change this later if you want to.
     * **Parent Compartment**: The compartment you are in is displayed. To choose another compartment to create this compartment in, select it from the list.
-    * **Tags**: If you have permissions to create a resource, then you also have permissions to apply free-form tags to that resource. To apply a defined tag, you must have permissions to use the tag namespace. For more information about tagging, see Resource Tags. If you are not sure whether to apply tags, skip this option (you can apply tags later) or ask your administrator.
+    * **Tags**: If you have permission to create a resource, then you also have permission to apply free-form tags to that resource. To apply a defined tag, you must have permission to use the tag namespace. For more information about tagging, see Resource Tags. If you are unsure whether to apply tags, skip this option (you can apply tags later) or ask your administrator.
 
     Click **Create Compartment**.
 
@@ -69,15 +69,15 @@ This lab requires completion of the following:
        * A collection of statements in a single, named "policy" document, which has an Oracle Cloud ID (OCID) assigned to it
        * The overall body of policies your organization uses to control access to resources
 
-     A **compartment** is a collection of related resources that can be accessed only by certain groups that have been given permission by an administrator in your organization.
+     A **compartment** is a collection of related resources that can be accessed only by certain groups that an administrator has permitted your organization.
 
-     To use Oracle Cloud Infrastructure, you must be given the required type of access in a policy written by an administrator, whether you're using the Console, or the REST API with a software development kit (SDK), a command-line interface (CLI), or some other tool. If you try to perform an action, and receive a message that you don’t have permission, or are unauthorized, then confirm with your tenancy administrator the type of access you've been granted, and which compartment you should work in.
+     To use Oracle Cloud Infrastructure, you must be given the required type of access in a policy written by an administrator, whether using the Console or the REST API with a software development kit (SDK) or a command-line interface (CLI), or some other tool. If you try to perform an action and receive a message that you don't have permission, or are unauthorized, then confirm with your tenancy administrator the type of access you've been granted and which compartment you should work in.
 
-     For administrators: The policy in "Let database admins manage DB systems" lets the specified group do everything with databases, and related database resources.
+     For administrators: The policy in "Let database admins manage DB systems" lets the specified group do everything with databases and related database resources.
 
     ![Policy Statement](./images/policy-statement.png " ")
 
-     If you're new to policies, then see [Getting Started with Policies](https://docs.oracle.com/en-us/iaas/Content/Identity/Concepts/policygetstarted.htm) and [Common Policies] (https://docs.oracle.com/en-us/iaas/Content/Identity/policiescommon/commonpolicies.htm). If you want to dig deeper into writing policies for databases, then see [Details for the Database Service](https://docs.oracle.com/en-us/iaas/Content/Identity/Reference/databasepolicyreference.htm).
+     If you're new to policies, then see [Getting Started with Policies](https://docs.oracle.com/en-us/iaas/Content/Identity/Concepts/policygetstarted.htm) and [Common Policies] (https://docs.oracle.com/en-us/iaas/Content/Identity/policiescommon/commonpolicies.htm). If you want to dig deeper into writing database policies, see [Details for the Database Service](https://docs.oracle.com/en-us/iaas/Content/Identity/Reference/databasepolicyreference.htm).
 
 ## Task 2: Prepare the Network Setup for Exadata Database Service on Dedicated Infrastructure
 

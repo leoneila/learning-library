@@ -6,7 +6,7 @@
 
 ## Introduction
 
-This lab walks you through the steps to Create Oracle Database Home on Exadata Database Service on Dedicated Infrastructure
+This lab walks you through the steps to Create Oracle Database Home on Exadata Database Service on Dedicated Infrastructure.
 
 
 Estimated Time: 10 minutes
@@ -23,8 +23,8 @@ Estimated Time: 10 minutes
 This lab requires completion of the following:
 
 * Completion of [Lab 3: Create a Cloud VM Cluster resource](?lab=lab3-create-cloud-vmcluster) section.
-* A correctly configured virtual cloud network (VCN) to launch the system in. Its related networking resources (gateways, route tables, security lists, DNS, and so on) must also be configured as necessary for the system
-* The proper IAM policy is required to proceed See [Required IAM Policy for Exadata Cloud Infrastructure](https://docs.oracle.com/en-us/iaas/exadatacloud/exacs/preparing-for-ecc-deployment.html#GUID-EA03F7BC-7D8E-4177-AFF4-615F71C390CD).
+* A correctly configured virtual cloud network (VCN) to launch the system in. It's related networking resources (gateways, route tables, security lists, DNS, and so on) must also be configured as necessary for the system
+* The proper IAM policy is required to proceed. See [Required IAM Policy for Exadata Cloud Infrastructure](https://docs.oracle.com/en-us/iaas/exadatacloud/exacs/preparing-for-ecc-deployment.html#GUID-EA03F7BC-7D8E-4177-AFF4-615F71C390CD).
 
 
 
@@ -62,7 +62,7 @@ This lab requires completion of the following:
 
     ![Database Home display name](./images/dbhome-display-name.png " ")
 
-    **Database image**: Determines what Oracle Database version is used for the database. You can have databases with different minor versions the same database home. The major versions must remain the same. By default, the latest Oracle-published database software image is selected.
+    **Database image**: Determines what Oracle Database version is used for the database. You can have databases with different minor versions in the same database home. The major versions must remain the same. By default, the latest Oracle-published database software image is selected.
 
     Click **Change Database Image** to use an older Oracle-published image or a custom database software image that you have created in advance, then select an Image Type:
 
@@ -78,9 +78,9 @@ This lab requires completion of the following:
 
     ![Select Database Software Image](./images/select-db-software-image.png " ")
 
-    Click **Show Advanced Options** to specify advanced options for the Database Home
+    Click **Show Advanced Options** to specify advanced options for the Database Home.
 
-       **Tags**: If you have permissions to create a resource, then you also have permissions to apply free-form tags to that resource. To apply a defined tag, you must have permissions to use the tag namespace.
+       **Tags**: If you have permission to create a resource, you also have permission to apply free-form tags to that resource. To apply a defined tag, you must have permission to use the tag namespace.
 
        ![Advanced Options](./images/advanced-options.png " ")
 
@@ -147,7 +147,7 @@ You may now **proceed to the next lab**
 
 ## Learn More
 
-Click [here](https://docs.oracle.com/en-us/iaas/exadatacloud/exacs/ecs-manage-dbhomes.html) for documentation on Managing Oracle Database Homes on an Exadata Cloud Infrastructure Instance.
+Click [here](https://docs.oracle.com/en-us/iaas/exadatacloud/exacs/ecs-manage-dbhomes.html) for Managing Oracle Database Homes documentation on an Exadata Cloud Infrastructure Instance.
 
 
 ## Acknowledgements
