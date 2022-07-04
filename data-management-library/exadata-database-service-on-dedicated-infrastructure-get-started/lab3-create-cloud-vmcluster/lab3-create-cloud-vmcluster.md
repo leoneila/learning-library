@@ -157,7 +157,7 @@ You may now **proceed to the next lab**
 
 
 
-## Want to Learn More?
+## Learn More
 
 Click [here](https://docs.oracle.com/en-us/iaas/exadatacloud/exacs/manage-vm-clusters.html) for documentation on Managing VM Clusters
 

@@ -145,7 +145,7 @@ You may now **proceed to the next lab**
     ![Create Database Software Image](./images/create-dbsw-image.png " ")
 
 
-## Want to Learn More?
+## Learn More
 
 Click [here](https://docs.oracle.com/en-us/iaas/exadatacloud/exacs/ecs-manage-dbhomes.html) for documentation on Managing Oracle Database Homes on an Exadata Cloud Infrastructure Instance.
 

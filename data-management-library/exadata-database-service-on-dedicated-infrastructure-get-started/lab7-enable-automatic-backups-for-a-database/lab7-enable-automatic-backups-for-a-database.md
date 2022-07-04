@@ -83,7 +83,7 @@ This lab requires completion of the following:
 
 You may now **proceed to the next lab**
 
-## Want to Learn More?
+## Learn More
 
 Click [here](https://docs.oracle.com/en-us/iaas/exadatacloud/exacs/ecs-managing-db-backup-and-recovery.html) for documentation on how to Manage Database Backup and Recovery on Oracle Exadata Database Service on Dedicated Infrastructure.
 

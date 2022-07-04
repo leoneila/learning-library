@@ -197,7 +197,7 @@ For this Lab, we will be using an existing Database Home created from (Lab 4)
 You may now **proceed to the next lab**
 
 
-## Want to Learn More?
+## Learn More
 
 Click [here](https://docs.oracle.com/en-us/iaas/exadatacloud/exacs/manage-databases.html) for documentation on Managing Oracle Databases on an Exadata Cloud Infrastructure Instance.
 

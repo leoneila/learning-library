@@ -89,7 +89,7 @@ You can connect to the virtual machines in an Exadata Cloud Infrastructure syste
 
 You may now **proceed to the next lab**
 
-## Want to Learn More?
+## Learn More
 
 
 Click [here](https://docs.oracle.com/en-us/iaas/exadatacloud/exacs/ecs-connect-to-service-instance.html) for documentation on Connecting to an Exadata Cloud Infrastructure Instance.

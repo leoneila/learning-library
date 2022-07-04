@@ -154,7 +154,7 @@ This lab requires completion of the following:
 
 
 
-## Want to Learn More?
+## Learn More
 
 Click [here](https://docs.oracle.com/en-us/iaas/exadatacloud/exacs/using-data-guard-with-exacc.html) for documentation on how to use, configure and manage Oracle Data Guard with Exadata Cloud Infrastructure.
 

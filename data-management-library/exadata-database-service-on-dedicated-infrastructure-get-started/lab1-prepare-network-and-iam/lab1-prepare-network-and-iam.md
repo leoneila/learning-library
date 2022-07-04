@@ -28,13 +28,37 @@ This lab requires completion of the following:
 
 ## Task 1: Required IAM Policy for Exadata Database Service on Dedicated Infrastructure.
 
-1. Review the identity access management (IAM) policy for provisioning Oracle Exadata Database Service on Dedicated Infrastructure systems.
+
+1. Create a Compartment. Open the navigation menu and click **Identity & Security**. Under Identity, click **Compartments**. A list of the compartments you have access to is displayed.
+
+     ![Compartments OCI Navigation Menu](./images/oci-compartments-menu.png " ")
+
+    Navigate to the compartment in which you want to create the new compartment:
+
+    * To create the compartment in the tenancy (root compartment) click Create Compartment.
+    * Otherwise, click through the hierarchy of compartments until you reach the detail page of the compartment in which you want to create the compartment. On the Compartment Details page, click Create Compartment.
+
+    ![Create a Compartment Page](./images/create-compartment-details.png " ")
+
+    Enter the following:
+
+    * **Name**: A unique name for the compartment (maximum 100 characters, including letters, numbers, periods, hyphens, and underscores). The name must be unique across all the compartments in your tenancy.
+    * **Description**: A friendly description. You can change this later if you want to.
+    * **Parent Compartment**: The compartment you are in is displayed. To choose another compartment to create this compartment in, select it from the list.
+    * **Tags**: If you have permissions to create a resource, then you also have permissions to apply free-form tags to that resource. To apply a defined tag, you must have permissions to use the tag namespace. For more information about tagging, see Resource Tags. If you are not sure whether to apply tags, skip this option (you can apply tags later) or ask your administrator.
+
+    Click **Create Compartment**.
+
+     ![Create a Compartment Page](./images/click-create-compartment.png " ")
+
+
+2. Review the identity access management (IAM) policy for provisioning Oracle Exadata Database Service on Dedicated Infrastructure systems.
 
     Click the navigation menu Click **Identity & Security**, then click **Policies**.
 
      ![Policies Navigation Menu](./images/oci-menu-policy.png " ")
 
-2. Select **Compartment**, Under Identity in the **Policies** section Click **Create Policy**
+3. Select **Compartment**, Under Identity in the **Policies** section Click **Create Policy**
 
      ![Create Policy](./images/create-policy.png " ")
 
@@ -131,7 +155,7 @@ You may now **proceed to the next lab**
 
 
 
-## Want to Learn More?
+## Learn More
 
 Click [here](https://docs.oracle.com/en-us/iaas/exadatacloud/exacs/preparing-for-ecc-deployment.html) for documentation on Oracle Cloud Infrastructure (OCI) Requirements for Oracle Exadata Database Service on Dedicated Infrastructure.
 

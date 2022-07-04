@@ -128,7 +128,7 @@ You may now **proceed to the next lab**
 
 
 
-## Want to Learn More?
+## Learn More
 
 
 Click [here](https://docs.oracle.com/en-us/iaas/exadatacloud/exacs/ecs-manage-infrastructure.html) for Managing Exadata Cloud Infrastructure Instance.
