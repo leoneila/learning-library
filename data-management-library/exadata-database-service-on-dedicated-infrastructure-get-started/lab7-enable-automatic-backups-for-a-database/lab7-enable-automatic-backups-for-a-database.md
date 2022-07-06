@@ -1,5 +1,5 @@
 
-<!-- Updated April 5, 2022 -->
+
 
 # Enable Automatic Backups for a Database
 
@@ -21,25 +21,25 @@ Estimated Time: 5 minutes
 
 This lab requires completion of the following:
 
-* Completion of [Lab 5: Create Oracle Database on Exadata Database Service on Dedicated Infrastructure](?lab=lab5-create-database) section.
-* A correctly configured virtual cloud network (VCN) to launch the system. It's related networking resources (gateways, route tables, security lists, DNS, and so on) must also be configured as necessary for the system
-* The proper IAM policy is required to proceed. See [Required IAM Policy for Exadata Cloud Infrastructure](https://docs.oracle.com/en-us/iaas/exadatacloud/exacs/preparing-for-ecc-deployment.html#GUID-EA03F7BC-7D8E-4177-AFF4-615F71C390CD).
+* Completion of Lab 5: Create Oracle Database on Exadata Database Service on Dedicated Infrastructure section.
+* To launch the system, a correctly configured virtual cloud network (VCN). It's related networking resources (gateways, route tables, security lists, DNS, and so on) must also be configured as necessary for the system
+* The right IAM policy is required to proceed. See [Required IAM Policy for Exadata Cloud Infrastructure](https://docs.oracle.com/en-us/iaas/exadatacloud/exacs/preparing-for-ecc-deployment.html#GUID-EA03F7BC-7D8E-4177-AFF4-615F71C390CD).
 
 
 
 ## Task 1: Configure automatic backups for a database
 
 
-1.  Click the navigation menu Click **Oracle Database**, then click **Exadata on Oracle Public Cloud**.
+1. Click the navigation menu Click **Oracle Database**, then click **Exadata on Oracle Public Cloud**.
 
     ![Exadata on Oracle Public Cloud Menu](./images/exadb-d-menu.png " ")
 
-2.  Choose your **Compartment**
+2. Choose your **Compartment**
 
     ![Choose your Compartment Page](./images/choose-compartment.png " ")
 
 
-3.  Navigate to the cloud VM cluster containing the database you want to configure:
+3. Navigate to the cloud VM cluster containing the database you want to configure:
 
     Under **Oracle Exadata Database Service on Dedicated Infrastructure**, Click **Exadata VM Clusters**. In the list of VM clusters, find the VM cluster you want to access and click its highlighted name to view the details page for the cluster.
 

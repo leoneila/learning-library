@@ -1,5 +1,5 @@
 
-<!-- Updated April 5, 2022 -->
+
 
 # Create Oracle Database on Exadata Database Service on Dedicated Infrastructure
 
@@ -19,11 +19,11 @@ Estimated Time: 10 minutes
 
 ### Prerequisites
 
-This lab requires completion of the following:
+This Lab requires completion of the following:
 
-* Completion of [Lab 4: Create Oracle Database Home on an Exadata Database Service on Dedicated Infrastructure](?lab=lab4-create-dbhome) section.
-* A correctly configured virtual cloud network (VCN) to launch the system. It's related networking resources (gateways, route tables, security lists, DNS, and so on) must also be configured as necessary for the system
-* The proper IAM policy is required to proceed. See [Required IAM Policy for Exadata Cloud Infrastructure](https://docs.oracle.com/en-us/iaas/exadatacloud/exacs/preparing-for-ecc-deployment.html#GUID-EA03F7BC-7D8E-4177-AFF4-615F71C390CD).
+* Completion of Lab 4: Create Oracle Database Home on an Exadata Database Service on Dedicated Infrastructure section.
+* To launch the system, a correctly configured virtual cloud network (VCN). It's related networking resources (gateways, route tables, security lists, DNS, and so on) must also be configured as necessary for the system
+* The right IAM policy is required to proceed. See [Required IAM Policy for Exadata Cloud Infrastructure](https://docs.oracle.com/en-us/iaas/exadatacloud/exacs/preparing-for-ecc-deployment.html#GUID-EA03F7BC-7D8E-4177-AFF4-615F71C390CD).
 
 
 
@@ -31,16 +31,16 @@ This lab requires completion of the following:
 ## Task 1: Create Oracle Database
 
 
-1.  Click the navigation menu Click **Oracle Database**, then click **Exadata on Oracle Public Cloud**.
+1. Click the navigation menu Click **Oracle Database**, then click **Exadata on Oracle Public Cloud**.
 
     ![Exadata on Oracle Public Cloud Menu](./images/exadb-d-menu.png " ")
 
-2.  Choose your **Compartment**
+2. Choose your **Compartment**
 
     ![Choose your Compartment Page](./images/choose-compartment.png " ")
 
 
-3.  Navigate to the cloud VM cluster you want to create the new Database on:
+3. Navigate to the cloud VM cluster you want to create the new database on:
 
     Under **Oracle Exadata Database Service on Dedicated Infrastructure**, Click **Exadata VM Clusters**. In the list of VM clusters, find the VM cluster you want to access and click its highlighted name to view the details page for the cluster.
 
@@ -50,7 +50,7 @@ This lab requires completion of the following:
 
     ![Create Database Page](./images/create-db-page.png " ")
 
-5.  In the Create Database dialog, enter the following:
+5. In the Create Database dialog, enter the following:
 
     ![Database Name, DB Unique name](./images/dbname.png " ")
 
@@ -81,11 +81,11 @@ This lab requires completion of the following:
 
     ![Database version selection page](./images/dbversion.png " ")
 
-    **PDB name**:*(Optional)* For Oracle Database 12c (12.1.0.2) and later, you can specify the name of the pluggable database. The PDB name must begin with an alphabetic character, and can contain a maximum of eight alphanumeric characters. The only special character permitted is the underscore ( _).
+    **PDB name**:*(Optional)* For Oracle Database 12c (12.1.0.2) and later, you can specify the name of the pluggable database. The PDB name must begin with an alphabetic character and can contain a maximum of eight alphanumeric characters. The only special character permitted is the underscore ( _).
 
     ![PDB Name](./images/pdbname.png " ")
 
-    **Database Home**: The Oracle Database Home for the database. Choose the applicable option:
+    **Database Home**: The Oracle Database Home for the Database. Choose the applicable option:
 
     > **Note:** For the Database Home, you can select an existing Database Home created from (Lab 4) OR Create a new Database Home.
 For this Lab, we will be using an existing Database Home created from (Lab 4)
@@ -97,20 +97,20 @@ For this Lab, we will be using an existing Database Home created from (Lab 4)
     * **Create a new Database Home**: Use this option to provision a new Database Home for your database.
 
 
-    **Create administrator credentials**: *(Read only)* A database administrator SYS user will be created with the Password you supply.
+    **Create administrator credentials**: *(Read-only)* A database administrator SYS user will be created with the Password you supply.
 
        * **Username**: SYS
        * **Password**: Supply the Password for this user. The Password must meet the following criteria:
 
-         A strong password for SYS, SYSTEM, TDE wallet, and PDB Admin. The password must be 9 to 30 characters and contain at least two uppercase, two lowercase, two numeric, and two special characters. The special characters must be _, #, or -. The password must not contain the username (SYS, SYSTEM, and so on) or the word "oracle" either in forward or reversed order and regardless of casing.
+         A strong password for SYS, SYSTEM, TDE wallet, and PDB Admin. The Password must be 9 to 30 characters and contain at least two uppercase, two lowercase, two numeric, and two special characters. The special characters must be _, #, or -. The Password must not contain  (SYS, SYSTEM, and so on) or the word "oracle" either in forwarding or reversed order, regardless of casing.
 
-       * **Confirm password**: Re-enter the SYS password you specified.
+       * **Confirm Password**: Re-enter the SYS password you specified.
 
     ![Create Administrator Credentials](./images/create-db-admin-credentials.png " ")
 
-    Using a TDE wallet password is optional. If you are using customer-managed encryption keys stored in a vault in your tenancy, the TDE wallet password is not applicable to your DB system.
+    Using a TDE wallet password is optional. If you use customer-managed encryption keys stored in a vault in your tenancy, the TDE wallet password does not apply to your DB system.
 
-    > **Note:** For Customer-managed keys, Use Show Advance Options at the end of the Create Database dialog to configure customer-managed keys.If you are using customer-managed keys, or if you want to specify a different TDE wallet password, uncheck the Use the administrator password for the TDE wallet box. If you are using customer-managed keys, leave the TDE password fields blank. To set the TDE wallet password manually, enter a password in the Enter TDE wallet password field, and then confirm by entering it into the Confirm TDE wallet password field.
+    > **Note:** For Customer-managed keys, Use Show Advance Options at the end of the Create Database dialog to configure customer-managed keys.If you are using customer-managed keys or want to specify a different TDE wallet password, uncheck the Use the administrator password for the TDE wallet box. If you are using customer-managed keys, leave the TDE password fields blank. To set the TDE wallet password manually, enter a password in the Enter TDE wallet password field, then confirm by entering it into the Confirm TDE wallet password field.
 
     **Select workload type**: Choose the workload type that best suits your application:
 
@@ -122,9 +122,9 @@ For this Lab, we will be using an existing Database Home created from (Lab 4)
 
     ![Select Workload Type](./images/select-workload-type.png " ")
 
-    **Configure database backups**: Specify the settings for backing up the database to Object Storage:
+    **Configure database backups**: Specify the settings for backing up the Database to Object Storage:
 
-    * **Enable automatic backup**: Check the check box to enable automatic incremental backups for this database. If you are creating a database in a security zone compartment, you must enable automatic backups.
+    * **Enable Automatic Backup**: Check the check box to enable automatic incremental backups for this database. You must enable automatic backups if you are creating a database in a security zone compartment.
 
     > **Note:** All [pre-requisites](https://docs.oracle.com/en-us/iaas/exadatacloud/exacs/ecs-managing-db-backup-and-recovery.html#GUID-41586B8E-FF2F-44B7-827B-D9122289C8AE) for backing up to Oracle Cloud Infrastructure Object Storage must be met for automatic backups to work
 
@@ -144,7 +144,7 @@ For this Lab, we will be using an existing Database Home created from (Lab 4)
 
      **Management**:
 
-     **Oracle SID prefix**: The Oracle Database instance number is automatically added to the SID prefix to create the **INSTANCE\_NAME** database parameter. The **INSTANCE\_NAME** parameter is also known as the SID. The SID is unique across the cloud VM cluster. If not specified, SID prefix defaults to the db_name.
+     **Oracle SID prefix**: The Oracle Database instance number is automatically added to the SID prefix to create the **INSTANCE\_NAME** database parameter. The **INSTANCE\_NAME** parameter is also known as the SID. The SID is unique across the cloud VM cluster. If not specified, the SID prefix defaults to the db_name.
 
      The SID prefix must meet the requirements:
 
@@ -162,13 +162,13 @@ For this Lab, we will be using an existing Database Home created from (Lab 4)
 
     ![National Character set](./images/national-character-set.png " ")
 
-    **Encryption**: If you are creating a database in an Exadata Cloud Service VM cluster, then you can choose to use encryption based on encryption keys that you manage. By default, the database is configured using Oracle-managed encryption keys.
+    **Encryption**: If you are creating a database in an Exadata Cloud Service VM cluster, then you can choose to use Encryption based on Encryption keys that you manage. By default, the database is configured using Oracle-managed encryption keys.
 
      > **Note:** For this Lab, we will use Oracle-Managed encryption keys
 
      ![Select Encryption](./images/encryption.png " ")
 
-     *Optional* To configure the database with encryption based on encryption keys you manage:
+     *Optional* To configure the database with Encryption based on encryption keys you manage:
 
      * Select **Use customer-managed keys**. You must have a valid encryption key in the Oracle Cloud Infrastructure Vault service. [See Let security admins manage vaults, keys, and secrets](https://docs.oracle.com/iaas/Content/Identity/Concepts/commonpolicies.htm#sec-admins-manage-vaults-keys)
 
@@ -182,7 +182,7 @@ For this Lab, we will be using an existing Database Home created from (Lab 4)
 
      ![Manage Tags](./images/tags.png " ")
 
-7. Click **Create Database**
+7. Click **Create database**
 
      ![Click Create Database Page](./images/click-create-database.png " ")
 
@@ -194,7 +194,7 @@ For this Lab, we will be using an existing Database Home created from (Lab 4)
    ![Available State](./images/available-state.png " ")
 
 
-You may now **proceed to the next lab**
+You may now **proceed to the next Lab**
 
 
 ## Learn More

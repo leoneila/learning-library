@@ -1,12 +1,12 @@
 
-<!-- Updated April 5, 2022 -->
+
 
 # Connect to an Exadata Database Service on Dedicated Infrastructure Instance
 
 
 ## Introduction
 
-This lab walks you through how to connect to an Exadata Cloud Infrastructure instance using SSH or SQL Developer.
+This lab walks you through connecting to an Exadata Cloud Infrastructure instance using SSH or SQL Developer.
 
 Estimated Time: 10 minutes
 
@@ -21,9 +21,9 @@ Estimated Time: 10 minutes
 
 This lab requires completion of the following:
 
-* Completion of [Lab 5: Create Oracle Database on Exadata Database Service on Dedicated Infrastructure](?lab=lab5-create-database) section.
-* A correctly configured virtual cloud network (VCN) to launch the system. It's related networking resources (gateways, route tables, security lists, DNS, and so on) must also be configured as necessary for the system
-* The proper IAM policy is required to proceed. See [Required IAM Policy for Exadata Cloud Infrastructure](https://docs.oracle.com/en-us/iaas/exadatacloud/exacs/preparing-for-ecc-deployment.html#GUID-EA03F7BC-7D8E-4177-AFF4-615F71C390CD).
+* Completion of Lab 5: Create Oracle Database on Exadata Database Service on Dedicated Infrastructure section.
+* To launch the system, a correctly configured virtual cloud network (VCN). It's related networking resources (gateways, route tables, security lists, DNS, and so on) must also be configured as necessary for the system
+* The right IAM policy is required to proceed. See [Required IAM Policy for Exadata Cloud Infrastructure](https://docs.oracle.com/en-us/iaas/exadatacloud/exacs/preparing-for-ecc-deployment.html#GUID-EA03F7BC-7D8E-4177-AFF4-615F71C390CD).
 * The full path to the file that contains the private key associated with the public key used when the system was launched.
 * The public or private IP address of the Exadata Cloud Infrastructure instance.
 
@@ -33,28 +33,28 @@ This lab requires completion of the following:
 ## Task 1: View the Exadata VM Cluster Details to find the IP addresses in the OCI Console
 
 
-1.  Click the navigation menu Click **Oracle Database**, then click **Exadata on Oracle Public Cloud**.
+1. Click the navigation menu Click **Oracle Database**, then click **Exadata on Oracle Public Cloud**.
 
     ![Exadata on Oracle Public Cloud Menu](./images/exadb-d-menu.png " ")
 
-2.  Choose your **Compartment**
+2. Choose your **Compartment**
 
     ![Choose your Compartment Page](./images/choose-compartment.png " ")
 
 
-3.  Navigate to the cloud VM cluster you want to view the IP addresses:
+3. Navigate to the cloud VM cluster you want to view the IP addresses:
 
     Under **Oracle Exadata Database Service on Dedicated Infrastructure**, Click **Exadata VM Clusters**. In the list of VM clusters, find the VM cluster you want to access and click its highlighted name to view the details page for the cluster.
 
     ![Exadata VM Clusters Page](./images/exavmclusters.png " ")
 
-4.  Under **Resources**, click **Virtual Machines**.
+4. Under **Resources**, click **Virtual Machines**.
 
     ![View Virtual Machines Page](./images/view-vmcluster.png " ")
 
     Find the public or private IP address of the Exadata Cloud Infrastructure instance.
 
-    The values are displayed in the **Public IP Address** and **Private IP Address & DNS Name** columns of the table displaying the **Virtual Machines** of the Exadata Cloud Infrastructure instance.
+    The values are displayed in the **Public IP Address** and **Private IP Address & DNS Name** columns of the table showing the **Virtual Machines** of the Exadata Cloud Infrastructure instance.
 
     Use the private IP address to connect to the system from your on-premises network or from within the virtual cloud network (VCN). This includes connecting from a host on-premises through a VPN or FastConnect to your VCN or from another host in the same VCN. Use the public IP address to connect to the system from outside the cloud (with no VPN).
 
@@ -62,7 +62,7 @@ This lab requires completion of the following:
 
 You can connect to the virtual machines in an Exadata Cloud Infrastructure system using a Secure Shell (SSH) connection.
 
-1.  This procedure is used to access a virtual machine on an Oracle ExaDB-D system from a Unix-style system using SSH.
+1. This procedure is used to access a virtual machine on an Oracle ExaDB-D system from a Unix-style system using SSH.
 
     Enter the following SSH command to access the virtual machine:     
 

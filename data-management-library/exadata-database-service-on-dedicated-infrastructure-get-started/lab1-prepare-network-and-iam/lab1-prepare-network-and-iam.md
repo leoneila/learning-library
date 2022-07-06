@@ -1,12 +1,12 @@
 
-<!-- Updated April 5, 2022 -->
+
 
 # Create your Virtual Cloud Network (VCN) and Required IAM Policy for Exadata Database Service on Dedicated Infrastructure
 
 
 ## Introduction
 
-This lab walks you through the steps to Prepare and describe the recommended configuration for your Network and the Required IAM Policy for Exadata Database Service on Dedicated Infrastructure.
+This lab walks you through the preparation steps and describes the recommended configuration for your network and the Required IAM Policy for Exadata Database Service on Dedicated Infrastructure.
 
 Estimated Time: 10 minutes
 
@@ -33,7 +33,7 @@ This lab requires completion of the following:
 
      ![Compartments OCI Navigation Menu](./images/oci-compartments-menu.png " ")
 
-    Navigate to the compartment in which you want to create the new compartment:
+    Navigate to the Compartment in which you want to create the new Compartment:
 
     * To create the Compartment in the tenancy (root compartment), click Create Compartment.
     * Otherwise, click through the hierarchy of compartments until you reach the detail page of the Compartment in which you want to create the Compartment. On the Compartment Details page, click Create Compartment.
@@ -42,9 +42,9 @@ This lab requires completion of the following:
 
     Enter the following:
 
-    * **Name**: A unique name for the compartment (maximum 100 characters, including letters, numbers, periods, hyphens, and underscores). The Name must be unique across all the compartments in your tenancy.
+    * **Name**: A unique name for the Compartment (maximum 100 characters, including letters, numbers, periods, hyphens, and underscores). The Name must be unique across all the compartments in your tenancy.
     * **Description**: A friendly description. You can change this later if you want to.
-    * **Parent Compartment**: The compartment you are in is displayed. To choose another compartment to create this compartment in, select it from the list.
+    * **Parent Compartment**: The Compartment you are in is displayed. To choose another compartment to create this Compartment in, select it from the list.
     * **Tags**: If you have permission to create a resource, then you also have permission to apply free-form tags to that resource. To apply a defined tag, you must have permission to use the tag namespace. For more information about tagging, see Resource Tags. If you are unsure whether to apply tags, skip this option (you can apply tags later) or ask your administrator.
 
     Click **Create Compartment**.
@@ -63,15 +63,15 @@ This lab requires completion of the following:
      ![Create Policy](./images/create-policy.png " ")
 
 
-     A **policy** is an IAM document that specifies who has what type of access to your resources. It is used in different ways:
+     A **policy** is An IAM document that specifies who has what type of access to your resources. It is used in different ways:
 
-       * An individual statement written in the policy language
+       * An individual statement is written in the policy language
        * A collection of statements in a single, named "policy" document, which has an Oracle Cloud ID (OCID) assigned to it
        * The overall body of policies your organization uses to control access to resources
 
      A **compartment** is a collection of related resources that can be accessed only by certain groups that an administrator has permitted your organization.
 
-     To use Oracle Cloud Infrastructure, you must be given the required type of access in a policy written by an administrator, whether using the Console or the REST API with a software development kit (SDK) or a command-line interface (CLI), or some other tool. If you try to perform an action and receive a message that you don't have permission, or are unauthorized, then confirm with your tenancy administrator the type of access you've been granted and which compartment you should work in.
+     To use Oracle Cloud Infrastructure, you must be given the required type of access in a policy written by an administrator, whether using the Console or the REST API with a software development kit (SDK) or a command-line interface (CLI), or some other tool. If you try to perform an action and receive a message that you don't have permission, or are unauthorized, then confirm with your tenancy administrator the type of access you've been granted and which Compartment you should work into.
 
      For administrators: The policy in "Let database admins manage DB systems" lets the specified group do everything with databases and related database resources.
 
@@ -99,17 +99,17 @@ This lab requires completion of the following:
 
     ![Create VCN](./images/createvcn.png " ")
 
-3. In the Create a Virtual Cloud Network Page Enter the following:  
+3. In the Create a Virtual Cloud Network Page, Enter the following:  
 
-   **Name**: A descriptive name for the VCN. It doesn't have to be unique, and it cannot be changed later in the Console (but you can change it with the API). Avoid entering confidential information.
+   **Name**: A descriptive name for the VCN. It doesn't have to be unique and cannot be changed later in the Console (but you can change it with the API). Avoid entering confidential information.
 
    **Create in Compartment**: Select a compartment
 
-   **IPv4 CIDR Blocks**: Up to five but at least one non-overlapping IPv4 CIDR blocks for the VCN. For example: 172.16.0.0/16. You can add or remove CIDR blocks later. See [Allowed VCN Size and Address Ranges](https://docs.oracle.com/en-us/iaas/Content/Network/Concepts/overview.htm#Allowed)
+   **IPv4 CIDR Blocks**: Up to five but at least one non-overlapping IPv4 CIDR block for the VCN. For example: 172.16.0.0/16. You can add or remove CIDR blocks later. See [Allowed VCN Size and Address Ranges](https://docs.oracle.com/en-us/iaas/Content/Network/Concepts/overview.htm#Allowed)
 
-   **Use DNS Hostnames in this VCN**: Required for assignment of DNS hostnames to hosts in the VCN, and required if you plan to use the VCN's default DNS feature (called the Internet and VCN Resolver). If the check box is selected, you can specify a DNS label for the VCN, or allow the Console to generate one for you. The dialog box automatically displays the corresponding **DNS Domain Name** for the VCN (<VCN DNS label>.oraclevcn.com). For more information, See [DNS in Your Virtual Cloud Network](https://docs.oracle.com/en-us/iaas/Content/Network/Concepts/dns.htm#DNS_in_Your_Virtual_Cloud_Network).
+   **Use DNS Hostnames in this VCN**: Required for assignment of DNS hostnames to hosts in the VCN, and required if you plan to use the VCN's default DNS feature (called the Internet and VCN Resolver). If the check box is selected, you can specify a DNS label for the VCN or allow the Console to generate one for you. The dialog box automatically displays the corresponding **DNS Domain Name** for the VCN (<VCN DNS label>.oraclevcn.com). See [DNS in Your Virtual Cloud Network](https://docs.oracle.com/en-us/iaas/Content/Network/Concepts/dns.htm#DNS_in_Your_Virtual_Cloud_Network).
 
-   **IPv6 prefixes**: You can request that a single Oracle-allocated IPv6 /56 prefix is assigned to this VCN. Alternately, you can assign a BYOIPv6 prefix or ULA prefix to the VCN. This option is available for all commercial and government regions. For more information on IPv6, See [IPv6 Addresses](https://docs.oracle.com/en-us/iaas/Content/Network/Concepts/ipv6.htm#IPv6_Addresses).
+   **IPv6 prefixes**: You can request that a single Oracle-allocated IPv6 /56 prefix is assigned to this VCN. Alternately, you can set a BYOIPv6 or ULA prefix to the VCN. This option is available for all commercial and government regions. For more information on IPv6, See [IPv6 Addresses](https://docs.oracle.com/en-us/iaas/Content/Network/Concepts/ipv6.htm#IPv6_Addresses).
 
    Click **Create VCN**.
 
@@ -121,13 +121,13 @@ This lab requires completion of the following:
 
     ![VCN Details Page](./images/vcn-details-page.png " ")
 
-    In general, Oracle recommends using **regional subnets** , which span all **availability domains** in the region. For more information, See [Overview of VCNs and Subnets](https://docs.oracle.com/iaas/Content/Network/Tasks/managingVCNs_topic-Overview_of_VCNs_and_Subnets.htm#Overview).
+    In general, Oracle recommends using **regional subnets** , which span all **availability domains** in the region. See [Overview of VCNs and Subnets](https://docs.oracle.com/iaas/Content/Network/Tasks/managingVCNs_topic-Overview_of_VCNs_and_Subnets.htm#Overview).
 
-    You will create custom route tables for each subnet. You will also create security rules to control traffic to and from the client network and backup network of the Exadata compute nodes (for The Cloud VM Cluster Resource, nodes are called virtual machines). More information follows about those items.
+    You will create custom route tables for each subnet. You will also make security rules to control traffic to and from the client network, and backup network of the Exadata compute nodes (for The Cloud VM Cluster Resource, nodes are called virtual machines). More information follows about those items.
 
       * [Option 1: Public Client Subnet with Internet Gateway](https://docs.oracle.com/en-us/iaas/exadatacloud/exacs/ecs-network-setup.html#GUID-D8296957-E344-4688-B626-42A99E1D164B)
 
-        This option can be useful when doing a proof-of-concept or development work.
+        This option can be helpful when doing proof-of-concept or development work.
 
       * [Option 2: Private Subnets](https://docs.oracle.com/en-us/iaas/exadatacloud/exacs/ecs-network-setup.html#GUID-51C3EC2C-20DA-4EE5-B882-CD500FA6F7C6)
 
@@ -147,7 +147,7 @@ This lab requires completion of the following:
 
 
 
-      > **Note:** For Exadata Cloud Infrastructure instances, networking is configured on the cloud VM cluster resource.
+      > **Note:** For Exadata Cloud Infrastructure instances, Networking is configured on the cloud VM cluster resource.
 
 
 You may now **proceed to the next lab**

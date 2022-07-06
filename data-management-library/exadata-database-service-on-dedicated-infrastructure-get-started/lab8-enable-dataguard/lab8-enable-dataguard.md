@@ -1,5 +1,5 @@
 
-<!-- Updated April 5, 2022 -->
+
 
 # Enable Data Guard on an Exadata Database Service on Dedicated Infrastructure
 
@@ -21,9 +21,9 @@ Estimated Time: 10 minutes
 
 This lab requires completion of the following:
 
-* Completion of [Lab 5: Create Oracle Database on Exadata Database Service on Dedicated Infrastructure](?lab=lab5-create-database) section.
-* A correctly configured virtual cloud network (VCN) to launch the system. It's related networking resources (gateways, route tables, security lists, DNS, and so on) must also be configured as necessary for the system
-* The proper IAM policy is required to proceed. See [Required IAM Policy for Exadata Cloud Infrastructure](https://docs.oracle.com/en-us/iaas/exadatacloud/exacs/preparing-for-ecc-deployment.html#GUID-EA03F7BC-7D8E-4177-AFF4-615F71C390CD)
+* Completion of Lab 5: Create Oracle Database on Exadata Database Service on Dedicated Infrastructure section.
+* To launch the system, a correctly configured virtual cloud network (VCN). It's related networking resources (gateways, route tables, security lists, DNS, and so on) must also be configured as necessary for the system
+* The right IAM policy is required to proceed. See [Required IAM Policy for Exadata Cloud Infrastructure](https://docs.oracle.com/en-us/iaas/exadatacloud/exacs/preparing-for-ecc-deployment.html#GUID-EA03F7BC-7D8E-4177-AFF4-615F71C390CD)
 
 
 
@@ -31,16 +31,16 @@ This lab requires completion of the following:
 ## Task 1: Using the Console to Enable Data Guard on an Exadata Cloud Infrastructure
 
 
-1.  Click the navigation menu Click **Oracle Database**, then click **Exadata on Oracle Public Cloud**.
+1. Click the navigation menu Click **Oracle Database**, then click **Exadata on Oracle Public Cloud**.
 
     ![Exadata on Oracle Public Cloud Menu](./images/exadb-d-menu.png " ")
 
-2.  Choose your **Compartment** that contains the Exadata Cloud Infrastructure instance with the Database for which you want to enable Oracle Data Guard
+2. Choose your **Compartment** that contains the Exadata Cloud Infrastructure instance with the Database for which you want to enable Oracle Data Guard
 
     ![Choose your Compartment Page](./images/choose-compartment.png " ")
 
 
-3.  Navigate to the cloud VM cluster that contains a database you want to assume the primary role:
+3. Navigate to the cloud VM cluster that contains a database you want to assume the primary role:
 
     Under **Oracle Exadata Database Service on Dedicated Infrastructure**, Click **Exadata VM Clusters**. In the list of VM clusters, find the VM cluster you want to access and click its highlighted name to view the details page for the cluster.
 
@@ -70,7 +70,7 @@ This lab requires completion of the following:
       * In the **Select peer DB system** section, provide the following information for the standby database to obtain a list of available Exadata systems in which to locate the standby database:
 
         * **Region**: Select a region where you want to locate the standby database. The hint text associated with this field tells you in which Region the primary Database is located. The Region where the primary Database is located is selected by default. You can choose to locate the standby database in a different region.
-        * **Availability domain**: Select an availability domain for the standby database. The hint text associated with this field tells you in which availability domain the primary database is located.
+        * **Availability domain**: Select an availability domain for the standby database. The hint text associated with this field tells you in which availability domain the primary Database is located.
         * **Shape**: Select the Shape of the standby Exadata system.
         * **Data Guard peer resource type**: Select DB System or **VM Cluster**.
         * Select a DB system or cloud VM cluster from the drop-down list.
@@ -93,7 +93,7 @@ This lab requires completion of the following:
 
      * **Create a new Database Home**: If you choose this option, enter a name for the new Database Home in the **Database Home display name** field. Click **Change Database Image** to select a database software image for the new Database Home. In the **Select a Database Software Image** panel, do the following:
 
-        * Select the compartment containing the database software image you want to use to create the new Database Home.
+        * Select the Compartment containing the database software image you want to use to create the new Database Home.
 
         * Select the Oracle Database software version that the new Database Home will use, then choose an image from the list
         of available images for your selected software version.
@@ -104,7 +104,7 @@ This lab requires completion of the following:
 
   ![Configure standby database](./images/configure-standby-db.png " ")
 
-     * **Database unique name**: Optionally, specify a value for the DB\_UNIQUE\_NAME database parameter. This value must be unique across the primary and standby cloud VM clusters. The unique name must meet the requirements:
+     * **Database unique name**: Optionally, specify a value for the DB\_UNIQUE\_NAME database parameter. This value must be unique across the Primary and Standby cloud VM clusters. The unique name must meet the requirements:
 
        * Maximum of 30 characters
        * Contain only alphanumeric or underscore (_) characters
@@ -115,7 +115,7 @@ This lab requires completion of the following:
 
         >  *< db\_name >\_< 3\_chars\_unique\_string >_< region-name >*  
 
-     * **Database password**: Enter the database administrator password of the primary database. Use this same database administrator password for the standby database.
+     * **Database password**: Enter the database administrator password of the primary Database. Use this same database administrator password for the standby database.
 
 
 
@@ -134,13 +134,13 @@ This lab requires completion of the following:
            * Maximum of 12 characters
            * Contain only alphanumeric characters
            * Begin with an alphabetic character
-           * Unique in the VM cluster and across primary and standby databases      
+           * Unique in the VM cluster and across primary and Standby databases      
 
 9. Click **Enable Data Guard**.       
 
       ![Click Enable Data Guard](./images/click-enable-data-guard.png " ")
 
-      When the association is created, the details for a database and its peer display their respective roles as **Primary** or **Standby**.
+      When the association is created, details for a database and its peer display their respective roles as **Primary** or **Standby**.
 
       ![Database Data Guard role primary display](./images/dg-association-role-primary.png " ")
 

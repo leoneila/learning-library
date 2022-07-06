@@ -1,13 +1,14 @@
-## Introduction
+# Introduction
 
 This workshop walks you through all the steps to get started using the Oracle Exadata Database Service on Dedicated Infrastructure to perform lifecycle tasks and procedures.
 
+Estimated Time: 75 minutes
 
 **Oracle Exadata Database Service**
 
 Oracle Exadata Database Service is an automated Oracle Database service that allows organizations to run databases with the highest performance, availability, security, and cost-effectiveness. Databases run faster and with fewer resources on scale-out Exadata infrastructure that includes unique optimizations for transaction processing, analytics, and mixed workloads. Online scaling of computing resources enables customers to quickly adjust consumption to match workload demands without interrupting operations, while efficient database consolidation lowers total costs. Full compatibility with on-premises Oracle Database and Exadata environments makes it easy for customers to migrate workloads to the cloud.
 
-Exadata Database Service allows you to leverage the power of Exadata in the cloud. Exadata Database Service’s scale-out architecture will enable customers to provide more computing and storage independently and efficiently, right-sizing their service to meet growing demands. Exadata Database Service offers RDMA over Converged Ethernet (RoCE) networking for high bandwidth and low latency, persistent memory (PMEM) modules, and intelligent Exadata software.
+Exadata Database Service allows you to leverage the power of Exadata in the cloud. Exadata Database Service's scale-out architecture will enable customers to provide more computing and storage independently and efficiently, right-sizing their service to meet growing demands. Exadata Database Service offers RDMA over Converged Ethernet (RoCE) networking for high bandwidth and low latency, persistent memory (PMEM) modules, and intelligent Exadata software.
 
 Built-in Oracle Maximum Availability Architecture (Oracle MAA) best practices increase database availability. Exadata Database Service reduces downtime and simplifies operational management with zero downtime maintenance, online scaling, and one-click provisioning of Oracle Real Application Clusters (Oracle RAC) and Oracle Active Data Guard using built-in cloud automation.
 
@@ -18,22 +19,22 @@ Built-in Oracle Maximum Availability Architecture (Oracle MAA) best practices in
 
 
 **Network Overview: Exadata Database Service on Dedicated Infrastructure**
-![Network Overview of Exadata Database Service on Dedicated Infrastructure](./images/exa-db-d-architecture.png " ")
+![Network Overview of Exadata Database Service on Dedicated Infrastructure](./images/exa-db-d-architecture.png" ")
 
 
 The Diagram outlines the high-level network architecture for Exadata Database Service on Dedicated Infrastructure.
 
-**The Exadata Database Service on Dedicated Infrastructure** runs on the Exadata hosts, which are virtualized with **Dom0** for Oracle-managed components and **DomU** for user-managed components.
+**The Exadata Database Service on Dedicated Infrastructure** runs on the Exadata hosts, virtualized with **Dom0** for Oracle-managed components and **DomU** for user-managed components.
 Your databases run on one or more virtual machines (VM) hosted on DomU.
 Each Exadata Database Service instance provides two 25 Gbps networks for customer access: (Client and Backup)
 Each Exadata Database Service instance provides a 1Gbps Cloud Operations network for use by the Oracle Cloud Operation team for Infrastructure maintenance.
 
 **The Client Network** connects the Exadata database servers to your existing client network and is used for client access to the virtual machines.
 Applications access databases on Exadata Database Service through this network using Single Client Access Name (SCAN) and Oracle Real Application Clusters (Oracle RAC) Virtual IP (VIP) interfaces.
-The client access network uses a pair of network interfaces on each database server, which is connected to the customer network.
+The client access network uses a pair of network interfaces on each database server connected to the customer network.
 
 **The Backup Network** is similar to the client access network, as it connects the Exadata Database servers provided to separate backup traffic and bulk transfers from application traffic.
-Like the client network, the backup network uses a pair of network interfaces on each database server, which is connected to the customer network.
+Like the client network, the backup network uses a pair of network interfaces on each database server connected to the customer network.
 
 **The Oracle Cloud Operations Network** is a dedicated network connection used to perform infrastructure management tasks.
 This network is solely for infrastructure management purposes conducted by the Oracle Operations team and cannot be accessed by customers.
@@ -63,7 +64,7 @@ These hands-on lab guides provide step-by-step directions to setting up and usin
 
 
 
-# Introduction
+
 
 ## Acknowledgements
 

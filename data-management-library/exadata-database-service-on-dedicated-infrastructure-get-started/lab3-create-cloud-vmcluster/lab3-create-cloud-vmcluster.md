@@ -1,5 +1,5 @@
 
-<!-- Updated April 5, 2022 -->
+
 
 # Create a Cloud VM Cluster resource
 
@@ -22,9 +22,9 @@ Estimated Time: 10 minutes
 
 This lab requires completion of the following:
 
-* Completion of [Lab 2: Create an Exadata Cloud Infrastructure resource](?lab=lab2-create-exacloud-infra) section.
-* A correctly configured virtual cloud network (VCN) to launch the system. It's related networking resources (gateways, route tables, security lists, DNS, and so on) must also be configured as necessary for the system
-* The proper IAM policy is required to proceed. See [Required IAM Policy for Exadata Cloud Infrastructure](https://docs.oracle.com/en-us/iaas/exadatacloud/exacs/preparing-for-ecc-deployment.html#GUID-EA03F7BC-7D8E-4177-AFF4-615F71C390CD).
+* Completion of Lab 2: Create an Exadata Cloud Infrastructure resource section.
+* To launch the system, a correctly configured virtual cloud network (VCN). It's related networking resources (gateways, route tables, security lists, DNS, and so on) must also be configured as necessary for the system
+* The right IAM policy is required to proceed. See [Required IAM Policy for Exadata Cloud Infrastructure](https://docs.oracle.com/en-us/iaas/exadatacloud/exacs/preparing-for-ecc-deployment.html#GUID-EA03F7BC-7D8E-4177-AFF4-615F71C390CD).
 * The public key, in OpenSSH format, from the key pair that you plan to use for connecting to the system via SSH  
 
 
@@ -32,12 +32,12 @@ This lab requires completion of the following:
 
 ## Task 1: Create a Cloud VM Cluster resource
 
-1. Log in to the Oracle Cloud. Once logged in, you are taken to the cloud services dashboard, where you can see all the services available.
+1. Log in to the Oracle Cloud. Once logged in, you are taken to the cloud services dashboard, where you can see all available services.
 
     ![OCI Navigation Menu](./images/oci-navigation-menu.png " ")
 
 
-2.  Click the navigation menu Click **Oracle Database**, then click **Exadata on Oracle Public Cloud**.
+2. Click the navigation menu Click **Oracle Database**, then click **Exadata on Oracle Public Cloud**.
 
     ![Exadata on Oracle Public Cloud Menu](./images/exadb-d-menu.png " ")
 
@@ -69,7 +69,7 @@ This lab requires completion of the following:
 
 9. **Configure Exadata storage**: Specify the following:
 
-   **Allocate storage for Exadata sparse snapshots**: Select this configuration option if you intend to use snapshot functionality within your VM cluster. If you select this option, the SPARSE disk group is created, enabling you to utilize VM cluster snapshot functionality for PDB sparse cloning. If you do not choose this option, the SPARSE disk group is not created, and snapshot functionality will not be available on any database deployments that are created in the environment.
+   **Allocate storage for Exadata sparse snapshots**: Select this configuration option if you intend to use snapshot functionality within your VM cluster. If you select this option, the SPARSE disk group is created, enabling you to utilize VM cluster snapshot functionality for PDB sparse cloning. If you do not choose this option, the SPARSE disk group is not created, and snapshot functionality will not be available on any database deployments created in the environment.
 
    **Allocate storage for local backups**: Select this option if you intend to perform database backups to the local Exadata storage within your Exadata Cloud Service instance. If you select this option, more space is allocated to the RECO disk group, which is used to store backups on Exadata storage. If you do not choose this option, more space is allocated to the DATA disk group, enabling you to store more information in your databases.
 
@@ -79,7 +79,7 @@ This lab requires completion of the following:
 
     **Upload SSH key files**: Select this radio button to browse or drag and drop .pub files.
 
-    **Paste SSH keys**: Select this radio button to paste in individual public keys. To paste multiple keys, click + Another SSH Key and supply a single key for each entry.
+    **Paste SSH keys**: Select this radio button to paste individual public keys. To paste multiple keys, click + Another SSH Key and supply a single key for each entry.
 
       ![Add SSH Key](./images/SSH.png " ")
 
@@ -103,13 +103,13 @@ This lab requires completion of the following:
 
     **Hostname prefix**: Your choice of hostname for the Exadata DB system. The hostname must begin with an alphabetic character and can contain only alphanumeric characters and hyphens (-). The maximum number of characters allowed for an Exadata DB system is 12.
 
-    > **Note**: The hostname must be unique within the subnet. If it is not unique, the VM cluster will fail to provision.
+    > **Note**: The hostname must be unique within the subnet.
 
-    **Host domain name**: The domain name for the VM cluster. If the selected subnet uses the Oracle-provided Internet and VCN Resolver for DNS name resolution, this field displays the domain name for the subnet, and it can't be changed. Otherwise, you can provide your choice of a domain name. Hyphens (-) are not permitted.
+    **Host domain name**: The domain name for the VM cluster. If the selected subnet uses the Oracle-provided Internet and VCN Resolver for DNS name resolution, this field displays the subnet's domain name, which can't be changed. Otherwise, you can provide your choice of a domain name. Hyphens (-) are not permitted.
 
     Suppose you plan to store database backups in Object Storage. In that case, Oracle recommends using a VCN Resolver for DNS name resolution for the client subnet because it automatically resolves the Swift endpoints used for backups.
 
-    **Host and domain URL**: This read-only field combines the host and domain names to display the fully qualified domain name (FQDN) for the database. The maximum length is 64 characters.
+    **Host and domain URL**: This read-only field combines the host and domain names to display the database's fully qualified domain name (FQDN). The maximum length is 64 characters.
 
       ![Hostname, Host and domain URL](./images/hostname.png " ")  
 
@@ -118,7 +118,7 @@ This lab requires completion of the following:
 
     **License Included** means the cost of the cloud service includes a license for the Database service.
 
-    **Bring Your Own License (BYOL)** means you are an Oracle Database customer with an Unlimited License Agreement or Non-Unlimited License Agreement and want to use your license with Oracle Cloud Infrastructure. This removes the need for separate on-premises licenses and cloud licenses.
+    **Bring Your Own License (BYOL)** means you are an Oracle Database customer with an Unlimited License Agreement or Non-Unlimited License Agreement and want to use your License with Oracle Cloud Infrastructure. This removes the need for separate on-premises licenses and cloud licenses.
 
       ![Choose a License Type](./images/license-type.png " ")
 
@@ -128,7 +128,7 @@ This lab requires completion of the following:
 
       ![Advanced Options](./images/advanced-options.png " ")
 
-    **SCAN Listener Port**: This option is located in the Network tab. You can assign a SCAN listener port (TCP/IP) in the range between 1024 and 8999. The default is 1521
+    **SCAN Listener Port**: This option is located in the Network tab. You can assign a SCAN listener port (TCP/IP) between 1024 and 8999. The default is 1521
 
       ![SCAN Listener Port](./images/scan-listener-port.png " ")
 
