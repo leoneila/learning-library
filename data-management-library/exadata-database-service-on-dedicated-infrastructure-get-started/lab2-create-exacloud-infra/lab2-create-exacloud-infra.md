@@ -68,7 +68,7 @@ This lab requires completion of the following:
 
     **X7 and X8**: If you select an X7 or X8 system, you are given the choice of provisioning a quarter, half, or full rack. See Exadata Fixed Hardware Shapes: X6, X7, X8, and Exadata Base for hardware and capacity details.
 
-    **Exadata Base**: The Exadata base shape comes in a single configuration and provides an economical alternative to Provisioning a quarter rack system. See Exadata Fixed Hardware Shapes: X6, X7, X8, and Exadata Base
+    **Exadata Base**: The Exadata base shape comes in a single configuration and provides an economical alternative to Provisioning a quarter rack system. 
 
     If you selected a flexible shape (X8M-2 or X9M-2), specify the **Compute and storage configuration**. You can specify **Database servers** from a minimum of 2 up to 32. You can specify **Storage servers** from a minimum of 3 up to 64.
 

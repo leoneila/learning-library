@@ -25,9 +25,8 @@ Built-in Oracle Maximum Availability Architecture (Oracle MAA) best practices in
 The Diagram outlines the high-level network architecture for Exadata Database Service on Dedicated Infrastructure.
 
 **The Exadata Database Service on Dedicated Infrastructure** runs on the Exadata hosts, virtualized with **Dom0** for Oracle-managed components and **DomU** for user-managed components.
-Your databases run on one or more virtual machines (VM) hosted on DomU.
-Each Exadata Database Service instance provides two 25 Gbps networks for customer access: (Client and Backup)
-Each Exadata Database Service instance provides a 1Gbps Cloud Operations network for use by the Oracle Cloud Operation team for Infrastructure maintenance.
+Each Exadata Database Service instance provides two 50 Gbps networks for customer access: (Client and Backup)
+Each Exadata Database Service instance provides a 1Gbps Cloud Operations network for use by the Oracle Cloud Infrastructure Operation team for Infrastructure maintenance.
 
 **The Client Network** connects the Exadata database servers to your existing client network and is used for client access to the virtual machines.
 Applications access databases on Exadata Database Service through this network using Single Client Access Name (SCAN) and Oracle Real Application Clusters (Oracle RAC) Virtual IP (VIP) interfaces.
@@ -36,16 +35,16 @@ The client access network uses a pair of network interfaces on each database ser
 **The Backup Network** is similar to the client access network, as it connects the Exadata Database servers provided to separate backup traffic and bulk transfers from application traffic.
 Like the client network, the backup network uses a pair of network interfaces on each database server connected to the customer network.
 
-**The Oracle Cloud Operations Network** is a dedicated network connection used to perform infrastructure management tasks.
+**The Oracle Cloud Infrastructure Operations Network** is a dedicated network connection used to perform infrastructure management tasks.
 This network is solely for infrastructure management purposes conducted by the Oracle Operations team and cannot be accessed by customers.
 
 **The RDMA Over Converged Ethernet (ROCE) Fabric Network** connects the Exadata database servers, and Exadata Storage Servers using the ROCE switches on the rack. Each Database server and Storage server contains two ROCE interfaces (re0 and re1) connected to separate ROCE switches in the rack. Oracle Database uses this network for Oracle RAC cluster interconnect traffic and accessing data on Exadata Storage Servers.
 
-When you subscribe to the Exadata Database Service on Dedicated Infrastructure, Oracle owns and manages the Exadata Infrastructure, and customers manage everything that runs in the database VM. The Customer VM, DOMU, includes the database software, grid infrastructure, data, schema, and encryption keys. You can schedule maintenance windows for Oracle to perform infrastructure maintenance during a window that best aligns with their business needs.
+When you subscribe to the Exadata Database Service on Dedicated Infrastructure, Oracle owns and manages the Exadata Infrastructure, and customers manage everything that runs in the database VM. The Customer VM, DOMU, includes the database software, grid infrastructure, data, schema, and encryption keys. You can schedule maintenance windows for Oracle to perform infrastructure maintenance during a time that best aligns with their business needs.
 
 The Exadata Database Service simplifies lifecycle tasks, such as provisioning, scaling, patching, backup, and disaster recovery through Cloud Automation.
 
-You access your database through standard Oracle connection methods, such as Oracle Net. You access the VM cluster through traditional Oracle Linux methods, such as token-based Secure Shell (SSH). Your administrator can use the web-based OCI Console, OCI command-line interface (CLI), and REST APIs to connect to your Exadata Database Service over an HTTPS connection. Application users and administrators can connect only to the database servers, using the CLIENT and BACKUP networks you create while provisioning the Exadata Cloud Infrastructure & VM Cluster Resources.
+Application users and administrators can connect only to the database servers, using the CLIENT and BACKUP networks you previously created with your VCN.   Your administrator can use the web-based OCI Console, OCI command-line interface (CLI), and REST APIs to connect to your Exadata Database Service over an HTTPS connection.  You can access your database through standard Oracle connection methods, such as Oracle Net, and connect to the VM cluster through traditional Oracle Linux methods, such as token-based Secure Shell (SSH).
 
 These hands-on lab guides provide step-by-step directions to setting up and using your Exadata Database Service on Dedicated Infrastructure.
 
