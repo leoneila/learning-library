@@ -15,7 +15,7 @@ Estimated Time: 10 minutes
 
 ### Objectives
 
--   Prepare and Create the recommended configuration for your Network and Required IAM Policy for Exadata Database Service on Dedicated Infrastructure.
+-   Create the recommended configuration for your Virtual Cloud Network (VCN) and Required IAM Policy for Exadata Database Service on Dedicated Infrastructure.
 
 ### Prerequisites
 
@@ -79,7 +79,7 @@ This lab requires completion of the following:
 
      If you're new to policies, then see [Getting Started with Policies](https://docs.oracle.com/en-us/iaas/Content/Identity/Concepts/policygetstarted.htm) and [Common Policies] (https://docs.oracle.com/en-us/iaas/Content/Identity/policiescommon/commonpolicies.htm). See [Details for the Database Service](https://docs.oracle.com/en-us/iaas/Content/Identity/Reference/databasepolicyreference.htm) if you want to dig deeper into writing database policies.
 
-## Task 2: Create the Network Setup for Exadata Database Service on Dedicated Infrastructure
+## Task 2: Create the Virtual Cloud Network (VCN) Setup for Exadata Database Service on Dedicated Infrastructure
 
  To launch an Exadata Cloud Infrastructure instance, you must have a Virtual Cloud Network and at least two subnets:
 
