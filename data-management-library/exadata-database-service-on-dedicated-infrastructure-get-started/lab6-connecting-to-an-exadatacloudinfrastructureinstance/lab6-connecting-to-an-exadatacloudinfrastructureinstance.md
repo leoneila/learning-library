@@ -22,10 +22,10 @@ Estimated Time: 10 minutes
 This lab requires completion of the following:
 
 * Completion of Lab 5: Create Oracle Database on Exadata Database Service on Dedicated Infrastructure section.
-* To launch the system, a correctly configured virtual cloud network (VCN). It's related networking resources (gateways, route tables, security lists, DNS, and so on) must also be configured as necessary for the system
+* To launch the system, a correctly configured virtual cloud network (VCN). Its related networking resources (gateways, route tables, security lists, DNS, and so on) must also be configured as necessary for the system.
 * The right IAM policy is required to proceed. See [Required IAM Policy for Exadata Cloud Infrastructure](https://docs.oracle.com/en-us/iaas/exadatacloud/exacs/preparing-for-ecc-deployment.html#GUID-EA03F7BC-7D8E-4177-AFF4-615F71C390CD).
-* The full path to the file that contains the private key associated with the public key used when the system was launched.
-* The public or private IP address of the Exadata Cloud Infrastructure instance.
+* The full path to the file that contains the private key associated with the public key was used when the system was launched.
+
 
 
 
@@ -72,11 +72,11 @@ You can connect to the virtual machines in an Exadata Cloud Infrastructure syste
 
     In the preceding syntax:
 
-    * *<code>  private-key  </code>* is the full path and name of the file that contains the SSH private key that corresponds to a public key registered in the system.
-    * *<code>  user  </code>* is the operating system user that you want to use to connect:
-         * To perform operations as the Oracle Database software owner, connect as as *<code>  opc  </code>* and *<code>  su oracle  </code>*. The *<code>  oracle  </code>* user does not have root user access to the virtual machine.
-         * To perform operations that require *<code>  root  </code>* access to the virtual machine, such as patching, connect as *<code>  opc  </code>*. The *<code>  opc  </code>* user can use the *<code>  sudo -s  </code>* command to gain *<code>  root  </code>* access to the virtual machine.
-    * *<code>  node  </code>* is the hostname or IP address for the virtual machine you want to access.
+    * *<code>  Private-key  </code>* is the full path and name of the file that contains the SSH private key that corresponds to a public key registered in the system.
+    * *<code>  User  </code>* is the operating system user that you want to use to connect:
+         * To perform operations as the Oracle Database software owner, connect as *<code>  opc  </code>* and *<code>  su oracle</code>*. The *<code>  oracle  </code>* user does not have root user access to the virtual machine.
+         * To perform operations that require *<code>  root  </code>* access to the virtual machine, such as patching, connect as *<code>  opc</code>*. The *<code>  opc  </code>* user can use the *<code>  sudo -s  </code>* command to gain *<code>  root  </code>* access to the virtual machine.
+    * *<code>  Node  </code>* is the hostname or IP address for the virtual machine you want to access.
 
     ![connect via ssh screen](./images/connect-ssh.png " ")
 
@@ -87,7 +87,7 @@ You can connect to the virtual machines in an Exadata Cloud Infrastructure syste
     See [Connecting to a Virtual Machine from a Microsoft Windows System Using PuTTY](https://docs.oracle.com/en-us/iaas/exadatacloud/exacs/ecs-connecting-to-service-inst.html#GUID-8D940FEF-2705-4502-95EA-665906606F3C)
 
 
-You may now **proceed to the next lab**
+You may now **proceed to the next lab**.
 
 ## Learn More
 

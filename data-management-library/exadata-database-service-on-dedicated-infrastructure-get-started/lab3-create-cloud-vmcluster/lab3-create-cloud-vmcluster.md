@@ -23,9 +23,9 @@ Estimated Time: 10 minutes
 This lab requires completion of the following:
 
 * Completion of Lab 2: Create an Exadata Cloud Infrastructure resource section.
-* To launch the system, a correctly configured virtual cloud network (VCN). It's related networking resources (gateways, route tables, security lists, DNS, and so on) must also be configured as necessary for the system
+* To launch the system, a correctly configured virtual cloud network (VCN). Its related networking resources (gateways, route tables, security lists, DNS, and so on) must also be configured as necessary for the system.
 * The right IAM policy is required to proceed. See [Required IAM Policy for Exadata Cloud Infrastructure](https://docs.oracle.com/en-us/iaas/exadatacloud/exacs/preparing-for-ecc-deployment.html#GUID-EA03F7BC-7D8E-4177-AFF4-615F71C390CD).
-* The public key, in OpenSSH format, from the key pair that you plan to use for connecting to the system via SSH  
+* The public key, in OpenSSH format, is from the key pair you plan to use to connect to the system via SSH.  
 
 
 
@@ -53,16 +53,16 @@ This lab requires completion of the following:
     In the Create Exadata VM Cluster Page, Provide the required information to configure the VM cluster.
 
 5. **Compartment**: Select a compartment for the VM cluster resource.
-6. **Display name**: Enter a user-friendly display name for the VM cluster.
+6. **Display Name**: Enter a user-friendly display name for the VM cluster.
 
     ![Select Compartment and Provide Display Name](./images/select-compartment.png " ")
 
-7. **Select Exadata infrastructure**: Select the infrastructure resource that will contain the VM cluster.     
+7. **Select Exadata infrastructure**: Select the infrastructure resource containing the VM cluster.     
      Currently, cloud Exadata infrastructure resources support only one VM cluster, so you must choose an infrastructure resource that does not have an existing VM cluster. Click Change Compartment and pick a different compartment from the one you are working in to view infrastructure resources in other compartments.
 
      ![Select Exadata Cloud Infrastructure](./images/select-exa-cloud-infra.png " ")
 
-8. **Configure the VM cluster**: Specify the number of OCPU cores you want to allocate to each of the VM  
+8. **Configure the VM cluster**: Specify the number of OCPU cores you want to allocate to each VM  
      cluster's virtual machine compute nodes. The read-only Requested OCPU count for the Exadata VM cluster field displays the total number of OCPU cores you are allocating.
 
      ![Specify OCPU Cores](./images/specify-ocpu.png " ")
@@ -91,7 +91,7 @@ This lab requires completion of the following:
 
     > **Note**: Do not use a subnet that overlaps with 192.168.16.16/28, which the Oracle Clusterware private interconnect uses on the database instance. Specifying an overlapping subnet causes the private interconnect to malfunction.
 
-    **Backup subnet**: The subnet to use for the backup network, which is typically used to transport backup information to and from Oracle Cloud Infrastructure Object Storage, and for Data Guard replication. Click Change Compartment to select a subnet in a different compartment, if applicable.
+    **Backup subnet**: The subnet for the backup network, which is typically used to transport backup information to and from Oracle Cloud Infrastructure Object Storage, and for Data Guard replication. Click Change Compartment to select a subnet in a different compartment, if applicable.
 
     > **Note**: Do not use a subnet that overlaps with 192.168.128.0/20. This restriction applies to both the client subnet and backup subnet.
 
@@ -153,13 +153,13 @@ This lab requires completion of the following:
 
 
 
-You may now **proceed to the next lab**
+You may now **proceed to the next lab**.
 
 
 
 ## Learn More
 
-Click [here](https://docs.oracle.com/en-us/iaas/exadatacloud/exacs/manage-vm-clusters.html) for documentation on Managing VM Clusters
+Click [here](https://docs.oracle.com/en-us/iaas/exadatacloud/exacs/manage-vm-clusters.html) for documentation on Managing VM Clusters.
 
 
 ## Acknowledgements

@@ -23,7 +23,7 @@ Estimated Time: 10 minutes
 This lab requires completion of the following:
 
 * Completion of Lab 3: Create a Cloud VM Cluster resource section.
-* To launch the system, a correctly configured virtual cloud network (VCN). It's related networking resources (gateways, route tables, security lists, DNS, and so on) must also be configured as necessary for the system
+* To launch the system, a correctly configured virtual cloud network (VCN). Its related networking resources (gateways, route tables, security lists, DNS, and so on) must also be configured as necessary for the system.
 * The right IAM policy is required to proceed. See [Required IAM Policy for Exadata Cloud Infrastructure](https://docs.oracle.com/en-us/iaas/exadatacloud/exacs/preparing-for-ecc-deployment.html#GUID-EA03F7BC-7D8E-4177-AFF4-615F71C390CD).
 
 
@@ -96,7 +96,7 @@ This lab requires completion of the following:
    ![Available State](./images/available-state.png " ")
 
 
-You may now **proceed to the next lab**
+You may now **proceed to the next lab**.
 
 ## Additional Task (Optional): Create Custom Database Software Image
 

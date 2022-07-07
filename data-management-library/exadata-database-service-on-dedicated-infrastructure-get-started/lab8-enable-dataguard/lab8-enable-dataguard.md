@@ -22,7 +22,7 @@ Estimated Time: 10 minutes
 This lab requires completion of the following:
 
 * Completion of Lab 5: Create Oracle Database on Exadata Database Service on Dedicated Infrastructure section.
-* To launch the system, a correctly configured virtual cloud network (VCN). It's related networking resources (gateways, route tables, security lists, DNS, and so on) must also be configured as necessary for the system
+* To launch the system, a correctly configured virtual cloud network (VCN). Its related networking resources (gateways, route tables, security lists, DNS, and so on) must also be configured as necessary for the system.
 * The right IAM policy is required to proceed. See [Required IAM Policy for Exadata Cloud Infrastructure](https://docs.oracle.com/en-us/iaas/exadatacloud/exacs/preparing-for-ecc-deployment.html#GUID-EA03F7BC-7D8E-4177-AFF4-615F71C390CD)
 
 
@@ -125,7 +125,7 @@ This lab requires completion of the following:
 
       * **Management**:
 
-        **Oracle SID prefix**: The Oracle Database instance number is automatically added to the SID prefix to create the **INSTANCE\_NAME** database parameter. The **INSTANCE\_NAME** parameter is also known as the SID. If not provided, then the SID prefix defaults to the first 12 characters of the **db\_unique\_name**.
+        **Oracle SID prefix**: The Oracle Database instance number is automatically added to the SID prefix to create the **INSTANCE\_NAME** database parameter. The **INSTANCE\_NAME** parameter is also known as the SID. If not provided, the SID prefix defaults to the first 12 characters of the **db\_unique\_name**.
 
         >  **Note:** Entering a SID prefix is only available for Oracle 12.1 databases and above.
 
@@ -156,7 +156,7 @@ This lab requires completion of the following:
 
 ## Learn More
 
-Click [here](https://docs.oracle.com/en-us/iaas/exadatacloud/exacs/using-data-guard-with-exacc.html) for documentation on how to use, configure and manage Oracle Data Guard with Exadata Cloud Infrastructure.
+Click [here](https://docs.oracle.com/en-us/iaas/exadatacloud/exacs/using-data-guard-with-exacc.html) for documentation on using, configuring, and managing Oracle Data Guard with Exadata Cloud Infrastructure.
 
 
 ## Acknowledgements

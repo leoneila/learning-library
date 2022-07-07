@@ -58,15 +58,15 @@ This lab requires completion of the following:
 
      ![Policies Navigation Menu](./images/oci-menu-policy.png " ")
 
-3. Select **Compartment**, Under Identity in the **Policies** section Click **Create Policy**
+3. Select **Compartment**, Under Identity in the **Policies** section Click, **Create Policy**.
 
      ![Create Policy](./images/create-policy.png " ")
 
 
      A **policy** is An IAM document that specifies who has what type of access to your resources. It is used in different ways:
 
-       * An individual statement is written in the policy language
-       * A collection of statements in a single, named "policy" document, which has an Oracle Cloud ID (OCID) assigned to it
+       * An individual statement is written in the policy language.
+       * A collection of statements in a single, named "policy" document, which has an Oracle Cloud ID (OCID) assigned to it.
        * The overall body of policies your organization uses to control access to resources
 
      A **compartment** is a collection of related resources that can be accessed only by certain groups that an administrator has permitted your organization.
@@ -77,7 +77,7 @@ This lab requires completion of the following:
 
     ![Policy Statement](./images/policy-statement.png " ")
 
-     If you're new to policies, then see [Getting Started with Policies](https://docs.oracle.com/en-us/iaas/Content/Identity/Concepts/policygetstarted.htm) and [Common Policies] (https://docs.oracle.com/en-us/iaas/Content/Identity/policiescommon/commonpolicies.htm). If you want to dig deeper into writing database policies, see [Details for the Database Service](https://docs.oracle.com/en-us/iaas/Content/Identity/Reference/databasepolicyreference.htm).
+     If you're new to policies, then see [Getting Started with Policies](https://docs.oracle.com/en-us/iaas/Content/Identity/Concepts/policygetstarted.htm) and [Common Policies] (https://docs.oracle.com/en-us/iaas/Content/Identity/policiescommon/commonpolicies.htm). See [Details for the Database Service](https://docs.oracle.com/en-us/iaas/Content/Identity/Reference/databasepolicyreference.htm) if you want to dig deeper into writing database policies.
 
 ## Task 2: Prepare the Network Setup for Exadata Database Service on Dedicated Infrastructure
 
@@ -95,7 +95,7 @@ This lab requires completion of the following:
 
     ![Virtual Cloud Networks Navigation Menu](./images/oci-menu-vcn.png " ")
 
-2. Select your **Compartment**, Under Networking in the **Virtual Cloud Networks** Click on **Create VCN**
+2. Select your **Compartment**. Under Networking in the **Virtual Cloud Networks**, Click on **Create VCN**
 
     ![Create VCN](./images/createvcn.png " ")
 
@@ -103,13 +103,13 @@ This lab requires completion of the following:
 
    **Name**: A descriptive name for the VCN. It doesn't have to be unique and cannot be changed later in the Console (but you can change it with the API). Avoid entering confidential information.
 
-   **Create in Compartment**: Select a compartment
+   **Create in Compartment**: Select a compartment.
 
    **IPv4 CIDR Blocks**: Up to five but at least one non-overlapping IPv4 CIDR block for the VCN. For example: 172.16.0.0/16. You can add or remove CIDR blocks later. See [Allowed VCN Size and Address Ranges](https://docs.oracle.com/en-us/iaas/Content/Network/Concepts/overview.htm#Allowed)
 
-   **Use DNS Hostnames in this VCN**: Required for assignment of DNS hostnames to hosts in the VCN, and required if you plan to use the VCN's default DNS feature (called the Internet and VCN Resolver). If the check box is selected, you can specify a DNS label for the VCN or allow the Console to generate one for you. The dialog box automatically displays the corresponding **DNS Domain Name** for the VCN (<VCN DNS label>.oraclevcn.com). See [DNS in Your Virtual Cloud Network](https://docs.oracle.com/en-us/iaas/Content/Network/Concepts/dns.htm#DNS_in_Your_Virtual_Cloud_Network).
+   **Use DNS Hostnames in this VCN**: Required for assignment of DNS hostnames to hosts in the VCN and required if you plan to use the VCN's default DNS feature (called the Internet and VCN Resolver). The dialog box automatically displays the corresponding **DNS Domain Name** for the VCN ( *< VCN DNS label >*.oraclevcn.com). If the check box is selected, you can specify a DNS label for the VCN or allow the Console to generate one for you. See [DNS in Your Virtual Cloud Network](https://docs.oracle.com/en-us/iaas/Content/Network/Concepts/dns.htm#DNS_in_Your_Virtual_Cloud_Network).
 
-   **IPv6 prefixes**: You can request that a single Oracle-allocated IPv6 /56 prefix is assigned to this VCN. Alternately, you can set a BYOIPv6 or ULA prefix to the VCN. This option is available for all commercial and government regions. For more information on IPv6, See [IPv6 Addresses](https://docs.oracle.com/en-us/iaas/Content/Network/Concepts/ipv6.htm#IPv6_Addresses).
+   **IPv6 prefixes**: You can request that a single Oracle-allocated IPv6 /56 prefix is assigned to this VCN. Alternately, you can set a BYOIPv6 or ULA prefix to the VCN. This option is available for all commercial and government regions. For more information on IPv6, see [IPv6 Addresses](https://docs.oracle.com/en-us/iaas/Content/Network/Concepts/ipv6.htm#IPv6_Addresses).
 
    Click **Create VCN**.
 
@@ -121,7 +121,7 @@ This lab requires completion of the following:
 
     ![VCN Details Page](./images/vcn-details-page.png " ")
 
-    In general, Oracle recommends using **regional subnets** , which span all **availability domains** in the region. See [Overview of VCNs and Subnets](https://docs.oracle.com/iaas/Content/Network/Tasks/managingVCNs_topic-Overview_of_VCNs_and_Subnets.htm#Overview).
+    In general, Oracle recommends using **regional subnets**, which span all **availability domains** in the region. See [Overview of VCNs and Subnets](https://docs.oracle.com/iaas/Content/Network/Tasks/managingVCNs_topic-Overview_of_VCNs_and_Subnets.htm#Overview).
 
     You will create custom route tables for each subnet. You will also make security rules to control traffic to and from the client network, and backup network of the Exadata compute nodes (for The Cloud VM Cluster Resource, nodes are called virtual machines). More information follows about those items.
 
@@ -147,10 +147,10 @@ This lab requires completion of the following:
 
 
 
-      > **Note:** For Exadata Cloud Infrastructure instances, Networking is configured on the cloud VM cluster resource.
+      > **Note:** Networking is configured on the cloud VM cluster resource for Exadata Cloud Infrastructure instances.
 
 
-You may now **proceed to the next lab**
+You may now **proceed to the next lab**.
 
 
 

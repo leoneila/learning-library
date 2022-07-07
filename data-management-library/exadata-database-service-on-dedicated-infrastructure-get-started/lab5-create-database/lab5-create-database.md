@@ -22,7 +22,7 @@ Estimated Time: 10 minutes
 This Lab requires completion of the following:
 
 * Completion of Lab 4: Create Oracle Database Home on an Exadata Database Service on Dedicated Infrastructure section.
-* To launch the system, a correctly configured virtual cloud network (VCN). It's related networking resources (gateways, route tables, security lists, DNS, and so on) must also be configured as necessary for the system
+* To launch the system, a correctly configured virtual cloud network (VCN). Its related networking resources (gateways, route tables, security lists, DNS, and so on) must also be configured as necessary for the system.
 * The right IAM policy is required to proceed. See [Required IAM Policy for Exadata Cloud Infrastructure](https://docs.oracle.com/en-us/iaas/exadatacloud/exacs/preparing-for-ecc-deployment.html#GUID-EA03F7BC-7D8E-4177-AFF4-615F71C390CD).
 
 
@@ -59,7 +59,7 @@ This Lab requires completion of the following:
     * Contain only alphanumeric characters
     * Begin with an alphabetic character
     * Cannot be part of the first eight characters of a **DB\_UNIQUE_NAME** on the VM cluster
-    * DO NOT use the following reserved names: grid, ASM
+    * DO NOT use the following reserved names: grid, ASM.
 
     **Database unique name suffix**:
     Optionally, specify a value for the **DB\_UNIQUE_NAME** database parameter. The value is case insensitive.
@@ -69,7 +69,7 @@ This Lab requires completion of the following:
     * Maximum of 30 characters
     * Contain only alphanumeric or underscore (_) characters
     * Begin with an alphabetic character
-    * Unique across the VM cluster. Recommended to be unique across the tenancy.
+    * Unique across the VM cluster. It is recommended to be unique across the tenancy.
 
     If not specified, the system automatically generates a unique name value, as follows:
 
@@ -81,7 +81,7 @@ This Lab requires completion of the following:
 
     ![Database version selection page](./images/dbversion.png " ")
 
-    **PDB name**:*(Optional)* For Oracle Database 12c (12.1.0.2) and later, you can specify the name of the pluggable database. The PDB name must begin with an alphabetic character and can contain a maximum of eight alphanumeric characters. The only special character permitted is the underscore ( _).
+    **PDB Name**:*(Optional)* For Oracle Database 12c (12.1.0.2) and later, you can specify the name of the pluggable database. The PDB name must begin with an alphabetic character and can contain a maximum of eight alphanumeric characters. The only special character permitted is the underscore ( _).
 
     ![PDB Name](./images/pdbname.png " ")
 
@@ -114,8 +114,7 @@ For this Lab, we will be using an existing Database Home created from (Lab 4)
 
     **Select workload type**: Choose the workload type that best suits your application:
 
-       * **Transaction Processing** configures the database for a transactional workload with a  
-         bias towards high volumes of random data access.
+       * **Transaction Processing** configures the database for a transactional workload with a bias toward high volumes of random data access.
 
        * **Data Warehouse** configures the database for decision support or data warehouse
          workload, with a bias towards large data scanning operations.
@@ -126,7 +125,7 @@ For this Lab, we will be using an existing Database Home created from (Lab 4)
 
     * **Enable Automatic Backup**: Check the check box to enable automatic incremental backups for this database. You must enable automatic backups if you are creating a database in a security zone compartment.
 
-    > **Note:** All [pre-requisites](https://docs.oracle.com/en-us/iaas/exadatacloud/exacs/ecs-managing-db-backup-and-recovery.html#GUID-41586B8E-FF2F-44B7-827B-D9122289C8AE) for backing up to Oracle Cloud Infrastructure Object Storage must be met for automatic backups to work
+    > **Note:** All [Prerequisites](https://docs.oracle.com/en-us/iaas/exadatacloud/exacs/ecs-managing-db-backup-and-recovery.html#GUID-41586B8E-FF2F-44B7-827B-D9122289C8AE) for backing up to Oracle Cloud Infrastructure Object Storage must be met for automatic backups to work
 
     ![Enable Automatic Backup check box](./images/enable-automatic-backup.png " ")
 
@@ -152,7 +151,7 @@ For this Lab, we will be using an existing Database Home created from (Lab 4)
      * Contain only alphanumeric characters
      * Begin with an alphabetic character
      * Unique in the VM cluster
-     * DO NOT use the following reserved names: grid, ASM
+     * DO NOT use the following reserved names: grid, ASM.
 
     **Character set**: The character set for the database. The default is AL32UTF8.
 
@@ -170,7 +169,7 @@ For this Lab, we will be using an existing Database Home created from (Lab 4)
 
      *Optional* To configure the database with Encryption based on encryption keys you manage:
 
-     * Select **Use customer-managed keys**. You must have a valid encryption key in the Oracle Cloud Infrastructure Vault service. [See Let security admins manage vaults, keys, and secrets](https://docs.oracle.com/iaas/Content/Identity/Concepts/commonpolicies.htm#sec-admins-manage-vaults-keys)
+     * Select **Use customer-managed keys**. You must have a valid encryption key in the Oracle Cloud Infrastructure Vault service. [See Let security admins manage vaults, keys, and secrets](https://docs.oracle.com/iaas/Content/Identity/Concepts/commonpolicies.htm#sec-admins-manage-vaults-keys).
 
      > **Note:** You must use AES-256 encryption keys for your database.*
 
@@ -187,14 +186,14 @@ For this Lab, we will be using an existing Database Home created from (Lab 4)
      ![Click Create Database Page](./images/click-create-database.png " ")
 
 
-   After database creation is complete, the status changes from **Provisioning** to **Available**
+   After database creation is complete, the status changes from **Provisioning** to **Available**.
 
    ![Provisioning State](./images/provisioning-state.png " ")
 
    ![Available State](./images/available-state.png " ")
 
 
-You may now **proceed to the next Lab**
+You may now **proceed to the next Lab**.
 
 
 ## Learn More

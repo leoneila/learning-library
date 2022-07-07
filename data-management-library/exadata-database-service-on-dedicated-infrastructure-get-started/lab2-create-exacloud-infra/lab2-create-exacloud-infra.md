@@ -21,7 +21,7 @@ Estimated Time: 10 minutes
 This lab requires completion of the following:
 
 * Completion of Lab 1: Create your Virtual Cloud Network (VCN) and Required IAM Policy for Exadata Database Service on Dedicated Infrastructure section.
-* To launch the system, a correctly configured virtual cloud network (VCN). It's related networking resources (gateways, route tables, security lists, DNS, and so on) must also be configured as necessary for the system
+* To launch the system, a correctly configured virtual cloud network (VCN). Its related networking resources (gateways, route tables, security lists, DNS, and so on) must also be configured as necessary for the system.
 * The right IAM policy is required to proceed. See [Required IAM Policy for Exadata Cloud Infrastructure](https://docs.oracle.com/en-us/iaas/exadatacloud/exacs/preparing-for-ecc-deployment.html#GUID-EA03F7BC-7D8E-4177-AFF4-615F71C390CD).
 
 
@@ -50,7 +50,7 @@ This lab requires completion of the following:
 
  5. **Compartment**: Select a compartment for the Exadata infrastructure.
     ![Select Compartment](./images/select-compartment.png " ")
- 6. **Display name**: Enter a display name for the Exadata infrastructure.
+ 6. **Display Name**: Enter a display name for the Exadata infrastructure.
  7. **Select an availability domain**: The availability domain in which the Exadata infrastructure resides.
 
     ![Availability Domain](./images/AD.png " ")
@@ -62,7 +62,7 @@ This lab requires completion of the following:
 
     **Exadata System Model:**
 
-    **X9M-2**: If you select the flexible X9M-2 cloud infrastructure model, your initial Exadata Cloud Infrastructure instance can have a minimum of 2 database servers and three storage servers, up to 32 database servers, and 64 storage servers. After Provisioning, you can scale the service instance as needed by adding additional storage servers, compute servers, or both.
+    **X9M-2**: If you select the flexible X9M-2 cloud infrastructure model, your initial Exadata Cloud Infrastructure instance can have a minimum of 2 database servers and three storage servers, up to 32 and 64 storage servers. After Provisioning, you can scale the service instance as needed by adding additional storage servers, compute servers, or both.
 
     **X8M-2**: If you select the flexible X8M-2 system model, your initial Exadata Cloud Service instance will have two database servers and three storage servers (the equivalents of an X8 quarter rack shape). After Provisioning, you can scale the service instance as needed by adding additional storage servers, compute servers, or both.
 
@@ -89,7 +89,7 @@ This lab requires completion of the following:
 
     ![Maintenance Months](./images/maintenance-months.png " ")
 
-    * Under **Week of the month**, specify which week of the monthly maintenance will take place.
+    * Under **Week of the month**, specify which week the monthly maintenance will take place.
     * Under **Day of the week**, specify the Day of the week on which the maintenance will occur.
     * Under **Start hour**, specify the hour during which the maintenance run will begin.
     * Under **Lead Time**, specify the weeks ahead of the maintenance event you would like to receive a notification message. Your lead time ensures that a newly released maintenance update is scheduled to account for your required period of advanced notification.
@@ -115,7 +115,7 @@ This lab requires completion of the following:
 
      ![Create Exadata Infrastructure](./images/click-create-exadata-infrastructure.png " ")
 
-     The Cloud Exadata infrastructure appears in the Exadata Infrastructure list with a status of **Provisioning**.  
+     The Cloud Exadata infrastructure appears in the Exadata Infrastructure list with **Provisioning** status.  
 
      ![Provisioning State](./images/provisioning-status.png " ")
 
@@ -123,7 +123,7 @@ This lab requires completion of the following:
 
      ![Available State](./images/available-status.png " ")
 
-You may now **proceed to the next lab**
+You may now **proceed to the next lab**.
 
 
 
