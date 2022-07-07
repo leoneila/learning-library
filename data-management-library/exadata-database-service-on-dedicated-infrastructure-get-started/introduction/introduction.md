@@ -25,7 +25,7 @@ Built-in Oracle Maximum Availability Architecture (Oracle MAA) best practices in
 The Diagram outlines the high-level network architecture for Exadata Database Service on Dedicated Infrastructure.
 
 **The Exadata Database Service on Dedicated Infrastructure** runs on the Exadata hosts, virtualized with **Dom0** for Oracle-managed components and **DomU** for user-managed components.
-Each Exadata Database Service instance provides two 50 Gbps networks for customer access: (Client and Backup)
+Each Exadata Database Service instance provides 50 Gbps shared networks for customer access: (Client and Backup).
 Each Exadata Database Service instance provides a 1Gbps Cloud Operations network for use by the Oracle Cloud Infrastructure Operation team for Infrastructure maintenance.
 
 **The Client Network** connects the Exadata database servers to your existing client network and is used for client access to the virtual machines.
