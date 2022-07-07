@@ -110,7 +110,7 @@ For this Lab, we will be using an existing Database Home created from (Lab 4)
 
     Using a TDE wallet password is optional. If you use customer-managed encryption keys stored in a vault in your tenancy, the TDE wallet password does not apply to your DB system.
 
-    > **Note:** For Customer-managed keys, Use Show Advance Options at the end of the Create Database dialog to configure customer-managed keys.If you are using customer-managed keys or want to specify a different TDE wallet password, uncheck the Use the administrator password for the TDE wallet box. If you are using customer-managed keys, leave the TDE password fields blank. To set the TDE wallet password manually, enter a password in the Enter TDE wallet password field, then confirm by entering it into the Confirm TDE wallet password field.
+    > **Note:** For Customer-managed keys, Use Show Advance Options at the end of the Create Database dialog to configure customer-managed keys. If you are using customer-managed keys or want to specify a different TDE wallet password, uncheck the Use the administrator password for the TDE wallet box. If you are using customer-managed keys, leave the TDE password fields blank. To set the TDE wallet password manually, enter a password in the Enter TDE wallet password field, then confirm by entering it into the Confirm TDE wallet password field.
 
     **Select workload type**: Choose the workload type that best suits your application:
 

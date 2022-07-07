@@ -39,7 +39,7 @@ Like the client network, the backup network uses a pair of network interfaces on
 **The Oracle Cloud Operations Network** is a dedicated network connection used to perform infrastructure management tasks.
 This network is solely for infrastructure management purposes conducted by the Oracle Operations team and cannot be accessed by customers.
 
-**The RDMA Over Converged Ethernet (ROCE) Fabric Network** connects the Exadata database servers and Exadata Storage Servers using the ROCE switches on the rack. Each Database server and Storage server contains two ROCE interfaces (re0 and re1) connected to separate ROCE switches in the rack. Oracle Database uses this network for Oracle RAC cluster interconnect traffic and accessing data on Exadata Storage Servers.
+**The RDMA Over Converged Ethernet (ROCE) Fabric Network** connects the Exadata database servers, and Exadata Storage Servers using the ROCE switches on the rack. Each Database server and Storage server contains two ROCE interfaces (re0 and re1) connected to separate ROCE switches in the rack. Oracle Database uses this network for Oracle RAC cluster interconnect traffic and accessing data on Exadata Storage Servers.
 
 When you subscribe to the Exadata Database Service on Dedicated Infrastructure, Oracle owns and manages the Exadata Infrastructure, and customers manage everything that runs in the database VM. The Customer VM, DOMU, includes the database software, grid infrastructure, data, schema, and encryption keys. You can schedule maintenance windows for Oracle to perform infrastructure maintenance during a window that best aligns with their business needs.
 

@@ -71,7 +71,7 @@ This lab requires completion of the following:
 
      A **compartment** is a collection of related resources that can be accessed only by certain groups that an administrator has permitted your organization.
 
-     To use Oracle Cloud Infrastructure, you must be given the required type of access in a policy written by an administrator, whether using the Console or the REST API with a software development kit (SDK) or a command-line interface (CLI), or some other tool. If you try to perform an action and receive a message that you don't have permission, or are unauthorized, then confirm with your tenancy administrator the type of access you've been granted and which Compartment you should work into.
+     To use Oracle Cloud Infrastructure, you must be given the required type of access in a policy written by an administrator, whether using the Console or the REST API with a software development kit (SDK) or a command-line interface (CLI), or some other tool. If you try to perform an action and receive a message that you don't have permission, or are unauthorized, then confirm with your tenancy administrator the type of access you've been granted and in which Compartment.
 
      For administrators: The policy in "Let database admins manage DB systems" lets the specified group do everything with databases and related database resources.
 

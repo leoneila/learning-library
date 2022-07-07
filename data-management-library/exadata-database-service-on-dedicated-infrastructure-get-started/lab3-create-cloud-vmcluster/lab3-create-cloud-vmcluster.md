@@ -146,7 +146,7 @@ This lab requires completion of the following:
       ![Provisioning State](./images/provisioning-state.png " ")
 
 
-    After your VM cluster is successfully created, The VM Cluster's icon changes from yellow to green and in **Available** state. You can view the VM Cluster Details page by clicking the name of the VM cluster in the list of clusters.
+    After your VM cluster is successfully created, The VM Cluster's icon changes from yellow to green and in the **Available** state. You can view the VM Cluster Details page by clicking the name of the VM cluster in the list of clusters.
 
       ![Available State](./images/available-state.png " ")
 
