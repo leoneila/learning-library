@@ -8,7 +8,7 @@
 
 This Lab walks you through the steps to create Oracle Database on Exadata Database Service on Dedicated Infrastructure.
 
-Estimated Time: 10 minutes
+Estimated Time: 40 minutes
 
 
 
@@ -108,7 +108,7 @@ For this Lab, we will be using an existing Database Home created from (Lab 4)
 
     ![Create Administrator Credentials](./images/create-db-admin-credentials.png " ")
 
-    Using a TDE wallet password is optional. If you use customer-managed encryption keys stored in a vault in your tenancy, the TDE wallet password does not apply to your DB system.
+    To manage encryption keys, you can use Oracle-managed keys using a TDE wallet or Customer-managed keys stored in an OCI Vault in your tenancy.  The OCI Vault must be provisioned for Customer-managed keys before you can use it.
 
     > **Note:** For Customer-managed keys, Use Show Advance Options at the end of the Create Database dialog to configure customer-managed keys. If you are using customer-managed keys or want to specify a different TDE wallet password, uncheck the Use the administrator password for the TDE wallet box. If you are using customer-managed keys, leave the TDE password fields blank. To set the TDE wallet password manually, enter a password in the Enter TDE wallet password field, then confirm by entering it into the Confirm TDE wallet password field.
 

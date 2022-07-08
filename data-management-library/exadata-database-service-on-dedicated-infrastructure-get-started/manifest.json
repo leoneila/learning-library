@@ -41,19 +41,14 @@
             "filename": "./lab5-create-database/lab5-create-database.md"
         },
         {
-            "title": "Lab 6: Connect to an Exadata Database Service on Dedicated Infrastructure Instance",
-            "description": "Connecting to an Exadata Database Service Instance",
-            "filename": "./lab6-connecting-to-an-exadatacloudinfrastructureinstance/lab6-connecting-to-an-exadatacloudinfrastructureinstance.md"
-        },
-        {
-            "title": "Lab 7: Enable Automatic Backups for a Database",
+            "title": "Lab 6: Enable Automatic Backups for a Database",
             "description": "Enable Automatic Backups",
-            "filename": "./lab7-enable-automatic-backups-for-a-database/lab7-enable-automatic-backups-for-a-database.md"
+            "filename": "./lab6-enable-automatic-backups-for-a-database/lab6-enable-automatic-backups-for-a-database.md"
         },
         {
-            "title": "Lab 8: Enable Data Guard on an Exadata Database Service on Dedicated Infrastructure",
+            "title": "Lab 7: Enable Data Guard on an Exadata Database Service on Dedicated Infrastructure",
             "description": "Enable Data Guard",
-            "filename": "./lab8-enable-dataguard/lab8-enable-dataguard.md"
+            "filename": "./lab7-enable-dataguard/lab7-enable-dataguard.md"
         },
 
         {

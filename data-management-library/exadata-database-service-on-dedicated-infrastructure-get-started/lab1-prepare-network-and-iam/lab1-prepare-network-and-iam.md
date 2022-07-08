@@ -43,7 +43,7 @@ This lab requires completion of the following:
     Enter the following:
 
     * **Name**: A unique name for the Compartment (maximum 100 characters, including letters, numbers, periods, hyphens, and underscores). The Name must be unique across all the compartments in your tenancy.
-    * **Description**: A friendly description. You can change this later if you want to.
+    * **Description**: Description for the Compartment. You can change this later if you want to.
     * **Parent Compartment**: The Compartment you are in is displayed. To choose another compartment to create this Compartment in, select it from the list.
     * **Tags**: If you have permission to create a resource, then you also have permission to apply free-form tags to that resource. To apply a defined tag, you must have permission to use the tag namespace. For more information about tagging, see Resource Tags. If you are unsure whether to apply tags, skip this option (you can apply tags later) or ask your administrator.
 
@@ -52,7 +52,7 @@ This lab requires completion of the following:
      ![Create a Compartment Page](./images/click-create-compartment.png " ")
 
 
-2. Review the identity access management (IAM) policy for provisioning Oracle Exadata Database Service on Dedicated Infrastructure systems.
+2. Review the Identity Access Management (IAM) Policy for provisioning Oracle Exadata Database Service on Dedicated Infrastructure systems.
 
     Click the navigation menu Click **Identity & Security**, then click **Policies**.
 
@@ -66,18 +66,18 @@ This lab requires completion of the following:
      A **policy** is An IAM document that specifies who has what type of access to your resources. It is used in different ways:
 
        * An individual statement is written in the policy language.
-       * A collection of statements in a single, named "policy" document, which has an Oracle Cloud ID (OCID) assigned to it.
+       * A collection of statements in a single, named "policy" document has an Oracle Cloud ID (OCID) assigned to it.
        * The overall body of policies your organization uses to control access to resources
 
      A **compartment** is a collection of related resources that can be accessed only by certain groups that an administrator has permitted your organization.
 
      To use Oracle Cloud Infrastructure, you must be given the required type of access in a policy written by an administrator, whether using the Console or the REST API with a software development kit (SDK) or a command-line interface (CLI), or some other tool. If you try to perform an action and receive a message that you don't have permission, or are unauthorized, then confirm with your tenancy administrator the type of access you've been granted and in which Compartment.
 
-     For administrators: The policy in "Let database admins manage DB systems" lets the specified group do everything with databases and related database resources.
+     For administrators: The Policy in "Let database admins manage DB systems" lets the specified group do everything with databases and related database resources.
 
     ![Policy Statement](./images/policy-statement.png " ")
 
-     If you're new to policies, then see [Getting Started with Policies](https://docs.oracle.com/en-us/iaas/Content/Identity/Concepts/policygetstarted.htm) and [Common Policies] (https://docs.oracle.com/en-us/iaas/Content/Identity/policiescommon/commonpolicies.htm). See [Details for the Database Service](https://docs.oracle.com/en-us/iaas/Content/Identity/Reference/databasepolicyreference.htm) if you want to dig deeper into writing database policies.
+     If you're new to policies, see [Getting Started with Policies](https://docs.oracle.com/en-us/iaas/Content/Identity/Concepts/policygetstarted.htm) and [Common Policies](https://docs.oracle.com/en-us/iaas/Content/Identity/policiescommon/commonpolicies.htm). See [Details for the Database Service](https://docs.oracle.com/en-us/iaas/Content/Identity/Reference/databasepolicyreference.htm) if you want to dig deeper into writing database policies.
 
 ## Task 2: Create the Virtual Cloud Network (VCN) Setup for Exadata Database Service on Dedicated Infrastructure
 
@@ -101,7 +101,7 @@ This lab requires completion of the following:
 
 3. In the Create a Virtual Cloud Network Page, Enter the following:  
 
-   **Name**: A descriptive name for the VCN. It doesn't have to be unique and cannot be changed later in the Console (but you can change it with the API). Avoid entering confidential information.
+   **Name**: A descriptive name for the Virtual Cloud Network (VCN).
 
    **Create in Compartment**: Select a compartment.
 
@@ -123,7 +123,9 @@ This lab requires completion of the following:
 
     In general, Oracle recommends using **regional subnets**, which span all **availability domains** in the region. See [Overview of VCNs and Subnets](https://docs.oracle.com/iaas/Content/Network/Tasks/managingVCNs_topic-Overview_of_VCNs_and_Subnets.htm#Overview).
 
-    You will create custom route tables for each subnet. You will also make security rules to control traffic to and from the client network, and backup network of the Exadata compute nodes (for The Cloud VM Cluster Resource, nodes are called virtual machines). More information follows about those items.
+    You will create custom **route tables** for each subnet. You will also make **security rules** to control traffic to and from the **client network** and **backup network**.
+
+    More information follows about those items.
 
       * [Option 1: Public Client Subnet with Internet Gateway](https://docs.oracle.com/en-us/iaas/exadatacloud/exacs/ecs-network-setup.html#GUID-D8296957-E344-4688-B626-42A99E1D164B)
 

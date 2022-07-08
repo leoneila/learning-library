@@ -8,7 +8,7 @@
 
 This lab walks you through how to Enable Automatic Backups for a Database.
 
-Estimated Time: 5 minutes
+Estimated Time: 15 minutes
 
 
 
@@ -21,7 +21,7 @@ Estimated Time: 5 minutes
 
 This lab requires completion of the following:
 
-* Completion of Lab 5: Create Oracle Database on Exadata Database Service on Dedicated Infrastructure section.
+* Completion of Lab 5: Create Oracle Database on Exadata Database Service on Dedicated Infrastructure.
 * To launch the system, a correctly configured virtual cloud network (VCN). Its related networking resources (gateways, route tables, security lists, DNS, and so on) must also be configured as necessary for the system.
 * The right IAM policy is required to proceed. See [Required IAM Policy for Exadata Cloud Infrastructure](https://docs.oracle.com/en-us/iaas/exadatacloud/exacs/preparing-for-ecc-deployment.html#GUID-EA03F7BC-7D8E-4177-AFF4-615F71C390CD).
 

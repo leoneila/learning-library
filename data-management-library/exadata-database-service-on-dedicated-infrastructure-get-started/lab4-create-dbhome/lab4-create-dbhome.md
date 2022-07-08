@@ -9,7 +9,7 @@
 This lab walks you through the steps to Create Oracle Database Home on Exadata Database Service on Dedicated Infrastructure.
 
 
-Estimated Time: 10 minutes
+Estimated Time: 25 minutes
 
 
 
@@ -62,19 +62,29 @@ This lab requires completion of the following:
 
     ![Database Home display name](./images/dbhome-display-name.png " ")
 
-    **Database image**: Determines what Oracle Database version is used for the database. You can have databases with different minor versions in the same database home. The major versions must remain the same. By default, the latest Oracle-published database software image is selected.
+    **Database image**: Determines what Oracle Database version is used for the database.
 
     Click **Change Database Image** to use an older Oracle-published image or a custom database software image that you have created in advance, then select an Image Type:
 
     ![Change Database Image](./images/change-db-image.png " ")
 
-    * **Oracle Provided Database Software images**: These images contain generally available versions of Oracle Database software.
 
-    * **Custom Database Software images**: These images are created by your organization and contain customized configurations of software updates and patches. Use the **Select a compartment** and **Select a Database version** selectors to limit the list of custom database software images to a specific compartment or Oracle Database software major release version.
+
+    * **Oracle Database Software images**: These images contain generally available versions of Oracle Database software.
+
+    * **Custom Database Software images**: These images are created by your organization and contain customized configurations of software updates and patches.
+
 
     ![Choose Database Software Image](./images/choose-db-software-image.png " ")
 
-       After choosing a software image, click **Select** to return to the Create Database dialog.
+    While provisioning, if you opt to use **Oracle Provided Database Software Images** as the image type, then you can use the **Display all available versions** switch to choose from all available PSUs and RUs. The most recent release for each major version is indicated with a "**(latest)**" label.
+
+    For the Oracle Database major version releases available in Oracle Cloud Infrastructure, images are provided for the current version plus the three most recent older versions (N through N - 3). For example, if an instance is using Oracle Database 19c, and the latest version of 19c offered is 19.8.0.0.0, images available for provisioning are for versions 19.8.0.0.0, 19.7.0.0, 19.6.0.0 and 19.5.0.0.
+
+    ![Display all available versions](./images/choose-display-all-db-sw-images.png " ")
+
+
+    After choosing a software image, click **Select**.
 
     ![Select Database Software Image](./images/select-db-software-image.png " ")
 

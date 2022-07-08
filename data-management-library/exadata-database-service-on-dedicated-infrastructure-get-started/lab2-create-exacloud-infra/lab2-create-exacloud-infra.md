@@ -8,7 +8,7 @@
 
 This lab walks you through the steps to create an Exadata Cloud Infrastructure resource.
 
-Estimated Time: 10 minutes
+Estimated Time: 15 minutes
 
 
 
@@ -68,9 +68,9 @@ This lab requires completion of the following:
 
     **X7 and X8**: If you select an X7 or X8 system, you are given the choice of provisioning a quarter, half, or full rack. See Exadata Fixed Hardware Shapes: X6, X7, X8, and Exadata Base for hardware and capacity details.
 
-    **Exadata Base**: The Exadata base shape comes in a single configuration and provides an economical alternative to Provisioning a quarter rack system. 
+    **Exadata Base**: The Exadata base shape comes in a single configuration and provides an economical alternative to Provisioning a quarter rack system.
 
-    If you selected a flexible shape (X8M-2 or X9M-2), specify the **Compute and storage configuration**. You can specify **Database servers** from a minimum of 2 up to 32. You can specify **Storage servers** from a minimum of 3 up to 64.
+    > **Note**: If you selected a flexible shape (X8M-2 or X9M-2), specify the **Compute and storage configuration**. You can specify **Database servers** from a minimum of 2 up to 32. You can specify **Storage servers** from a minimum of 3 up to 64.
 
     ![X8M-2 Exadata Cloud Infra](./images/x8m-infra.png " ")
 

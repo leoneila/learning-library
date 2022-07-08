@@ -9,7 +9,7 @@
 This lab walks you through the steps to create a Cloud VM Cluster resource.
 
 
-Estimated Time: 10 minutes
+Estimated Time: 4 hours, 45 minutes
 
 
 
@@ -95,7 +95,7 @@ This lab requires completion of the following:
 
     > **Note**: Do not use a subnet that overlaps with 192.168.128.0/20. This restriction applies to both the client subnet and backup subnet.
 
-    If you plan to back up databases to Object Storage, see the network prerequisites in [Managing Exadata Database Backups.](https://docs.oracle.com/en-us/iaas/exadatacloud/exacs/ecs-managing-db-backup-and-recovery.html#GUID-0CA094F9-7160-43FA-AB23-D51986CBBE85)
+
 
     **Network Security Groups**: Optionally, you can specify one or more network security groups (NSGs); for both the client and backup networks. NSGs function as virtual firewalls, allowing you to apply a set of ingress and egress security rules to your Exadata Database Service VM cluster.
 
@@ -106,8 +106,6 @@ This lab requires completion of the following:
     > **Note**: The hostname must be unique within the subnet.
 
     **Host domain name**: The domain name for the VM cluster. If the selected subnet uses the Oracle-provided Internet and VCN Resolver for DNS name resolution, this field displays the subnet's domain name, which can't be changed. Otherwise, you can provide your choice of a domain name. Hyphens (-) are not permitted.
-
-    Suppose you plan to store database backups in Object Storage. In that case, Oracle recommends using a VCN Resolver for DNS name resolution for the client subnet because it automatically resolves the Swift endpoints used for backups.
 
     **Host and domain URL**: This read-only field combines the host and domain names to display the database's fully qualified domain name (FQDN). The maximum length is 64 characters.
 
