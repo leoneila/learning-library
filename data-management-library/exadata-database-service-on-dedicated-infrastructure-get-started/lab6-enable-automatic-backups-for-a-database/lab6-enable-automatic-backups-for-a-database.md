@@ -8,7 +8,7 @@
 
 This lab walks you through how to Enable Automatic Backups for a Database.
 
-Estimated Time: 15 minutes
+Estimated Time: 10 minutes
 
 
 

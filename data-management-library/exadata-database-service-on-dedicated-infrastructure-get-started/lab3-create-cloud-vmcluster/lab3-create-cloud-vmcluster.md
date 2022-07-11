@@ -9,7 +9,7 @@
 This lab walks you through the steps to create a Cloud VM Cluster resource.
 
 
-Estimated Time: 4 hours, 45 minutes
+Estimated Time: 15 minutes (VM Cluster provisioning might take approximately 4hrs)
 
 
 

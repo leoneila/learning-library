@@ -8,7 +8,7 @@
 
 This lab guides you through the recommended configuration for the Required IAM Policy and how to create the Virtual Client Network (VCN), which will be used to connect to your Exadata Database Service on Dedicated Infrastructure.
 
-Estimated Time: 10 minutes
+Estimated Time: 15 minutes
 
 
 

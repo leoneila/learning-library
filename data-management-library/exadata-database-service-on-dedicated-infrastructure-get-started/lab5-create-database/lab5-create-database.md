@@ -8,7 +8,7 @@
 
 This Lab walks you through the steps to create Oracle Database on Exadata Database Service on Dedicated Infrastructure.
 
-Estimated Time: 40 minutes
+Estimated Time: 15 minutes
 
 
 

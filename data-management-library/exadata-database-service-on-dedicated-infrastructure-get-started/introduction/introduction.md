@@ -2,7 +2,7 @@
 
 This workshop guides you through the tasks to get started using the Oracle Exadata Database Service on Dedicated Infrastructure.
 
-Estimated Time: 7 hours, 10 minutes
+Estimated Time: 1 hour, 35 minutes
 
 **Oracle Exadata Database Service**
 

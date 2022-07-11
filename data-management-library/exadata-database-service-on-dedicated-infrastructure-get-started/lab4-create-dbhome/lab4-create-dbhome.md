@@ -9,7 +9,7 @@
 This lab walks you through the steps to Create Oracle Database Home on Exadata Database Service on Dedicated Infrastructure.
 
 
-Estimated Time: 25 minutes
+Estimated Time: 10 minutes
 
 
 

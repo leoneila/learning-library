@@ -8,7 +8,7 @@
 
 This lab walks you through the steps on how to Enable Data Guard.
 
-Estimated Time: 40 minutes
+Estimated Time: 15 minutes
 
 
 
